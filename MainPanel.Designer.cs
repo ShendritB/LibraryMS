@@ -34,17 +34,32 @@
             this.btnStudentet = new System.Windows.Forms.Button();
             this.btnRolet = new System.Windows.Forms.Button();
             this.btnListat = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblPageTitle = new System.Windows.Forms.Label();
+            this.btnHuazimet = new System.Windows.Forms.Button();
+            this.pnlMenu = new System.Windows.Forms.Panel();
+            this.btnSignOut = new System.Windows.Forms.Button();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.BtnKategorit = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnHome = new System.Windows.Forms.Button();
+            this.pnlTitle = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pnlNav = new System.Windows.Forms.Panel();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnMinimize = new System.Windows.Forms.Button();
+            this.btnCloseChild = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.lblRoli = new System.Windows.Forms.Label();
-            this.btnHuazimet = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.BtnKategorit = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.pnlShowData = new System.Windows.Forms.Panel();
+            this.pnlMenu.SuspendLayout();
+            this.pnlTitle.SuspendLayout();
+            this.pnlNav.SuspendLayout();
+            this.pnlShowData.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLibrat
@@ -53,14 +68,14 @@
             this.btnLibrat.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnLibrat.FlatAppearance.BorderSize = 0;
             this.btnLibrat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLibrat.Font = new System.Drawing.Font("Lucida Bright", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnLibrat.Font = new System.Drawing.Font("Lucida Bright", 12.2F, System.Drawing.FontStyle.Bold);
             this.btnLibrat.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLibrat.Image = ((System.Drawing.Image)(resources.GetObject("btnLibrat.Image")));
             this.btnLibrat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLibrat.Location = new System.Drawing.Point(0, 142);
+            this.btnLibrat.Location = new System.Drawing.Point(0, 182);
             this.btnLibrat.Name = "btnLibrat";
             this.btnLibrat.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnLibrat.Size = new System.Drawing.Size(225, 62);
+            this.btnLibrat.Size = new System.Drawing.Size(251, 62);
             this.btnLibrat.TabIndex = 3;
             this.btnLibrat.Text = "   Librat";
             this.btnLibrat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -73,14 +88,14 @@
             this.btnAutoret.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAutoret.FlatAppearance.BorderSize = 0;
             this.btnAutoret.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAutoret.Font = new System.Drawing.Font("Lucida Bright", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnAutoret.Font = new System.Drawing.Font("Lucida Bright", 12.2F, System.Drawing.FontStyle.Bold);
             this.btnAutoret.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnAutoret.Image = ((System.Drawing.Image)(resources.GetObject("btnAutoret.Image")));
             this.btnAutoret.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAutoret.Location = new System.Drawing.Point(0, 204);
+            this.btnAutoret.Location = new System.Drawing.Point(0, 284);
             this.btnAutoret.Name = "btnAutoret";
             this.btnAutoret.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnAutoret.Size = new System.Drawing.Size(225, 62);
+            this.btnAutoret.Size = new System.Drawing.Size(251, 62);
             this.btnAutoret.TabIndex = 4;
             this.btnAutoret.Text = "   Autoret";
             this.btnAutoret.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -94,14 +109,14 @@
             this.btnStudentet.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnStudentet.FlatAppearance.BorderSize = 0;
             this.btnStudentet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStudentet.Font = new System.Drawing.Font("Lucida Bright", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnStudentet.Font = new System.Drawing.Font("Lucida Bright", 12.2F, System.Drawing.FontStyle.Bold);
             this.btnStudentet.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnStudentet.Image = ((System.Drawing.Image)(resources.GetObject("btnStudentet.Image")));
             this.btnStudentet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStudentet.Location = new System.Drawing.Point(0, 266);
+            this.btnStudentet.Location = new System.Drawing.Point(0, 386);
             this.btnStudentet.Name = "btnStudentet";
             this.btnStudentet.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnStudentet.Size = new System.Drawing.Size(225, 62);
+            this.btnStudentet.Size = new System.Drawing.Size(251, 62);
             this.btnStudentet.TabIndex = 5;
             this.btnStudentet.Text = "   Studentet";
             this.btnStudentet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -115,14 +130,14 @@
             this.btnRolet.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRolet.FlatAppearance.BorderSize = 0;
             this.btnRolet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRolet.Font = new System.Drawing.Font("Lucida Bright", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnRolet.Font = new System.Drawing.Font("Lucida Bright", 12.2F, System.Drawing.FontStyle.Bold);
             this.btnRolet.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnRolet.Image = ((System.Drawing.Image)(resources.GetObject("btnRolet.Image")));
             this.btnRolet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRolet.Location = new System.Drawing.Point(0, 514);
+            this.btnRolet.Location = new System.Drawing.Point(0, 794);
             this.btnRolet.Name = "btnRolet";
             this.btnRolet.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnRolet.Size = new System.Drawing.Size(225, 63);
+            this.btnRolet.Size = new System.Drawing.Size(251, 63);
             this.btnRolet.TabIndex = 6;
             this.btnRolet.Text = "   Rolet";
             this.btnRolet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -136,32 +151,279 @@
             this.btnListat.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnListat.FlatAppearance.BorderSize = 0;
             this.btnListat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListat.Font = new System.Drawing.Font("Lucida Bright", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnListat.Font = new System.Drawing.Font("Lucida Bright", 12.2F, System.Drawing.FontStyle.Bold);
             this.btnListat.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnListat.Image = ((System.Drawing.Image)(resources.GetObject("btnListat.Image")));
             this.btnListat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnListat.Location = new System.Drawing.Point(0, 452);
+            this.btnListat.Location = new System.Drawing.Point(0, 692);
             this.btnListat.Name = "btnListat";
             this.btnListat.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnListat.Size = new System.Drawing.Size(225, 62);
+            this.btnListat.Size = new System.Drawing.Size(251, 62);
             this.btnListat.TabIndex = 7;
-            this.btnListat.Text = "Listat";
+            this.btnListat.Text = "   Listat";
             this.btnListat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnListat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnListat.UseVisualStyleBackColor = false;
             this.btnListat.Click += new System.EventHandler(this.btnListat_Click);
             // 
-            // label1
+            // lblPageTitle
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Lucida Bright", 20.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(296, 317);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(823, 39);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Miresevini ne sistemin e menaxhimit te libraris";
+            this.lblPageTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblPageTitle.AutoSize = true;
+            this.lblPageTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblPageTitle.Font = new System.Drawing.Font("Lucida Bright", 20.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lblPageTitle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblPageTitle.Location = new System.Drawing.Point(465, 20);
+            this.lblPageTitle.Name = "lblPageTitle";
+            this.lblPageTitle.Size = new System.Drawing.Size(117, 39);
+            this.lblPageTitle.TabIndex = 1;
+            this.lblPageTitle.Text = "Home";
+            this.lblPageTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnHuazimet
+            // 
+            this.btnHuazimet.BackColor = System.Drawing.Color.Transparent;
+            this.btnHuazimet.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHuazimet.FlatAppearance.BorderSize = 0;
+            this.btnHuazimet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHuazimet.Font = new System.Drawing.Font("Lucida Bright", 12.2F, System.Drawing.FontStyle.Bold);
+            this.btnHuazimet.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnHuazimet.Image = ((System.Drawing.Image)(resources.GetObject("btnHuazimet.Image")));
+            this.btnHuazimet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHuazimet.Location = new System.Drawing.Point(0, 590);
+            this.btnHuazimet.Name = "btnHuazimet";
+            this.btnHuazimet.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnHuazimet.Size = new System.Drawing.Size(251, 62);
+            this.btnHuazimet.TabIndex = 11;
+            this.btnHuazimet.Text = "   Huazimet";
+            this.btnHuazimet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHuazimet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHuazimet.UseVisualStyleBackColor = false;
+            this.btnHuazimet.Click += new System.EventHandler(this.btnHuazimet_Click);
+            // 
+            // pnlMenu
+            // 
+            this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.pnlMenu.Controls.Add(this.btnSignOut);
+            this.pnlMenu.Controls.Add(this.btnRolet);
+            this.pnlMenu.Controls.Add(this.panel10);
+            this.pnlMenu.Controls.Add(this.btnListat);
+            this.pnlMenu.Controls.Add(this.panel9);
+            this.pnlMenu.Controls.Add(this.btnHuazimet);
+            this.pnlMenu.Controls.Add(this.panel8);
+            this.pnlMenu.Controls.Add(this.BtnKategorit);
+            this.pnlMenu.Controls.Add(this.panel7);
+            this.pnlMenu.Controls.Add(this.btnStudentet);
+            this.pnlMenu.Controls.Add(this.panel6);
+            this.pnlMenu.Controls.Add(this.btnAutoret);
+            this.pnlMenu.Controls.Add(this.panel5);
+            this.pnlMenu.Controls.Add(this.btnLibrat);
+            this.pnlMenu.Controls.Add(this.panel4);
+            this.pnlMenu.Controls.Add(this.btnHome);
+            this.pnlMenu.Controls.Add(this.pnlTitle);
+            this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlMenu.Location = new System.Drawing.Point(0, 0);
+            this.pnlMenu.Name = "pnlMenu";
+            this.pnlMenu.Size = new System.Drawing.Size(251, 675);
+            this.pnlMenu.TabIndex = 12;
+            // 
+            // btnSignOut
+            // 
+            this.btnSignOut.BackColor = System.Drawing.Color.Transparent;
+            this.btnSignOut.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnSignOut.FlatAppearance.BorderSize = 0;
+            this.btnSignOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSignOut.Font = new System.Drawing.Font("Lucida Bright", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignOut.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSignOut.Image = ((System.Drawing.Image)(resources.GetObject("btnSignOut.Image")));
+            this.btnSignOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSignOut.Location = new System.Drawing.Point(0, 606);
+            this.btnSignOut.Name = "btnSignOut";
+            this.btnSignOut.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnSignOut.Size = new System.Drawing.Size(251, 69);
+            this.btnSignOut.TabIndex = 15;
+            this.btnSignOut.Text = "   Signout";
+            this.btnSignOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSignOut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSignOut.UseVisualStyleBackColor = false;
+            this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
+            // 
+            // panel10
+            // 
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel10.Location = new System.Drawing.Point(0, 754);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(251, 40);
+            this.panel10.TabIndex = 18;
+            // 
+            // panel9
+            // 
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(0, 652);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(251, 40);
+            this.panel9.TabIndex = 18;
+            // 
+            // panel8
+            // 
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(0, 550);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(251, 40);
+            this.panel8.TabIndex = 18;
+            // 
+            // BtnKategorit
+            // 
+            this.BtnKategorit.BackColor = System.Drawing.Color.Transparent;
+            this.BtnKategorit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnKategorit.FlatAppearance.BorderSize = 0;
+            this.BtnKategorit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnKategorit.Font = new System.Drawing.Font("Lucida Bright", 12.2F, System.Drawing.FontStyle.Bold);
+            this.BtnKategorit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnKategorit.Image = ((System.Drawing.Image)(resources.GetObject("BtnKategorit.Image")));
+            this.BtnKategorit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnKategorit.Location = new System.Drawing.Point(0, 488);
+            this.BtnKategorit.Name = "BtnKategorit";
+            this.BtnKategorit.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.BtnKategorit.Size = new System.Drawing.Size(251, 62);
+            this.BtnKategorit.TabIndex = 16;
+            this.BtnKategorit.Text = "   Kategorit";
+            this.BtnKategorit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnKategorit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnKategorit.UseVisualStyleBackColor = false;
+            this.BtnKategorit.Click += new System.EventHandler(this.BtnKategorit_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 448);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(251, 40);
+            this.panel7.TabIndex = 18;
+            // 
+            // panel6
+            // 
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 346);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(251, 40);
+            this.panel6.TabIndex = 18;
+            // 
+            // panel5
+            // 
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 244);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(251, 40);
+            this.panel5.TabIndex = 18;
+            // 
+            // panel4
+            // 
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 142);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(251, 40);
+            this.panel4.TabIndex = 17;
+            // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.Transparent;
+            this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Lucida Bright", 12.2F, System.Drawing.FontStyle.Bold);
+            this.btnHome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(0, 80);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnHome.Size = new System.Drawing.Size(251, 62);
+            this.btnHome.TabIndex = 14;
+            this.btnHome.Text = "   Home";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // pnlTitle
+            // 
+            this.pnlTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.pnlTitle.Controls.Add(this.label3);
+            this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTitle.Location = new System.Drawing.Point(0, 0);
+            this.pnlTitle.Name = "pnlTitle";
+            this.pnlTitle.Size = new System.Drawing.Size(251, 80);
+            this.pnlTitle.TabIndex = 13;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Lucida Bright", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(63, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(114, 38);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Menaxhimi i\r\n    libraris";
+            // 
+            // pnlNav
+            // 
+            this.pnlNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.pnlNav.Controls.Add(this.btnClose);
+            this.pnlNav.Controls.Add(this.btnMinimize);
+            this.pnlNav.Controls.Add(this.btnCloseChild);
+            this.pnlNav.Controls.Add(this.lblPageTitle);
+            this.pnlNav.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlNav.Location = new System.Drawing.Point(251, 0);
+            this.pnlNav.Name = "pnlNav";
+            this.pnlNav.Size = new System.Drawing.Size(1032, 80);
+            this.pnlNav.TabIndex = 13;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.OrangeRed;
+            this.btnClose.Location = new System.Drawing.Point(995, 2);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(36, 36);
+            this.btnClose.TabIndex = 3;
+            this.btnClose.Text = "O";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click_1);
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinimize.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnMinimize.Location = new System.Drawing.Point(969, 2);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(36, 36);
+            this.btnMinimize.TabIndex = 3;
+            this.btnMinimize.Text = "O";
+            this.btnMinimize.UseVisualStyleBackColor = true;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
+            // btnCloseChild
+            // 
+            this.btnCloseChild.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnCloseChild.FlatAppearance.BorderSize = 0;
+            this.btnCloseChild.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseChild.Image = ((System.Drawing.Image)(resources.GetObject("btnCloseChild.Image")));
+            this.btnCloseChild.Location = new System.Drawing.Point(0, 0);
+            this.btnCloseChild.Name = "btnCloseChild";
+            this.btnCloseChild.Size = new System.Drawing.Size(56, 80);
+            this.btnCloseChild.TabIndex = 2;
+            this.btnCloseChild.UseVisualStyleBackColor = true;
+            this.btnCloseChild.Click += new System.EventHandler(this.btnCloseChild_Click);
             // 
             // label2
             // 
@@ -169,7 +431,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Lucida Bright", 12.2F);
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label2.Location = new System.Drawing.Point(643, 204);
+            this.label2.Location = new System.Drawing.Point(349, 264);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(99, 23);
             this.label2.TabIndex = 2;
@@ -181,143 +443,45 @@
             this.lblRoli.BackColor = System.Drawing.Color.Transparent;
             this.lblRoli.Font = new System.Drawing.Font("Lucida Bright", 12.2F);
             this.lblRoli.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.lblRoli.Location = new System.Drawing.Point(797, 204);
+            this.lblRoli.Location = new System.Drawing.Point(565, 264);
             this.lblRoli.Name = "lblRoli";
             this.lblRoli.Size = new System.Drawing.Size(50, 23);
             this.lblRoli.TabIndex = 10;
             this.lblRoli.Text = "Roli";
             // 
-            // btnHuazimet
+            // pnlShowData
             // 
-            this.btnHuazimet.BackColor = System.Drawing.Color.Transparent;
-            this.btnHuazimet.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHuazimet.FlatAppearance.BorderSize = 0;
-            this.btnHuazimet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHuazimet.Font = new System.Drawing.Font("Lucida Bright", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnHuazimet.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnHuazimet.Image = ((System.Drawing.Image)(resources.GetObject("btnHuazimet.Image")));
-            this.btnHuazimet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuazimet.Location = new System.Drawing.Point(0, 390);
-            this.btnHuazimet.Name = "btnHuazimet";
-            this.btnHuazimet.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnHuazimet.Size = new System.Drawing.Size(225, 62);
-            this.btnHuazimet.TabIndex = 11;
-            this.btnHuazimet.Text = "   Huazimet";
-            this.btnHuazimet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuazimet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHuazimet.UseVisualStyleBackColor = false;
-            this.btnHuazimet.Click += new System.EventHandler(this.btnHuazimet_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.btnRolet);
-            this.panel1.Controls.Add(this.btnListat);
-            this.panel1.Controls.Add(this.btnHuazimet);
-            this.panel1.Controls.Add(this.BtnKategorit);
-            this.panel1.Controls.Add(this.btnStudentet);
-            this.panel1.Controls.Add(this.btnAutoret);
-            this.panel1.Controls.Add(this.btnLibrat);
-            this.panel1.Controls.Add(this.btnHome);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(225, 680);
-            this.panel1.TabIndex = 12;
-            // 
-            // btnHome
-            // 
-            this.btnHome.BackColor = System.Drawing.Color.Transparent;
-            this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Lucida Bright", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnHome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
-            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(0, 80);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnHome.Size = new System.Drawing.Size(225, 62);
-            this.btnHome.TabIndex = 14;
-            this.btnHome.Text = "   Home";
-            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHome.UseVisualStyleBackColor = false;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(225, 80);
-            this.panel2.TabIndex = 13;
-            // 
-            // panel3
-            // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(225, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(943, 80);
-            this.panel3.TabIndex = 13;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(12, 628);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(168, 49);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "SignOut";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // BtnKategorit
-            // 
-            this.BtnKategorit.BackColor = System.Drawing.Color.Transparent;
-            this.BtnKategorit.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnKategorit.FlatAppearance.BorderSize = 0;
-            this.BtnKategorit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnKategorit.Font = new System.Drawing.Font("Lucida Bright", 10.2F, System.Drawing.FontStyle.Bold);
-            this.BtnKategorit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BtnKategorit.Image = ((System.Drawing.Image)(resources.GetObject("BtnKategorit.Image")));
-            this.BtnKategorit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnKategorit.Location = new System.Drawing.Point(0, 328);
-            this.BtnKategorit.Name = "BtnKategorit";
-            this.BtnKategorit.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.BtnKategorit.Size = new System.Drawing.Size(225, 62);
-            this.BtnKategorit.TabIndex = 16;
-            this.BtnKategorit.Text = "   Kategorit";
-            this.BtnKategorit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnKategorit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnKategorit.UseVisualStyleBackColor = false;
+            this.pnlShowData.Controls.Add(this.label2);
+            this.pnlShowData.Controls.Add(this.lblRoli);
+            this.pnlShowData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlShowData.Location = new System.Drawing.Point(251, 80);
+            this.pnlShowData.Name = "pnlShowData";
+            this.pnlShowData.Size = new System.Drawing.Size(1032, 595);
+            this.pnlShowData.TabIndex = 14;
             // 
             // MainPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1168, 680);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lblRoli);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1283, 675);
+            this.Controls.Add(this.pnlShowData);
+            this.Controls.Add(this.pnlNav);
+            this.Controls.Add(this.pnlMenu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainPanel";
             this.Text = "MainPanel";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainPanel_FormClosing);
-            this.panel1.ResumeLayout(false);
+            this.pnlMenu.ResumeLayout(false);
+            this.pnlTitle.ResumeLayout(false);
+            this.pnlTitle.PerformLayout();
+            this.pnlNav.ResumeLayout(false);
+            this.pnlNav.PerformLayout();
+            this.pnlShowData.ResumeLayout(false);
+            this.pnlShowData.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -328,15 +492,27 @@
         private System.Windows.Forms.Button btnStudentet;
         private System.Windows.Forms.Button btnRolet;
         private System.Windows.Forms.Button btnListat;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblPageTitle;
+        private System.Windows.Forms.Button btnHuazimet;
+        private System.Windows.Forms.Panel pnlMenu;
+        private System.Windows.Forms.Panel pnlTitle;
+        private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.Panel pnlNav;
+        private System.Windows.Forms.Button btnSignOut;
+        private System.Windows.Forms.Button BtnKategorit;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblRoli;
-        private System.Windows.Forms.Button btnHuazimet;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnHome;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button BtnKategorit;
+        private System.Windows.Forms.Panel pnlShowData;
+        private System.Windows.Forms.Button btnCloseChild;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnMinimize;
     }
 }

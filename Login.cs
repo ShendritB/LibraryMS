@@ -33,19 +33,17 @@ namespace Library_TI1
             string roli = logBLL.LoginBLL(perdoruesi, fjalkalimi);
             if (roli == Roli.Biblotekist.ToString())
             {
-                //this.Hide();
-                //this.Close();
-               // frm1.Close();
+                this.Hide();
                 Session.Roli = Roli.Biblotekist;
-                mP = new MainPanel(this);
+                mP = new MainPanel(/*this*/);
                 mP.Show();
             }
             else if (roli == Roli.Admin.ToString())
             {
-                //this.Hide();
+                this.Hide();
                 //this.Close();
                 Session.Roli = Roli.Admin;
-                mP = new MainPanel(this);
+                mP = new MainPanel(/*this*/);
                 mP.Show();
 
             }
@@ -53,6 +51,16 @@ namespace Library_TI1
             {
                 MessageBox.Show("Të dhënat e gabuara", "Lajmrim", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
