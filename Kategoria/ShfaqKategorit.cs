@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Library_BLL;
 using Library_BO;
-using Library_TI1.Author;
+//using Library_TI1.Author;
 using Library_TI1.Kategoria;
 
 namespace Library_TI1
@@ -60,9 +60,9 @@ namespace Library_TI1
             if (e.ColumnIndex == 0)
             {
 
-                NdryshoAutoret k1 = new NdryshoAutoret();
-                k1.LoadData(kategoriaId);
-                k1.ShowDialog();
+                ////NdryshoAutoret k1 = new NdryshoAutoret();
+                //k1.LoadData(kategoriaId);
+                //k1.ShowDialog();
             }
             else if (e.ColumnIndex == 1)
             {
