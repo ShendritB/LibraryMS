@@ -21,7 +21,7 @@ namespace Library_TI1
 
         Books.Librat l1 = new Books.Librat();
         ShfaqKategorit k1 = new ShfaqKategorit();
-        Author.ListaAutoret a1 = new Author.ListaAutoret();
+        //Author.ListaAutoret a1 = new Author.ListaAutoret();
         private void btnLibra_Click(object sender, EventArgs e)
         {
           
@@ -46,16 +46,20 @@ namespace Library_TI1
 
         private void BtnAutoret_Click(object sender, EventArgs e)
         {
-            pnlActive.Height = btnKategorit.Height;
-            pnlActive.Top = BtnAutoret.Top;
-            this.IsMdiContainer = true;
-            a1.TopLevel = false;
-            PnlMain.Controls.Add(a1);
-            a1.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            a1.Dock = DockStyle.Fill;
-            a1.Show();
+            //pnlActive.Height = btnKategorit.Height;
+            //pnlActive.Top = BtnAutoret.Top;
+            //this.IsMdiContainer = true;
+            //a1.TopLevel = false;
+            //PnlMain.Controls.Add(a1);
+            //a1.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            //a1.Dock = DockStyle.Fill;
+            //a1.Show();
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

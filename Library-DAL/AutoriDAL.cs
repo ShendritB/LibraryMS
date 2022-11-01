@@ -54,49 +54,10 @@ namespace Library_DAL
             {
                 return false;
             }
-
         }
-
-        public AutoriBO GetItemById(int id)
+        public bool FshijAutoret()
         {
-            DataSet ds;
-            AutoriBO k1;
-
-            try
-            {
-                using (DBConn.conn = new SqlConnection(DBConn.conString))
-                {
-                    DBConn.conn.Open();
-                    DBConn.cmd = new SqlCommand("spAutoriMerrId", DBConn.conn);
-                    DBConn.cmd.CommandType = CommandType.StoredProcedure;
-
-                    DBConn.cmd.Parameters.AddWithValue("@ID", id);
-
-                    DBConn.da = new SqlDataAdapter(DBConn.cmd);
-                    ds = new DataSet();
-                    DBConn.da.Fill(ds);
-
-
-                    string AutoriId = Convert.ToString(ds.Tables[0].Rows[0]["AutoriId"]);
-                    string emri = Convert.ToString(ds.Tables[0].Rows[0]["Emri"]);
-                    string mbiemri = Convert.ToString(ds.Tables[0].Rows[0]["Mbiemri"]);
-
-
-                    k1 = new AutoriBO(Int32.Parse(AutoriId), emri, mbiemri);
-                    return k1;
-
-                }
-
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public bool FshijAutoret(int id)
-        {
-            if (id > 0)
+            if (AutoriBO.AutoriId > 0)
             {
                 try
                 {
@@ -106,7 +67,7 @@ namespace Library_DAL
                         DBConn.cmd = new SqlCommand("spAutoretDel", DBConn.conn);
                         DBConn.cmd.CommandType = CommandType.StoredProcedure;
 
-                        DBConn.cmd.Parameters.AddWithValue("@AutoriId", id);
+                        DBConn.cmd.Parameters.AddWithValue("@AutoriId", AutoriBO.AutoriId);
                         DBConn.cmd.ExecuteNonQuery();
                         return true;
 
@@ -120,10 +81,9 @@ namespace Library_DAL
             }
             return false;
         }
-
         public bool Ndrysho(AutoriBO katBO)
         {
-            if (katBO.AutoriId > 0)
+            if (AutoriBO.AutoriId > 0)
             {
                 try
                 {
@@ -132,21 +92,15 @@ namespace Library_DAL
                         DBConn.conn.Open();
                         DBConn.cmd = new SqlCommand("spAutoretEdit", DBConn.conn);
                         DBConn.cmd.CommandType = CommandType.StoredProcedure;
-
-                        DBConn.cmd.Parameters.AddWithValue("@AutoriId", katBO.AutoriId);
+                        DBConn.cmd.Parameters.AddWithValue("@AutoriId", AutoriBO.AutoriId);
                         DBConn.cmd.Parameters.AddWithValue("@Emri", katBO.Emri);
                         DBConn.cmd.Parameters.AddWithValue("@Mbiemri", katBO.Mbiemri);
-                        DBConn.cmd.Parameters.AddWithValue("@LUB", 1);
-                        DBConn.cmd.Parameters.AddWithValue("@LUN", 1);
-                        DBConn.cmd.Parameters.AddWithValue("@LUD", DateTime.Now);
                         DBConn.cmd.ExecuteNonQuery();
                         return true;
-
                     }
                 }
                 catch (Exception)
                 {
-
                     return false;
                 }
             }

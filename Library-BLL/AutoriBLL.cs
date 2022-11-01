@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Library_DAL;
 using Library_BO;
 using System.Data;
+using System.Windows.Forms;
 
 namespace Library_BLL
 {
@@ -30,14 +31,9 @@ namespace Library_BLL
         {
             return autDal.Ndrysho(updateAutori);
         }
-
-        public AutoriBO GetItem(int id)
+        public bool Fshij()
         {
-            return autDal.GetItemById(id);
-        }
-        public bool Fshij(int id)
-        {
-            return autDal.FshijAutoret(id);
+            return autDal.FshijAutoret();
         }
     }
 }

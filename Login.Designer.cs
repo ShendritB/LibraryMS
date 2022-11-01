@@ -52,9 +52,9 @@
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(135, 43);
+            this.pictureBox1.Location = new System.Drawing.Point(135, 55);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(127, 90);
+            this.pictureBox1.Size = new System.Drawing.Size(124, 90);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -63,7 +63,7 @@
             // 
             this.tbFjalkalimi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(56)))));
             this.tbFjalkalimi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbFjalkalimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.tbFjalkalimi.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbFjalkalimi.ForeColor = System.Drawing.Color.White;
             this.tbFjalkalimi.Location = new System.Drawing.Point(53, 428);
             this.tbFjalkalimi.Multiline = true;
@@ -102,8 +102,8 @@
             // 
             this.btnLogIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(216)))), ((int)(((byte)(255)))));
             this.btnLogIn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLogIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnLogIn.ForeColor = System.Drawing.Color.Black;
+            this.btnLogIn.Font = new System.Drawing.Font("Gilroy Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogIn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
             this.btnLogIn.Location = new System.Drawing.Point(53, 488);
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(273, 41);
@@ -126,7 +126,7 @@
             // 
             this.tbPerdoruesi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(56)))));
             this.tbPerdoruesi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbPerdoruesi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.tbPerdoruesi.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPerdoruesi.ForeColor = System.Drawing.Color.White;
             this.tbPerdoruesi.Location = new System.Drawing.Point(53, 343);
             this.tbPerdoruesi.Multiline = true;
@@ -168,11 +168,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Dunley Trial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Gilroy Bold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(216)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(63, 155);
+            this.label1.Location = new System.Drawing.Point(58, 154);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 76);
+            this.label1.Size = new System.Drawing.Size(282, 66);
             this.label1.TabIndex = 7;
             this.label1.Text = "Sistemi i menaxhimit \r\ntë Libraris";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

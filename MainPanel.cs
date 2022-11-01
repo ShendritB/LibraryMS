@@ -16,23 +16,13 @@ namespace Library_TI1
 {
     public partial class MainPanel : Form
     {
-        //private Login _login;
         private Button currentButton;
         private Random random;
         private int tempIndex;
         private Form activeForm;
-        //public MainPanel()
-        //{
-        //    InitializeComponent();
-        //    //if (Session.Roli == Roli.Admin)
-        //    //{
-        //    //  btnRolet.Enabled = false;
-        //    //}
-        //}
-        public MainPanel(/*Login login*/)
+        public MainPanel()
         {
             InitializeComponent();
-           // _login = login;
             if (Session.Roli == Roli.Admin)
             {
                 btnRolet.Enabled = false;
@@ -46,11 +36,6 @@ namespace Library_TI1
             this.ControlBox = false;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
-
-        //[DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        //private extern static void ReleaseCapture();
-        //[DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        //  private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
         private Color SelectThemeColor()
         {
             //random = new Random();
@@ -74,9 +59,10 @@ namespace Library_TI1
                     currentButton = (Button)btnSender;
                     currentButton.BackColor = color;
                     currentButton.ForeColor = Color.White;
-                    currentButton.Font = new System.Drawing.Font("Lucida Bright", 13.5F, System.Drawing.FontStyle.Bold);
+                    currentButton.Font = new System.Drawing.Font("Gilroy Bold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     pnlNav.BackColor = color;
                     pnlTitle.BackColor = ThemeColors.ChangeColorBrightness(color, -0.3);
+                    pnlCloseBtns.BackColor = ThemeColors.ChangeColorBrightness(color, -0.3);
                     btnSignOut.BackColor = ThemeColors.ChangeColorBrightness(color, -0.3);
                     ThemeColors.PrimaryColor = color;
                     ThemeColors.SecondaryColor = ThemeColors.ChangeColorBrightness(color, -0.3);
@@ -92,11 +78,11 @@ namespace Library_TI1
                 {
                     previousBtn.BackColor = Color.FromArgb(51, 51, 76);
                     previousBtn.ForeColor = Color.Gainsboro;
-                    previousBtn.Font = new System.Drawing.Font("Lucida Bright", 12.2F, System.Drawing.FontStyle.Bold);
+                    previousBtn.Font = new System.Drawing.Font("Gilroy Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 }
             }
         }
-        private void OpenChildForm(Form childForm, object btnSender)
+        public void OpenChildForm(Form childForm, object btnSender)
         {
             if (activeForm != null)
                 activeForm.Close();
@@ -134,7 +120,6 @@ namespace Library_TI1
 
         private void btnRolet_Click(object sender, EventArgs e)
         {
-
             OpenChildForm(new Forms.Rolet(), sender);
         }
 
@@ -149,14 +134,6 @@ namespace Library_TI1
 
             OpenChildForm(new Forms.Listat(), sender);
         }
-
-        private void btnHome_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-            if (activeForm != null)
-                activeForm.Close();
-            Reset();
-        }
         private void BtnKategorit_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.Kategoria(), sender);
@@ -165,7 +142,7 @@ namespace Library_TI1
         {
             MainPanel mainPanel = new MainPanel();
             mainPanel.Hide();
-            MessageBox.Show("Ju jeni çkyqur me suskses!", "Lajmrim");
+            MessageBox.Show("Ju jeni çkyqur me suskses!", "Lajmerim");
             Application.Restart();
         }
 

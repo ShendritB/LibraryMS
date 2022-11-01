@@ -8,11 +8,14 @@ namespace Library_BO
 {
     public class AutoriBO : Base
     {
-        public int AutoriId { get; set; }
+        public static int AutoriId { get; set; }
         public string Emri { get; set; }
         public string Mbiemri { get; set; }
 
-
+        public AutoriBO(int id)
+        {
+                AutoriId = id;
+        }
         public AutoriBO(string emri, string mbiemri, int insertedBy, DateTime insertedDate)
         {
             Emri = emri;
