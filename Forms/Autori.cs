@@ -126,6 +126,5 @@ namespace Library_TI1.Forms
                 MessageBox.Show("Te dhenat jane Fshir me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
     }
 }

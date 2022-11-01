@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblShtoNdrysho = new System.Windows.Forms.Label();
             this.tbMbiemri = new System.Windows.Forms.TextBox();
             this.tbEmri = new System.Windows.Forms.TextBox();
@@ -39,11 +39,11 @@
             this.btnPerditso = new System.Windows.Forms.Button();
             this.dgvAutori = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlButtom = new System.Windows.Forms.Panel();
             this.pnlMidButtom = new System.Windows.Forms.Panel();
             this.pnlCloseBtns = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.pnlButtom = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAutori)).BeginInit();
             this.panel1.SuspendLayout();
             this.pnlCloseBtns.SuspendLayout();
@@ -166,9 +166,9 @@
             // 
             this.dgvAutori.AllowUserToAddRows = false;
             this.dgvAutori.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.dgvAutori.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dgvAutori.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvAutori.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvAutori.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvAutori.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -193,6 +193,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(251, 854);
             this.panel1.TabIndex = 22;
+            // 
+            // pnlButtom
+            // 
+            this.pnlButtom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlButtom.Location = new System.Drawing.Point(0, 774);
+            this.pnlButtom.Name = "pnlButtom";
+            this.pnlButtom.Size = new System.Drawing.Size(251, 80);
+            this.pnlButtom.TabIndex = 0;
             // 
             // pnlMidButtom
             // 
@@ -242,14 +250,6 @@
             this.btnClose.TabIndex = 3;
             this.btnClose.Text = "O";
             this.btnClose.UseVisualStyleBackColor = true;
-            // 
-            // pnlButtom
-            // 
-            this.pnlButtom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlButtom.Location = new System.Drawing.Point(0, 774);
-            this.pnlButtom.Name = "pnlButtom";
-            this.pnlButtom.Size = new System.Drawing.Size(251, 80);
-            this.pnlButtom.TabIndex = 0;
             // 
             // Autori
             // 
