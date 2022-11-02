@@ -38,14 +38,10 @@
             this.BtnFshije = new System.Windows.Forms.Button();
             this.btnPerditso = new System.Windows.Forms.Button();
             this.dgvAutori = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pnlButtom = new System.Windows.Forms.Panel();
-            this.pnlMidButtom = new System.Windows.Forms.Panel();
             this.pnlCloseBtns = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAutori)).BeginInit();
-            this.panel1.SuspendLayout();
             this.pnlCloseBtns.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +52,7 @@
             this.lblShtoNdrysho.BackColor = System.Drawing.Color.Transparent;
             this.lblShtoNdrysho.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblShtoNdrysho.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblShtoNdrysho.Location = new System.Drawing.Point(377, 98);
+            this.lblShtoNdrysho.Location = new System.Drawing.Point(491, 164);
             this.lblShtoNdrysho.Name = "lblShtoNdrysho";
             this.lblShtoNdrysho.Size = new System.Drawing.Size(185, 24);
             this.lblShtoNdrysho.TabIndex = 4;
@@ -69,7 +65,7 @@
             this.tbMbiemri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbMbiemri.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbMbiemri.ForeColor = System.Drawing.Color.Black;
-            this.tbMbiemri.Location = new System.Drawing.Point(180, 187);
+            this.tbMbiemri.Location = new System.Drawing.Point(294, 253);
             this.tbMbiemri.Multiline = true;
             this.tbMbiemri.Name = "tbMbiemri";
             this.tbMbiemri.Size = new System.Drawing.Size(592, 36);
@@ -82,7 +78,7 @@
             this.tbEmri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbEmri.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbEmri.ForeColor = System.Drawing.Color.Black;
-            this.tbEmri.Location = new System.Drawing.Point(180, 139);
+            this.tbEmri.Location = new System.Drawing.Point(294, 205);
             this.tbEmri.Multiline = true;
             this.tbEmri.Name = "tbEmri";
             this.tbEmri.Size = new System.Drawing.Size(592, 36);
@@ -95,7 +91,7 @@
             this.lblMbiemriAut.BackColor = System.Drawing.Color.Transparent;
             this.lblMbiemriAut.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMbiemriAut.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblMbiemriAut.Location = new System.Drawing.Point(84, 195);
+            this.lblMbiemriAut.Location = new System.Drawing.Point(198, 261);
             this.lblMbiemriAut.Name = "lblMbiemriAut";
             this.lblMbiemriAut.Size = new System.Drawing.Size(90, 24);
             this.lblMbiemriAut.TabIndex = 0;
@@ -108,7 +104,7 @@
             this.lblEmriAut.BackColor = System.Drawing.Color.Transparent;
             this.lblEmriAut.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmriAut.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblEmriAut.Location = new System.Drawing.Point(84, 145);
+            this.lblEmriAut.Location = new System.Drawing.Point(198, 211);
             this.lblEmriAut.Name = "lblEmriAut";
             this.lblEmriAut.Size = new System.Drawing.Size(55, 24);
             this.lblEmriAut.TabIndex = 0;
@@ -122,7 +118,7 @@
             this.btnRuaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRuaj.Font = new System.Drawing.Font("Gilroy Bold", 10.8F, System.Drawing.FontStyle.Bold);
             this.btnRuaj.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnRuaj.Location = new System.Drawing.Point(180, 233);
+            this.btnRuaj.Location = new System.Drawing.Point(294, 299);
             this.btnRuaj.Name = "btnRuaj";
             this.btnRuaj.Size = new System.Drawing.Size(166, 46);
             this.btnRuaj.TabIndex = 21;
@@ -138,7 +134,7 @@
             this.BtnFshije.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnFshije.Font = new System.Drawing.Font("Gilroy Bold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnFshije.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnFshije.Location = new System.Drawing.Point(591, 233);
+            this.BtnFshije.Location = new System.Drawing.Point(705, 299);
             this.BtnFshije.Name = "BtnFshije";
             this.BtnFshije.Size = new System.Drawing.Size(181, 46);
             this.BtnFshije.TabIndex = 19;
@@ -154,7 +150,7 @@
             this.btnPerditso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPerditso.Font = new System.Drawing.Font("Gilroy Bold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPerditso.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPerditso.Location = new System.Drawing.Point(381, 233);
+            this.btnPerditso.Location = new System.Drawing.Point(495, 299);
             this.btnPerditso.Name = "btnPerditso";
             this.btnPerditso.Size = new System.Drawing.Size(181, 46);
             this.btnPerditso.TabIndex = 18;
@@ -173,7 +169,7 @@
             this.dgvAutori.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvAutori.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAutori.GridColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dgvAutori.Location = new System.Drawing.Point(180, 297);
+            this.dgvAutori.Location = new System.Drawing.Point(294, 363);
             this.dgvAutori.Name = "dgvAutori";
             this.dgvAutori.ReadOnly = true;
             this.dgvAutori.RowHeadersWidth = 51;
@@ -184,42 +180,15 @@
             this.dgvAutori.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAutori_CellClick);
             this.dgvAutori.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAutori_CellClick);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panel1.Controls.Add(this.pnlButtom);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(935, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(251, 854);
-            this.panel1.TabIndex = 22;
-            // 
-            // pnlButtom
-            // 
-            this.pnlButtom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlButtom.Location = new System.Drawing.Point(0, 774);
-            this.pnlButtom.Name = "pnlButtom";
-            this.pnlButtom.Size = new System.Drawing.Size(251, 80);
-            this.pnlButtom.TabIndex = 0;
-            // 
-            // pnlMidButtom
-            // 
-            this.pnlMidButtom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.pnlMidButtom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlMidButtom.Location = new System.Drawing.Point(0, 774);
-            this.pnlMidButtom.Name = "pnlMidButtom";
-            this.pnlMidButtom.Size = new System.Drawing.Size(935, 80);
-            this.pnlMidButtom.TabIndex = 23;
-            // 
             // pnlCloseBtns
             // 
             this.pnlCloseBtns.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.pnlCloseBtns.Controls.Add(this.btnMinimize);
             this.pnlCloseBtns.Controls.Add(this.btnClose);
             this.pnlCloseBtns.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlCloseBtns.Location = new System.Drawing.Point(935, 0);
+            this.pnlCloseBtns.Location = new System.Drawing.Point(1186, 0);
             this.pnlCloseBtns.Name = "pnlCloseBtns";
-            this.pnlCloseBtns.Size = new System.Drawing.Size(0, 774);
+            this.pnlCloseBtns.Size = new System.Drawing.Size(0, 854);
             this.pnlCloseBtns.TabIndex = 24;
             // 
             // btnMinimize
@@ -257,8 +226,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1186, 854);
             this.Controls.Add(this.pnlCloseBtns);
-            this.Controls.Add(this.pnlMidButtom);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.BtnFshije);
             this.Controls.Add(this.dgvAutori);
             this.Controls.Add(this.btnRuaj);
@@ -272,7 +239,6 @@
             this.Text = "Autoret";
             this.Load += new System.EventHandler(this.Autori_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAutori)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.pnlCloseBtns.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -289,11 +255,8 @@
         private System.Windows.Forms.Button BtnFshije;
         private System.Windows.Forms.Button btnRuaj;
         private System.Windows.Forms.Button btnPerditso;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel pnlMidButtom;
         private System.Windows.Forms.Panel pnlCloseBtns;
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Panel pnlButtom;
     }
 }
