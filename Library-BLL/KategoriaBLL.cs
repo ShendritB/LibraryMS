@@ -11,10 +11,10 @@ namespace Library_BLL
 {
     public class KategoriaBLL
     { 
-        Kategoria katDal;
+        KategoriaDAL katDal;
         public KategoriaBLL()
         {
-            katDal = new Kategoria();
+            katDal = new KategoriaDAL();
         }
        
         public DataTable ShfaqKategoriaBLL()
@@ -35,9 +35,9 @@ namespace Library_BLL
         {
             return katDal.GetItemById(id);
         }
-        public bool Fshij(int id)
+        public bool Fshij()
         {
-            return katDal.FshijKategorit(id);
+            return katDal.FshijKategorit();
         }
 
     }

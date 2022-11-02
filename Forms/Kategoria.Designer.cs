@@ -28,131 +28,251 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.pnlCloseBtns = new System.Windows.Forms.Panel();
+            this.btnMinimize = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.pnlMidButtom = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlButtom = new System.Windows.Forms.Panel();
+            this.BtnFshije = new System.Windows.Forms.Button();
+            this.dgvKategoria = new System.Windows.Forms.DataGridView();
+            this.btnRuaj = new System.Windows.Forms.Button();
+            this.lblShtoNdrysho = new System.Windows.Forms.Label();
+            this.tbEmri = new System.Windows.Forms.TextBox();
+            this.btnPerditso = new System.Windows.Forms.Button();
+            this.lblEmriAut = new System.Windows.Forms.Label();
+            this.tbPershkrimi = new System.Windows.Forms.TextBox();
+            this.lblPershkrimiKat = new System.Windows.Forms.Label();
+            this.pnlCloseBtns.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKategoria)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox4
+            // pnlCloseBtns
             // 
-            this.textBox4.Location = new System.Drawing.Point(170, 137);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 13;
+            this.pnlCloseBtns.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.pnlCloseBtns.Controls.Add(this.btnMinimize);
+            this.pnlCloseBtns.Controls.Add(this.btnClose);
+            this.pnlCloseBtns.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlCloseBtns.Location = new System.Drawing.Point(935, 0);
+            this.pnlCloseBtns.Name = "pnlCloseBtns";
+            this.pnlCloseBtns.Size = new System.Drawing.Size(0, 774);
+            this.pnlCloseBtns.TabIndex = 36;
             // 
-            // textBox3
+            // btnMinimize
             // 
-            this.textBox3.Location = new System.Drawing.Point(286, 246);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 14;
+            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimize.BackColor = System.Drawing.Color.Transparent;
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinimize.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnMinimize.Location = new System.Drawing.Point(-70, 0);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(36, 36);
+            this.btnMinimize.TabIndex = 3;
+            this.btnMinimize.Text = "O";
+            this.btnMinimize.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // btnClose
             // 
-            this.textBox2.Location = new System.Drawing.Point(170, 48);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 15;
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.OrangeRed;
+            this.btnClose.Location = new System.Drawing.Point(-39, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(36, 36);
+            this.btnClose.TabIndex = 3;
+            this.btnClose.Text = "O";
+            this.btnClose.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // pnlMidButtom
             // 
-            this.textBox1.Location = new System.Drawing.Point(170, 91);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 16;
+            this.pnlMidButtom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.pnlMidButtom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlMidButtom.Location = new System.Drawing.Point(0, 774);
+            this.pnlMidButtom.Name = "pnlMidButtom";
+            this.pnlMidButtom.Size = new System.Drawing.Size(935, 80);
+            this.pnlMidButtom.TabIndex = 35;
             // 
-            // label4
+            // panel1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(94, 143);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 16);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "label1";
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panel1.Controls.Add(this.pnlButtom);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(935, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(251, 854);
+            this.panel1.TabIndex = 34;
             // 
-            // label2
+            // pnlButtom
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(94, 97);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "label1";
+            this.pnlButtom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlButtom.Location = new System.Drawing.Point(0, 774);
+            this.pnlButtom.Name = "pnlButtom";
+            this.pnlButtom.Size = new System.Drawing.Size(251, 80);
+            this.pnlButtom.TabIndex = 0;
             // 
-            // label1
+            // BtnFshije
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(94, 54);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "label1";
+            this.BtnFshije.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnFshije.BackColor = System.Drawing.Color.Transparent;
+            this.BtnFshije.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnFshije.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnFshije.Font = new System.Drawing.Font("Gilroy Bold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnFshije.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnFshije.Location = new System.Drawing.Point(591, 233);
+            this.BtnFshije.Name = "BtnFshije";
+            this.BtnFshije.Size = new System.Drawing.Size(181, 46);
+            this.BtnFshije.TabIndex = 32;
+            this.BtnFshije.Text = "Fshije";
+            this.BtnFshije.UseVisualStyleBackColor = false;
+            this.BtnFshije.Click += new System.EventHandler(this.BtnFshije_Click);
             // 
-            // dataGridView1
+            // dgvKategoria
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(526, 159);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(262, 150);
-            this.dataGridView1.TabIndex = 9;
+            this.dgvKategoria.AllowUserToAddRows = false;
+            this.dgvKategoria.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            this.dgvKategoria.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvKategoria.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvKategoria.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvKategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKategoria.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dgvKategoria.Location = new System.Drawing.Point(180, 297);
+            this.dgvKategoria.Name = "dgvKategoria";
+            this.dgvKategoria.ReadOnly = true;
+            this.dgvKategoria.RowHeadersWidth = 51;
+            this.dgvKategoria.RowTemplate.Height = 24;
+            this.dgvKategoria.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvKategoria.Size = new System.Drawing.Size(592, 249);
+            this.dgvKategoria.TabIndex = 30;
+            this.dgvKategoria.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKategoria_CellClick);
             // 
-            // button3
+            // btnRuaj
             // 
-            this.button3.Location = new System.Drawing.Point(526, 326);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnRuaj.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnRuaj.BackColor = System.Drawing.Color.Transparent;
+            this.btnRuaj.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnRuaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRuaj.Font = new System.Drawing.Font("Gilroy Bold", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnRuaj.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRuaj.Location = new System.Drawing.Point(180, 233);
+            this.btnRuaj.Name = "btnRuaj";
+            this.btnRuaj.Size = new System.Drawing.Size(166, 46);
+            this.btnRuaj.TabIndex = 33;
+            this.btnRuaj.Text = "Shto Kategori";
+            this.btnRuaj.UseVisualStyleBackColor = false;
+            this.btnRuaj.Click += new System.EventHandler(this.btnRuaj_Click);
             // 
-            // button2
+            // lblShtoNdrysho
             // 
-            this.button2.Location = new System.Drawing.Point(713, 326);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.lblShtoNdrysho.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblShtoNdrysho.AutoSize = true;
+            this.lblShtoNdrysho.BackColor = System.Drawing.Color.Transparent;
+            this.lblShtoNdrysho.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShtoNdrysho.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblShtoNdrysho.Location = new System.Drawing.Point(377, 98);
+            this.lblShtoNdrysho.Name = "lblShtoNdrysho";
+            this.lblShtoNdrysho.Size = new System.Drawing.Size(185, 24);
+            this.lblShtoNdrysho.TabIndex = 29;
+            this.lblShtoNdrysho.Text = "Shto/Ndrysho/Fshi";
             // 
-            // button1
+            // tbEmri
             // 
-            this.button1.Location = new System.Drawing.Point(618, 326);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.tbEmri.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbEmri.BackColor = System.Drawing.SystemColors.Window;
+            this.tbEmri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbEmri.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEmri.ForeColor = System.Drawing.Color.Black;
+            this.tbEmri.Location = new System.Drawing.Point(180, 139);
+            this.tbEmri.Multiline = true;
+            this.tbEmri.Name = "tbEmri";
+            this.tbEmri.Size = new System.Drawing.Size(592, 36);
+            this.tbEmri.TabIndex = 27;
+            // 
+            // btnPerditso
+            // 
+            this.btnPerditso.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPerditso.BackColor = System.Drawing.Color.Transparent;
+            this.btnPerditso.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnPerditso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPerditso.Font = new System.Drawing.Font("Gilroy Bold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPerditso.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPerditso.Location = new System.Drawing.Point(381, 233);
+            this.btnPerditso.Name = "btnPerditso";
+            this.btnPerditso.Size = new System.Drawing.Size(181, 46);
+            this.btnPerditso.TabIndex = 31;
+            this.btnPerditso.Text = "Perditsoje";
+            this.btnPerditso.UseVisualStyleBackColor = false;
+            this.btnPerditso.Click += new System.EventHandler(this.btnPerditso_Click);
+            // 
+            // lblEmriAut
+            // 
+            this.lblEmriAut.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblEmriAut.AutoSize = true;
+            this.lblEmriAut.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmriAut.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmriAut.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblEmriAut.Location = new System.Drawing.Point(59, 141);
+            this.lblEmriAut.Name = "lblEmriAut";
+            this.lblEmriAut.Size = new System.Drawing.Size(55, 24);
+            this.lblEmriAut.TabIndex = 25;
+            this.lblEmriAut.Text = "Emri:";
+            // 
+            // tbPershkrimi
+            // 
+            this.tbPershkrimi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbPershkrimi.BackColor = System.Drawing.SystemColors.Window;
+            this.tbPershkrimi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbPershkrimi.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPershkrimi.ForeColor = System.Drawing.Color.Black;
+            this.tbPershkrimi.Location = new System.Drawing.Point(180, 187);
+            this.tbPershkrimi.Multiline = true;
+            this.tbPershkrimi.Name = "tbPershkrimi";
+            this.tbPershkrimi.Size = new System.Drawing.Size(592, 36);
+            this.tbPershkrimi.TabIndex = 28;
+            // 
+            // lblPershkrimiKat
+            // 
+            this.lblPershkrimiKat.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblPershkrimiKat.AutoSize = true;
+            this.lblPershkrimiKat.BackColor = System.Drawing.Color.Transparent;
+            this.lblPershkrimiKat.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPershkrimiKat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblPershkrimiKat.Location = new System.Drawing.Point(59, 192);
+            this.lblPershkrimiKat.Name = "lblPershkrimiKat";
+            this.lblPershkrimiKat.Size = new System.Drawing.Size(109, 24);
+            this.lblPershkrimiKat.TabIndex = 26;
+            this.lblPershkrimiKat.Text = "Pershkrimi:";
             // 
             // Kategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1186, 854);
+            this.Controls.Add(this.pnlCloseBtns);
+            this.Controls.Add(this.pnlMidButtom);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.BtnFshije);
+            this.Controls.Add(this.dgvKategoria);
+            this.Controls.Add(this.btnRuaj);
+            this.Controls.Add(this.lblShtoNdrysho);
+            this.Controls.Add(this.tbEmri);
+            this.Controls.Add(this.btnPerditso);
+            this.Controls.Add(this.lblEmriAut);
+            this.Controls.Add(this.tbPershkrimi);
+            this.Controls.Add(this.lblPershkrimiKat);
             this.Name = "Kategoria";
             this.Text = "Kategoria";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Kategoria_Load);
+            this.pnlCloseBtns.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKategoria)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,16 +280,20 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel pnlCloseBtns;
+        private System.Windows.Forms.Button btnMinimize;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Panel pnlMidButtom;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlButtom;
+        private System.Windows.Forms.Button BtnFshije;
+        private System.Windows.Forms.DataGridView dgvKategoria;
+        private System.Windows.Forms.Button btnRuaj;
+        private System.Windows.Forms.Label lblShtoNdrysho;
+        private System.Windows.Forms.TextBox tbEmri;
+        private System.Windows.Forms.Button btnPerditso;
+        private System.Windows.Forms.Label lblEmriAut;
+        private System.Windows.Forms.TextBox tbPershkrimi;
+        private System.Windows.Forms.Label lblPershkrimiKat;
     }
 }

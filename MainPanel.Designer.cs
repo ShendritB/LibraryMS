@@ -52,11 +52,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pnlNav = new System.Windows.Forms.Panel();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnMinimize = new System.Windows.Forms.Button();
             this.btnCloseChild = new System.Windows.Forms.Button();
-            this.pnlShowData = new System.Windows.Forms.Panel();
             this.pnlCloseBtns = new System.Windows.Forms.Panel();
+            this.btnMinimize = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.pnlShowData = new System.Windows.Forms.Panel();
             this.pnlMenu.SuspendLayout();
             this.pnlTitle.SuspendLayout();
             this.pnlNav.SuspendLayout();
@@ -93,7 +93,7 @@
             this.btnAutoret.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnAutoret.Image = ((System.Drawing.Image)(resources.GetObject("btnAutoret.Image")));
             this.btnAutoret.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAutoret.Location = new System.Drawing.Point(0, 245);
+            this.btnAutoret.Location = new System.Drawing.Point(0, 347);
             this.btnAutoret.Name = "btnAutoret";
             this.btnAutoret.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnAutoret.Size = new System.Drawing.Size(251, 62);
@@ -114,7 +114,7 @@
             this.btnStudentet.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnStudentet.Image = ((System.Drawing.Image)(resources.GetObject("btnStudentet.Image")));
             this.btnStudentet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStudentet.Location = new System.Drawing.Point(0, 347);
+            this.btnStudentet.Location = new System.Drawing.Point(0, 245);
             this.btnStudentet.Name = "btnStudentet";
             this.btnStudentet.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnStudentet.Size = new System.Drawing.Size(251, 62);
@@ -213,10 +213,10 @@
             this.pnlMenu.Controls.Add(this.btnHuazimet);
             this.pnlMenu.Controls.Add(this.panel8);
             this.pnlMenu.Controls.Add(this.BtnKategorit);
-            this.pnlMenu.Controls.Add(this.panel7);
-            this.pnlMenu.Controls.Add(this.btnStudentet);
             this.pnlMenu.Controls.Add(this.panel6);
             this.pnlMenu.Controls.Add(this.btnAutoret);
+            this.pnlMenu.Controls.Add(this.panel7);
+            this.pnlMenu.Controls.Add(this.btnStudentet);
             this.pnlMenu.Controls.Add(this.panel5);
             this.pnlMenu.Controls.Add(this.btnLibrat);
             this.pnlMenu.Controls.Add(this.panel2);
@@ -297,7 +297,7 @@
             // panel7
             // 
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 409);
+            this.panel7.Location = new System.Drawing.Point(0, 307);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(251, 40);
             this.panel7.TabIndex = 18;
@@ -305,7 +305,7 @@
             // panel6
             // 
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 307);
+            this.panel6.Location = new System.Drawing.Point(0, 409);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(251, 40);
             this.panel6.TabIndex = 18;
@@ -395,21 +395,29 @@
             this.pnlNav.Size = new System.Drawing.Size(1032, 80);
             this.pnlNav.TabIndex = 13;
             // 
-            // btnClose
+            // btnCloseChild
             // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.BackColor = System.Drawing.Color.Transparent;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btnClose.Location = new System.Drawing.Point(212, 3);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(36, 36);
-            this.btnClose.TabIndex = 3;
-            this.btnClose.Text = "O";
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click_1);
+            this.btnCloseChild.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnCloseChild.FlatAppearance.BorderSize = 0;
+            this.btnCloseChild.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseChild.Image = ((System.Drawing.Image)(resources.GetObject("btnCloseChild.Image")));
+            this.btnCloseChild.Location = new System.Drawing.Point(0, 0);
+            this.btnCloseChild.Name = "btnCloseChild";
+            this.btnCloseChild.Size = new System.Drawing.Size(56, 80);
+            this.btnCloseChild.TabIndex = 2;
+            this.btnCloseChild.UseVisualStyleBackColor = true;
+            this.btnCloseChild.Click += new System.EventHandler(this.btnCloseChild_Click);
+            // 
+            // pnlCloseBtns
+            // 
+            this.pnlCloseBtns.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.pnlCloseBtns.Controls.Add(this.btnMinimize);
+            this.pnlCloseBtns.Controls.Add(this.btnClose);
+            this.pnlCloseBtns.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlCloseBtns.Location = new System.Drawing.Point(781, 0);
+            this.pnlCloseBtns.Name = "pnlCloseBtns";
+            this.pnlCloseBtns.Size = new System.Drawing.Size(251, 80);
+            this.pnlCloseBtns.TabIndex = 14;
             // 
             // btnMinimize
             // 
@@ -427,18 +435,21 @@
             this.btnMinimize.UseVisualStyleBackColor = false;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
-            // btnCloseChild
+            // btnClose
             // 
-            this.btnCloseChild.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnCloseChild.FlatAppearance.BorderSize = 0;
-            this.btnCloseChild.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCloseChild.Image = ((System.Drawing.Image)(resources.GetObject("btnCloseChild.Image")));
-            this.btnCloseChild.Location = new System.Drawing.Point(0, 0);
-            this.btnCloseChild.Name = "btnCloseChild";
-            this.btnCloseChild.Size = new System.Drawing.Size(56, 80);
-            this.btnCloseChild.TabIndex = 2;
-            this.btnCloseChild.UseVisualStyleBackColor = true;
-            this.btnCloseChild.Click += new System.EventHandler(this.btnCloseChild_Click);
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.OrangeRed;
+            this.btnClose.Location = new System.Drawing.Point(212, 3);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(36, 36);
+            this.btnClose.TabIndex = 3;
+            this.btnClose.Text = "O";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click_1);
             // 
             // pnlShowData
             // 
@@ -448,17 +459,6 @@
             this.pnlShowData.Name = "pnlShowData";
             this.pnlShowData.Size = new System.Drawing.Size(1032, 892);
             this.pnlShowData.TabIndex = 14;
-            // 
-            // pnlCloseBtns
-            // 
-            this.pnlCloseBtns.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.pnlCloseBtns.Controls.Add(this.btnMinimize);
-            this.pnlCloseBtns.Controls.Add(this.btnClose);
-            this.pnlCloseBtns.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlCloseBtns.Location = new System.Drawing.Point(781, 0);
-            this.pnlCloseBtns.Name = "pnlCloseBtns";
-            this.pnlCloseBtns.Size = new System.Drawing.Size(251, 80);
-            this.pnlCloseBtns.TabIndex = 14;
             // 
             // MainPanel
             // 
