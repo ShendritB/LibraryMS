@@ -10,7 +10,7 @@ using Library_BO;
 
 namespace Library_DAL
 {
-    public class Kategoria
+    public class KategoriaDAL
     {
         public DataTable ShfaqKategoritDAL()
         {
@@ -58,46 +58,46 @@ namespace Library_DAL
 
         }
       
-        public KategoriaBO GetItemById(int id)
+        //public KategoriaBO GetItemById(int id)
+        //{
+        //    DataSet ds;
+        //    KategoriaBO k1;
+
+        //    try
+        //    {
+        //        using (DBConn.conn = new SqlConnection(DBConn.conString))
+        //        {
+        //            DBConn.conn.Open();
+        //            DBConn.cmd = new SqlCommand("spKategoritMerrId", DBConn.conn);
+        //            DBConn.cmd.CommandType = CommandType.StoredProcedure;
+
+        //            DBConn.cmd.Parameters.AddWithValue("@ID", id);
+
+        //            DBConn.da = new SqlDataAdapter(DBConn.cmd);
+        //            ds = new DataSet();
+        //            DBConn.da.Fill(ds);
+
+
+        //            string KategoriaID = Convert.ToString(ds.Tables[0].Rows[0]["KategoriaId"]);
+        //            string emri = Convert.ToString(ds.Tables[0].Rows[0]["Emri"]);
+        //            string pershkrimi = Convert.ToString(ds.Tables[0].Rows[0]["Pershkrimi"]);
+
+
+        //            k1 = new KategoriaBO(Int32.Parse(KategoriaID), emri, pershkrimi);
+        //            return k1;
+
+        //        }
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
+        //}
+
+        public bool FshijKategorit()
         {
-            DataSet ds;
-            KategoriaBO k1;
-
-            try
-            {
-                using (DBConn.conn = new SqlConnection(DBConn.conString))
-                {
-                    DBConn.conn.Open();
-                    DBConn.cmd = new SqlCommand("spKategoritMerrId", DBConn.conn);
-                    DBConn.cmd.CommandType = CommandType.StoredProcedure;
-
-                    DBConn.cmd.Parameters.AddWithValue("@ID", id);
-
-                    DBConn.da = new SqlDataAdapter(DBConn.cmd);
-                    ds = new DataSet();
-                    DBConn.da.Fill(ds);
-
-
-                    string KategoriaID = Convert.ToString(ds.Tables[0].Rows[0]["KategoriaId"]);
-                    string emri = Convert.ToString(ds.Tables[0].Rows[0]["Emri"]);
-                    string pershkrimi = Convert.ToString(ds.Tables[0].Rows[0]["Pershkrimi"]);
-
-
-                    k1 = new KategoriaBO(Int32.Parse(KategoriaID), emri, pershkrimi);
-                    return k1;
-
-                }
-
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public bool FshijKategorit(int id)
-        {
-            if(id> 0)
+            if(KategoriaBO.KategoriaId > 0)
             {
                 try
                 {
@@ -107,7 +107,7 @@ namespace Library_DAL
                         DBConn.cmd = new SqlCommand("spKategoritDel", DBConn.conn);
                         DBConn.cmd.CommandType = CommandType.StoredProcedure;
 
-                        DBConn.cmd.Parameters.AddWithValue("@KategoriaId", id);
+                        DBConn.cmd.Parameters.AddWithValue("@KategoriaId", KategoriaBO.KategoriaId);
                         DBConn.cmd.ExecuteNonQuery();
                         return true;
 
@@ -124,7 +124,7 @@ namespace Library_DAL
 
         public bool Ndrysho(KategoriaBO katBO)
         {
-            if (katBO.KategoriaId > 0)
+            if (KategoriaBO.KategoriaId > 0)
             {
                 try
                 {
@@ -134,7 +134,7 @@ namespace Library_DAL
                         DBConn.cmd = new SqlCommand("spKategoritEdit", DBConn.conn);
                         DBConn.cmd.CommandType = CommandType.StoredProcedure;
 
-                        DBConn.cmd.Parameters.AddWithValue("@KategoriaId", katBO.KategoriaId);
+                        DBConn.cmd.Parameters.AddWithValue("@KategoriaId", KategoriaBO.KategoriaId);
                         DBConn.cmd.Parameters.AddWithValue("@Emri", katBO.Emri);
                         DBConn.cmd.Parameters.AddWithValue("@Pershkrimi", katBO.Pershkrimi);
                         DBConn.cmd.Parameters.AddWithValue("@LUB", 1);

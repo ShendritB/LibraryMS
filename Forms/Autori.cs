@@ -61,9 +61,9 @@ namespace Library_TI1.Forms
             tbMbiemri.Text = dgvAutori.SelectedRows[0].Cells[2].Value.ToString();
         }
 
-        private bool isValid()
+        private bool IsValid()
         {
-            if (tbEmri.Text == null && tbMbiemri.Text == null)
+            if (tbEmri.Text == string.Empty || tbMbiemri.Text == string.Empty)
             {
                 MessageBox.Show("Ju lutem plotesoni fushat e kerkuara", "Gabim", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
@@ -75,7 +75,7 @@ namespace Library_TI1.Forms
 
         private void btnRuaj_Click(object sender, EventArgs e)
         {
-            if (isValid())
+            if (IsValid())
             {
                 autBLL.ShtoAutor(shtoAutor());
                 MessageBox.Show("Te dhenat jane shtuar me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -83,6 +83,9 @@ namespace Library_TI1.Forms
                 tbMbiemri.Clear();
                 shfaqAutoret();
             }
+            //else
+            //    MessageBox.Show("Te dhenat nuk jane shtuar!", "Deshtim", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
 
         }
 

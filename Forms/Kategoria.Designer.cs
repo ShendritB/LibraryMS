@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlCloseBtns = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
@@ -42,8 +42,8 @@
             this.tbEmri = new System.Windows.Forms.TextBox();
             this.btnPerditso = new System.Windows.Forms.Button();
             this.lblEmriAut = new System.Windows.Forms.Label();
-            this.tbMbiemri = new System.Windows.Forms.TextBox();
-            this.lblMbiemriAut = new System.Windows.Forms.Label();
+            this.tbPershkrimi = new System.Windows.Forms.TextBox();
+            this.lblPershkrimiKat = new System.Windows.Forms.Label();
             this.pnlCloseBtns.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKategoria)).BeginInit();
@@ -55,9 +55,9 @@
             this.pnlCloseBtns.Controls.Add(this.btnMinimize);
             this.pnlCloseBtns.Controls.Add(this.btnClose);
             this.pnlCloseBtns.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlCloseBtns.Location = new System.Drawing.Point(1105, 0);
+            this.pnlCloseBtns.Location = new System.Drawing.Point(935, 0);
             this.pnlCloseBtns.Name = "pnlCloseBtns";
-            this.pnlCloseBtns.Size = new System.Drawing.Size(0, 759);
+            this.pnlCloseBtns.Size = new System.Drawing.Size(0, 774);
             this.pnlCloseBtns.TabIndex = 36;
             // 
             // btnMinimize
@@ -93,9 +93,9 @@
             // 
             this.pnlMidButtom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.pnlMidButtom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlMidButtom.Location = new System.Drawing.Point(0, 759);
+            this.pnlMidButtom.Location = new System.Drawing.Point(0, 774);
             this.pnlMidButtom.Name = "pnlMidButtom";
-            this.pnlMidButtom.Size = new System.Drawing.Size(1105, 80);
+            this.pnlMidButtom.Size = new System.Drawing.Size(935, 80);
             this.pnlMidButtom.TabIndex = 35;
             // 
             // panel1
@@ -103,15 +103,15 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panel1.Controls.Add(this.pnlButtom);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(1105, 0);
+            this.panel1.Location = new System.Drawing.Point(935, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(251, 839);
+            this.panel1.Size = new System.Drawing.Size(251, 854);
             this.panel1.TabIndex = 34;
             // 
             // pnlButtom
             // 
             this.pnlButtom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlButtom.Location = new System.Drawing.Point(0, 759);
+            this.pnlButtom.Location = new System.Drawing.Point(0, 774);
             this.pnlButtom.Name = "pnlButtom";
             this.pnlButtom.Size = new System.Drawing.Size(251, 80);
             this.pnlButtom.TabIndex = 0;
@@ -130,14 +130,15 @@
             this.BtnFshije.TabIndex = 32;
             this.BtnFshije.Text = "Fshije";
             this.BtnFshije.UseVisualStyleBackColor = false;
+            this.BtnFshije.Click += new System.EventHandler(this.BtnFshije_Click);
             // 
             // dgvKategoria
             // 
             this.dgvKategoria.AllowUserToAddRows = false;
             this.dgvKategoria.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            this.dgvKategoria.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            this.dgvKategoria.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvKategoria.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvKategoria.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvKategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -150,6 +151,7 @@
             this.dgvKategoria.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvKategoria.Size = new System.Drawing.Size(592, 249);
             this.dgvKategoria.TabIndex = 30;
+            this.dgvKategoria.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKategoria_CellClick);
             // 
             // btnRuaj
             // 
@@ -161,7 +163,7 @@
             this.btnRuaj.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRuaj.Location = new System.Drawing.Point(180, 233);
             this.btnRuaj.Name = "btnRuaj";
-            this.btnRuaj.Size = new System.Drawing.Size(166, 42);
+            this.btnRuaj.Size = new System.Drawing.Size(166, 46);
             this.btnRuaj.TabIndex = 33;
             this.btnRuaj.Text = "Shto Kategori";
             this.btnRuaj.UseVisualStyleBackColor = false;
@@ -216,43 +218,43 @@
             this.lblEmriAut.BackColor = System.Drawing.Color.Transparent;
             this.lblEmriAut.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmriAut.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblEmriAut.Location = new System.Drawing.Point(60, 144);
+            this.lblEmriAut.Location = new System.Drawing.Point(59, 141);
             this.lblEmriAut.Name = "lblEmriAut";
             this.lblEmriAut.Size = new System.Drawing.Size(55, 24);
             this.lblEmriAut.TabIndex = 25;
             this.lblEmriAut.Text = "Emri:";
             // 
-            // tbMbiemri
+            // tbPershkrimi
             // 
-            this.tbMbiemri.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tbMbiemri.BackColor = System.Drawing.SystemColors.Window;
-            this.tbMbiemri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbMbiemri.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbMbiemri.ForeColor = System.Drawing.Color.Black;
-            this.tbMbiemri.Location = new System.Drawing.Point(180, 187);
-            this.tbMbiemri.Multiline = true;
-            this.tbMbiemri.Name = "tbMbiemri";
-            this.tbMbiemri.Size = new System.Drawing.Size(592, 36);
-            this.tbMbiemri.TabIndex = 28;
+            this.tbPershkrimi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbPershkrimi.BackColor = System.Drawing.SystemColors.Window;
+            this.tbPershkrimi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbPershkrimi.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPershkrimi.ForeColor = System.Drawing.Color.Black;
+            this.tbPershkrimi.Location = new System.Drawing.Point(180, 187);
+            this.tbPershkrimi.Multiline = true;
+            this.tbPershkrimi.Name = "tbPershkrimi";
+            this.tbPershkrimi.Size = new System.Drawing.Size(592, 36);
+            this.tbPershkrimi.TabIndex = 28;
             // 
-            // lblMbiemriAut
+            // lblPershkrimiKat
             // 
-            this.lblMbiemriAut.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblMbiemriAut.AutoSize = true;
-            this.lblMbiemriAut.BackColor = System.Drawing.Color.Transparent;
-            this.lblMbiemriAut.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMbiemriAut.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblMbiemriAut.Location = new System.Drawing.Point(60, 194);
-            this.lblMbiemriAut.Name = "lblMbiemriAut";
-            this.lblMbiemriAut.Size = new System.Drawing.Size(109, 24);
-            this.lblMbiemriAut.TabIndex = 26;
-            this.lblMbiemriAut.Text = "Pershkrimi:";
+            this.lblPershkrimiKat.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblPershkrimiKat.AutoSize = true;
+            this.lblPershkrimiKat.BackColor = System.Drawing.Color.Transparent;
+            this.lblPershkrimiKat.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPershkrimiKat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblPershkrimiKat.Location = new System.Drawing.Point(59, 192);
+            this.lblPershkrimiKat.Name = "lblPershkrimiKat";
+            this.lblPershkrimiKat.Size = new System.Drawing.Size(109, 24);
+            this.lblPershkrimiKat.TabIndex = 26;
+            this.lblPershkrimiKat.Text = "Pershkrimi:";
             // 
             // Kategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1356, 839);
+            this.ClientSize = new System.Drawing.Size(1186, 854);
             this.Controls.Add(this.pnlCloseBtns);
             this.Controls.Add(this.pnlMidButtom);
             this.Controls.Add(this.panel1);
@@ -263,8 +265,8 @@
             this.Controls.Add(this.tbEmri);
             this.Controls.Add(this.btnPerditso);
             this.Controls.Add(this.lblEmriAut);
-            this.Controls.Add(this.tbMbiemri);
-            this.Controls.Add(this.lblMbiemriAut);
+            this.Controls.Add(this.tbPershkrimi);
+            this.Controls.Add(this.lblPershkrimiKat);
             this.Name = "Kategoria";
             this.Text = "Kategoria";
             this.Load += new System.EventHandler(this.Kategoria_Load);
@@ -291,7 +293,7 @@
         private System.Windows.Forms.TextBox tbEmri;
         private System.Windows.Forms.Button btnPerditso;
         private System.Windows.Forms.Label lblEmriAut;
-        private System.Windows.Forms.TextBox tbMbiemri;
-        private System.Windows.Forms.Label lblMbiemriAut;
+        private System.Windows.Forms.TextBox tbPershkrimi;
+        private System.Windows.Forms.Label lblPershkrimiKat;
     }
 }

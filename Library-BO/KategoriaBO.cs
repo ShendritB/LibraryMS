@@ -8,7 +8,7 @@ namespace Library_BO
 {
     public class KategoriaBO : Base
     {
-        public int KategoriaId { get; set; }
+        public static int KategoriaId { get; set; }
         public string emri { get; set; }
         public string Pershkrimi { get; set; }
 
@@ -30,6 +30,11 @@ namespace Library_BO
             Emri = emri;
             Pershkrimi = pershkrimi;
 
+        }
+        public KategoriaBO(string emri, string pershkrimi)
+        {
+            Emri = emri;
+            Pershkrimi = pershkrimi;
         }
 
         public string Emri

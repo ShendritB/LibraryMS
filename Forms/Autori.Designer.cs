@@ -124,7 +124,7 @@
             this.btnRuaj.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRuaj.Location = new System.Drawing.Point(180, 233);
             this.btnRuaj.Name = "btnRuaj";
-            this.btnRuaj.Size = new System.Drawing.Size(166, 42);
+            this.btnRuaj.Size = new System.Drawing.Size(166, 46);
             this.btnRuaj.TabIndex = 21;
             this.btnRuaj.Text = "Shto autor";
             this.btnRuaj.UseVisualStyleBackColor = false;
