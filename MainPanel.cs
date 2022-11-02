@@ -36,6 +36,16 @@ namespace Library_TI1
             this.ControlBox = false;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
+        private void MainPanel_Load(object sender, EventArgs e)
+        {
+            LoadTheme();
+        }
+        private void LoadTheme()
+        {
+            var color = ThemeColors.PrimaryColor;
+            PnlBtmMid.BackColor = ThemeColors.ChangeColorBrightness(color, -0.3);
+            PnlBtmMid.BackColor = ThemeColors.PrimaryColor;
+        }
         private Color SelectThemeColor()
         {
             //random = new Random();
@@ -61,6 +71,8 @@ namespace Library_TI1
                     currentButton.ForeColor = Color.White;
                     currentButton.Font = new System.Drawing.Font("Gilroy Bold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     pnlNav.BackColor = color;
+                    PnlBtmMid.BackColor = color;
+                    pnlBtmRight.BackColor = ThemeColors.ChangeColorBrightness(color, -0.3);
                     pnlTitle.BackColor = ThemeColors.ChangeColorBrightness(color, -0.3);
                     pnlCloseBtns.BackColor = ThemeColors.ChangeColorBrightness(color, -0.3);
                     btnSignOut.BackColor = ThemeColors.ChangeColorBrightness(color, -0.3);
@@ -170,5 +182,7 @@ namespace Library_TI1
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+
     }
 }

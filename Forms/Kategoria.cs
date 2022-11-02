@@ -42,10 +42,12 @@ namespace Library_TI1.Forms
             lblEmriAut.ForeColor = ThemeColors.PrimaryColor;
             lblPershkrimiKat.ForeColor = ThemeColors.PrimaryColor;
             var color = ThemeColors.PrimaryColor;
-            pnlButtom.BackColor = ThemeColors.ChangeColorBrightness(color, -0.3);
-            pnlMidButtom.BackColor = ThemeColors.PrimaryColor;
         }
-
+        private void ResetTb()
+        {
+            tbEmri.Clear();
+            tbPershkrimi.Clear();
+        }
         public void ShfaqKategorit()
         {
             katBll = new KategoriaBLL();
@@ -59,8 +61,7 @@ namespace Library_TI1.Forms
             {
                 katBll.ShtoKategorit(shtoKategori());
                 MessageBox.Show("Te dhenat jane shtuar me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                tbEmri.Clear();
-                tbPershkrimi.Clear();
+                ResetTb();
                 ShfaqKategorit();
             }
         }
@@ -78,39 +79,45 @@ namespace Library_TI1.Forms
         {
             if (tbEmri.Text == string.Empty)
             {
-                MessageBox.Show("Emri i kategoris eshte i kerkuara", "Gabim", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Plotesoni te dhenat e kerkuara!", "Gabim", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             return true;
         }
-
         private void btnPerditso_Click(object sender, EventArgs e)
         {
-            if (KategoriaBO.KategoriaId > 0)
+            if (IsValid())
             {
-                katBll.Update(Perditso());
-                ShfaqKategorit();
-                MessageBox.Show("Te dhenat jane Ndryshuar me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (KategoriaBO.KategoriaId > 0)
+                {
+                    katBll.Update(Perditso());
+                    ShfaqKategorit();
+                    MessageBox.Show("Te dhenat jane Ndryshuar me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetTb();
+                }
+                else
+                {
+                    MessageBox.Show("Kliko mbi nje rresht qe deshiron ta Ndryshosh!", "Lajmerim", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetTb();
+                }
             }
-            else
-            {
-                MessageBox.Show("Kliko mbi nje rreshtin qe deshiron ta Ndryshosh!", "Lajmirim", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            }
-
-
         }
         private void BtnFshije_Click(object sender, EventArgs e)
         {
-            if (KategoriaBO.KategoriaId > 0)
+            if (IsValid())
             {
-                katBll.Fshij();
-                ShfaqKategorit();
-                MessageBox.Show("Te dhenat jane Fshir me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Kliko mbi nje rreshtin qe deshiron ta fshish!", "Lajmirim", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (KategoriaBO.KategoriaId > 0)
+                {
+                    katBll.Fshij();
+                    ShfaqKategorit();
+                    MessageBox.Show("Te dhenat jane Fshir me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetTb();
+                }
+                else
+                {
+                    MessageBox.Show("Kliko mbi nje rresht qe deshiron ta fshish!", "Lajmerim", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetTb();
+                }
             }
         }
         private KategoriaBO Perditso()
@@ -118,7 +125,6 @@ namespace Library_TI1.Forms
             katBO = new KategoriaBO(tbEmri.Text, tbPershkrimi.Text);
             return katBO;
         }
-
         private void dgvKategoria_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             KategoriaBO.KategoriaId = Convert.ToInt32(dgvKategoria.SelectedRows[0].Cells[0].Value.ToString());

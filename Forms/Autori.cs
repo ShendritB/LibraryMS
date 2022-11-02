@@ -22,10 +22,15 @@ namespace Library_TI1.Forms
         {
             InitializeComponent();
             shfaqAutoret();
-        }
+        }       
         private void Autori_Load(object sender, EventArgs e)
         {
             LoadTheme();
+        }
+        private void ResetTb()
+        {
+            tbEmri.Clear();
+            tbMbiemri.Clear();
         }
         private void LoadTheme()
         {
@@ -43,8 +48,6 @@ namespace Library_TI1.Forms
             lblEmriAut.ForeColor = ThemeColors.PrimaryColor;
             lblMbiemriAut.ForeColor = ThemeColors.PrimaryColor;
             var color = ThemeColors.PrimaryColor;
-            pnlButtom.BackColor = ThemeColors.ChangeColorBrightness(color, -0.3);
-            pnlMidButtom.BackColor = ThemeColors.PrimaryColor;
         }
         public void shfaqAutoret()
         {
@@ -79,26 +82,29 @@ namespace Library_TI1.Forms
             {
                 autBLL.ShtoAutor(shtoAutor());
                 MessageBox.Show("Te dhenat jane shtuar me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                tbEmri.Clear();
-                tbMbiemri.Clear();
+                ResetTb();
                 shfaqAutoret();
             }
-            //else
-            //    MessageBox.Show("Te dhenat nuk jane shtuar!", "Deshtim", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-
         }
 
         private void btnNdrysho_Click(object sender, EventArgs e)
         {
-            //tbEmri.Enabled = false;
-            //tbMbiemri.Enabled = false;
-            if (AutoriBO.AutoriId > 0)
+            if (IsValid())
             {
-                autBLL.Update(Perditso());
+                if (AutoriBO.AutoriId > 0)
+                {
+                    autBLL.Update(Perditso());
+                    shfaqAutoret();
+                    MessageBox.Show("Te dhenat jane Ndryshuar me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetTb();
+                }
+                else
+                {
+                    MessageBox.Show("Kliko mbi nje rresht qe deshiron ta Ndryshosh!", "Lajmirim", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetTb();
+                }
             }
-            shfaqAutoret();
-            MessageBox.Show("Te dhenat jane Ndryshuar me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
 
         //Plotesimi i BO
@@ -122,11 +128,19 @@ namespace Library_TI1.Forms
 
         private void BtnFshije_Click(object sender, EventArgs e)
         {
-            if (AutoriBO.AutoriId > 0)
+            if (IsValid())
             {
-                autBLL.Fshij();
-                shfaqAutoret();
-                MessageBox.Show("Te dhenat jane Fshir me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (AutoriBO.AutoriId > 0)
+                {
+                    autBLL.Fshij();
+                    shfaqAutoret();
+                    MessageBox.Show("Te dhenat jane Fshir me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Kliko mbi nje rresht qe deshiron ta fshish!", "Lajmirim", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetTb();
+                }
             }
         }
     }

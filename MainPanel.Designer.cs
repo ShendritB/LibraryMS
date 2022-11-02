@@ -42,25 +42,29 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.BtnKategorit = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlTitle = new System.Windows.Forms.Panel();
             this.lblRoli = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.pnlNav = new System.Windows.Forms.Panel();
             this.btnCloseChild = new System.Windows.Forms.Button();
             this.pnlCloseBtns = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.pnlShowData = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.PnlBtmMid = new System.Windows.Forms.Panel();
+            this.pnlBtmRight = new System.Windows.Forms.Panel();
             this.pnlMenu.SuspendLayout();
             this.pnlTitle.SuspendLayout();
             this.pnlNav.SuspendLayout();
             this.pnlCloseBtns.SuspendLayout();
+            this.pnlShowData.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLibrat
@@ -174,7 +178,7 @@
             this.lblPageTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblPageTitle.Font = new System.Drawing.Font("Gilroy Bold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPageTitle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblPageTitle.Location = new System.Drawing.Point(466, 36);
+            this.lblPageTitle.Location = new System.Drawing.Point(333, 19);
             this.lblPageTitle.Name = "lblPageTitle";
             this.lblPageTitle.Size = new System.Drawing.Size(106, 40);
             this.lblPageTitle.TabIndex = 1;
@@ -230,7 +234,7 @@
             // 
             // btnSignOut
             // 
-            this.btnSignOut.BackColor = System.Drawing.Color.Transparent;
+            this.btnSignOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.btnSignOut.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnSignOut.FlatAppearance.BorderSize = 0;
             this.btnSignOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -294,14 +298,6 @@
             this.BtnKategorit.UseVisualStyleBackColor = false;
             this.BtnKategorit.Click += new System.EventHandler(this.BtnKategorit_Click);
             // 
-            // panel7
-            // 
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 307);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(251, 40);
-            this.panel7.TabIndex = 18;
-            // 
             // panel6
             // 
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
@@ -309,6 +305,14 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(251, 40);
             this.panel6.TabIndex = 18;
+            // 
+            // panel7
+            // 
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 307);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(251, 40);
+            this.panel7.TabIndex = 18;
             // 
             // panel5
             // 
@@ -369,23 +373,9 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Miresevini në SML";
             // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Gilroy Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(423, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(192, 24);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Menaxhimi i libraris";
-            // 
             // pnlNav
             // 
             this.pnlNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.pnlNav.Controls.Add(this.label3);
             this.pnlNav.Controls.Add(this.btnCloseChild);
             this.pnlNav.Controls.Add(this.lblPageTitle);
             this.pnlNav.Controls.Add(this.pnlCloseBtns);
@@ -454,11 +444,41 @@
             // pnlShowData
             // 
             this.pnlShowData.BackColor = System.Drawing.SystemColors.Control;
+            this.pnlShowData.Controls.Add(this.PnlBtmMid);
+            this.pnlShowData.Controls.Add(this.panel3);
             this.pnlShowData.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlShowData.Location = new System.Drawing.Point(251, 80);
             this.pnlShowData.Name = "pnlShowData";
             this.pnlShowData.Size = new System.Drawing.Size(1032, 892);
             this.pnlShowData.TabIndex = 14;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panel3.Controls.Add(this.pnlBtmRight);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(781, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(251, 892);
+            this.panel3.TabIndex = 0;
+            // 
+            // PnlBtmMid
+            // 
+            this.PnlBtmMid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.PnlBtmMid.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.PnlBtmMid.Location = new System.Drawing.Point(0, 812);
+            this.PnlBtmMid.Name = "PnlBtmMid";
+            this.PnlBtmMid.Size = new System.Drawing.Size(781, 80);
+            this.PnlBtmMid.TabIndex = 1;
+            // 
+            // pnlBtmRight
+            // 
+            this.pnlBtmRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.pnlBtmRight.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlBtmRight.Location = new System.Drawing.Point(0, 812);
+            this.pnlBtmRight.Name = "pnlBtmRight";
+            this.pnlBtmRight.Size = new System.Drawing.Size(251, 80);
+            this.pnlBtmRight.TabIndex = 15;
             // 
             // MainPanel
             // 
@@ -481,6 +501,8 @@
             this.pnlNav.ResumeLayout(false);
             this.pnlNav.PerformLayout();
             this.pnlCloseBtns.ResumeLayout(false);
+            this.pnlShowData.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -499,7 +521,6 @@
         private System.Windows.Forms.Panel pnlNav;
         private System.Windows.Forms.Button btnSignOut;
         private System.Windows.Forms.Button BtnKategorit;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel8;
@@ -515,5 +536,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnlCloseBtns;
+        private System.Windows.Forms.Panel PnlBtmMid;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnlBtmRight;
     }
 }

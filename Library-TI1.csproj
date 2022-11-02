@@ -107,24 +107,6 @@
     <Compile Include="Forms\Studentet.Designer.cs">
       <DependentUpon>Studentet.cs</DependentUpon>
     </Compile>
-    <Compile Include="Libri\Librat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Libri\Librat.Designer.cs">
-      <DependentUpon>Librat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Home.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Libri\ListaLibrat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Libri\ListaLibrat.Designer.cs">
-      <DependentUpon>ListaLibrat.cs</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,15 +142,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Studentet.resx">
       <DependentUpon>Studentet.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Libri\Librat.resx">
-      <DependentUpon>Librat.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Libri\ListaLibrat.resx">
-      <DependentUpon>ListaLibrat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
