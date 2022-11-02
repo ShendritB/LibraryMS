@@ -107,18 +107,6 @@
     <Compile Include="Forms\Studentet.Designer.cs">
       <DependentUpon>Studentet.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kategoria\KategoritEdit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Kategoria\KategoritEdit.Designer.cs">
-      <DependentUpon>KategoritEdit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Kategoria\ShfaqKategorit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Kategoria\ShfaqKategorit.Designer.cs">
-      <DependentUpon>ShfaqKategorit.cs</DependentUpon>
-    </Compile>
     <Compile Include="Libri\Librat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,12 +160,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Studentet.resx">
       <DependentUpon>Studentet.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Kategoria\KategoritEdit.resx">
-      <DependentUpon>KategoritEdit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Kategoria\ShfaqKategorit.resx">
-      <DependentUpon>ShfaqKategorit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Libri\Librat.resx">
       <DependentUpon>Librat.cs</DependentUpon>

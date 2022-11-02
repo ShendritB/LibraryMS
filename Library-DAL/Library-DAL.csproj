@@ -64,7 +64,7 @@
   <ItemGroup>
     <Compile Include="AutoriDAL.cs" />
     <Compile Include="BiblotekistiSherbimet.cs" />
-    <Compile Include="Kategoria.cs" />
+    <Compile Include="KategoriaDAL.cs" />
     <Compile Include="DBConn.cs" />
     <Compile Include="LoginDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
