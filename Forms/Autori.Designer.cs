@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblShtoNdrysho = new System.Windows.Forms.Label();
             this.tbMbiemri = new System.Windows.Forms.TextBox();
             this.tbEmri = new System.Windows.Forms.TextBox();
@@ -162,9 +162,9 @@
             // 
             this.dgvAutori.AllowUserToAddRows = false;
             this.dgvAutori.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.dgvAutori.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.dgvAutori.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvAutori.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvAutori.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvAutori.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;

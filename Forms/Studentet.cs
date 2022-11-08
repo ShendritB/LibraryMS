@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Library_BLL;
+using Library_BO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,130 @@ namespace Library_TI1.Forms
 {
     public partial class Studentet : Form
     {
+        StudentiBLL stuBll;
+        DataTable dt;
+        StudentiBO stuBO;
         public Studentet()
         {
             InitializeComponent();
+            ShfaqStudentet();
+        }
+        private void Studentet_Load(object sender, EventArgs e)
+        {
+            LoadTheme();
+        }
+        private void ResetTb()
+        {
+            tbEmri.Clear();
+            tbMbiemri.Clear();
+            tbNrPrs.Clear();
+            tbNrTel.Clear();
+            tbEmail.Clear();
+        }
+        public void ShfaqStudentet()
+        {
+
+            stuBll = new StudentiBLL();
+            dt = stuBll.StudentetShfaqBLL();
+            dgvStudentet.DataSource = dt;
+            this.dgvStudentet.Columns["StudentId"].Visible = false;
+        }
+        private void LoadTheme()
+        {
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColors.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColors.SecondaryColor;
+                }
+            }
+            lblShtoNdrysho.ForeColor = ThemeColors.SecondaryColor;
+            lblEmriAut.ForeColor = ThemeColors.PrimaryColor;
+            lblPershkrimiKat.ForeColor = ThemeColors.PrimaryColor;
+            var color = ThemeColors.PrimaryColor;
+        }
+        private void btnPerditso_Click(object sender, EventArgs e)
+        {
+            if (IsValid())
+            {
+                if (StudentiBO.StudentiId > 0)
+                {
+                    stuBll.NdryshoStudent(Perditso());
+                    ShfaqStudentet();
+                    MessageBox.Show("Te dhenat jane Ndryshuar me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetTb();
+                }
+                else
+                {
+                    MessageBox.Show("Kliko mbi nje rresht qe deshiron ta Ndryshosh!", "Lajmerim", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetTb();
+                }
+            }
+
+        }
+        private void btnRuaj_Click(object sender, EventArgs e)
+        {
+            if (IsValid())
+            {
+                stuBll.ShtoStudent(shto());
+                MessageBox.Show("Te dhenat jane shtuar me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ResetTb();
+                ShfaqStudentet();
+            }
+
+        }
+        private void BtnFshije_Click(object sender, EventArgs e)
+        {
+            if (IsValid())
+            {
+                if (StudentiBO.StudentiId > 0)
+                {
+                    stuBll.Fshij();
+                    ShfaqStudentet();
+                    MessageBox.Show("Te dhenat jane Fshir me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetTb();
+                }
+                else
+                {
+                    MessageBox.Show("Kliko mbi nje rresht qe deshiron ta fshish!", "Lajmerim", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetTb();
+                }
+            }
+
+        }
+        public StudentiBO shto()
+        {
+            stuBO = new StudentiBO(tbEmri.Text, tbMbiemri.Text, tbNrTel.Text, tbNrPrs.Text, tbEmail.Text, dtpLindjes.Text);
+            return stuBO;
+        }
+        private bool IsValid()
+        {
+            if (tbEmri.Text == string.Empty || tbMbiemri.Text == string.Empty || tbNrPrs.Text == string.Empty || tbEmail.Text == string.Empty)
+            {
+                MessageBox.Show("Plotesoni te dhenat e kerkuara(Emrin,Mbiemrin,Nr.Prs dhe Emailen)!", "Gabim", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            return true;
+        }
+
+        private StudentiBO Perditso()
+        {
+            stuBO = new StudentiBO(tbEmri.Text, tbMbiemri.Text, tbNrTel.Text, tbNrPrs.Text, tbEmail.Text, dtpLindjes.Text);
+            return stuBO;
+        }
+
+        private void dgvStudentet_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            StudentiBO.StudentiId = Convert.ToInt32(dgvStudentet.SelectedRows[0].Cells[0].Value.ToString());
+            tbEmri.Text = dgvStudentet.SelectedRows[0].Cells[1].Value.ToString();
+            tbMbiemri.Text = dgvStudentet.SelectedRows[0].Cells[2].Value.ToString();
+            tbEmail.Text = dgvStudentet.SelectedRows[0].Cells[3].Value.ToString();
+            tbNrPrs.Text = dgvStudentet.SelectedRows[0].Cells[4].Value.ToString();
+            tbNrTel.Text = dgvStudentet.SelectedRows[0].Cells[5].Value.ToString();
+            dtpLindjes.Text = dgvStudentet.SelectedRows[0].Cells[6].Value.ToString();
         }
     }
 }
