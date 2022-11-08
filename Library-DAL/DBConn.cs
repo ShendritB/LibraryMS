@@ -11,16 +11,20 @@ namespace Library_DAL
     public class DBConn
     {
 
-        public static string conString = ConfigurationManager.ConnectionStrings["ConStrSHB"].ConnectionString.ToString();
-
+        // public static string conString = ConfigurationManager.ConnectionStrings["ConStrSHB"].ConnectionString.ToString();
+        public static string conString = ConfigurationManager.ConnectionStrings["ConStringMM"].ConnectionString.ToString();
         public static SqlConnection conn;
         public static SqlCommand cmd;
         public static SqlDataAdapter da;
-
         public static SqlConnection MerrSQLConn()
         {
-            return new SqlConnection(ConfigurationManager.ConnectionStrings["ConStrSHB"].ConnectionString);
+            return new SqlConnection(ConfigurationManager.ConnectionStrings["ConStringMM"].ConnectionString);
         }
+
+        //public static SqlConnection MerrSQLConn()
+        //{
+        //    return new SqlConnection(ConfigurationManager.ConnectionStrings["ConStrSHB"].ConnectionString);
+        //}
 
     }
 }
