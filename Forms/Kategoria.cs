@@ -67,7 +67,7 @@ namespace Library_TI1.Forms
         }
         public KategoriaBO shtoKategori()
         {
-            if (tbEmri.Text == null && tbPershkrimi.Text == null)
+            if (tbEmri.Text == null || tbPershkrimi.Text == null)
                 MessageBox.Show("Ju lutem plotesoni fushat e kerkuara");
             else
             {

@@ -12,6 +12,7 @@ namespace Library_BLL
     public class KategoriaBLL
     { 
         KategoriaDAL katDal;
+
         public KategoriaBLL()
         {
             katDal = new KategoriaDAL();
