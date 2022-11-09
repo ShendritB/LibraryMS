@@ -37,12 +37,17 @@ namespace Library_TI1.Forms
             label2.ForeColor = ThemeColors.PrimaryColor;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnPerditso_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnRuaj_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnFshije_Click(object sender, EventArgs e)
         {
 
         }

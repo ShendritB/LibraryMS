@@ -28,141 +28,356 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.group = new System.Windows.Forms.GroupBox();
+            this.lblShtoNdrysho = new System.Windows.Forms.Label();
+            this.BtnFshije = new System.Windows.Forms.Button();
+            this.dgvStudentet = new System.Windows.Forms.DataGridView();
+            this.btnRuaj = new System.Windows.Forms.Button();
+            this.tbVitiBotimit = new System.Windows.Forms.TextBox();
+            this.tbISBN = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tbEmri = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnPerditso = new System.Windows.Forms.Button();
+            this.tbBotuesi = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblTitulli = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbPershkrimi = new System.Windows.Forms.TextBox();
+            this.lblPershkrimiKat = new System.Windows.Forms.Label();
+            this.tbNrKopjeve = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cbKategoria = new System.Windows.Forms.ComboBox();
+            this.cbAutoret = new System.Windows.Forms.ComboBox();
+            this.group.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStudentet)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // group
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(880, 702);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(74, 48);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.group.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.group.Controls.Add(this.lblShtoNdrysho);
+            this.group.Location = new System.Drawing.Point(172, 67);
+            this.group.Name = "group";
+            this.group.Size = new System.Drawing.Size(817, 72);
+            this.group.TabIndex = 61;
+            this.group.TabStop = false;
             // 
-            // button2
+            // lblShtoNdrysho
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(975, 702);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(74, 48);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.lblShtoNdrysho.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblShtoNdrysho.AutoSize = true;
+            this.lblShtoNdrysho.BackColor = System.Drawing.Color.Transparent;
+            this.lblShtoNdrysho.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShtoNdrysho.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblShtoNdrysho.Location = new System.Drawing.Point(321, 28);
+            this.lblShtoNdrysho.Name = "lblShtoNdrysho";
+            this.lblShtoNdrysho.Size = new System.Drawing.Size(192, 25);
+            this.lblShtoNdrysho.TabIndex = 38;
+            this.lblShtoNdrysho.Text = "Shto/Ndrysho/Fshi";
             // 
-            // button3
+            // BtnFshije
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(788, 702);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(74, 48);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.BtnFshije.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnFshije.BackColor = System.Drawing.Color.Transparent;
+            this.BtnFshije.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnFshije.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnFshije.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnFshije.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnFshije.Location = new System.Drawing.Point(769, 381);
+            this.BtnFshije.Name = "BtnFshije";
+            this.BtnFshije.Size = new System.Drawing.Size(220, 46);
+            this.BtnFshije.TabIndex = 58;
+            this.BtnFshije.Text = "Fshije";
+            this.BtnFshije.UseVisualStyleBackColor = false;
+            this.BtnFshije.Click += new System.EventHandler(this.BtnFshije_Click);
             // 
-            // dataGridView1
+            // dgvStudentet
             // 
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(787, 535);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(262, 150);
-            this.dataGridView1.TabIndex = 3;
+            this.dgvStudentet.AllowUserToAddRows = false;
+            this.dgvStudentet.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dgvStudentet.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvStudentet.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvStudentet.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvStudentet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStudentet.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dgvStudentet.Location = new System.Drawing.Point(172, 447);
+            this.dgvStudentet.Name = "dgvStudentet";
+            this.dgvStudentet.ReadOnly = true;
+            this.dgvStudentet.RowHeadersWidth = 51;
+            this.dgvStudentet.RowTemplate.Height = 24;
+            this.dgvStudentet.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvStudentet.Size = new System.Drawing.Size(817, 249);
+            this.dgvStudentet.TabIndex = 56;
             // 
-            // label1
+            // btnRuaj
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(54, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "label1";
+            this.btnRuaj.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnRuaj.BackColor = System.Drawing.Color.Transparent;
+            this.btnRuaj.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnRuaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRuaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnRuaj.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRuaj.Location = new System.Drawing.Point(172, 381);
+            this.btnRuaj.Name = "btnRuaj";
+            this.btnRuaj.Size = new System.Drawing.Size(220, 46);
+            this.btnRuaj.TabIndex = 59;
+            this.btnRuaj.Text = "Shto student";
+            this.btnRuaj.UseVisualStyleBackColor = false;
+            this.btnRuaj.Click += new System.EventHandler(this.btnRuaj_Click);
             // 
-            // label2
+            // tbVitiBotimit
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(54, 89);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "label1";
+            this.tbVitiBotimit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbVitiBotimit.BackColor = System.Drawing.SystemColors.Window;
+            this.tbVitiBotimit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbVitiBotimit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbVitiBotimit.ForeColor = System.Drawing.Color.Black;
+            this.tbVitiBotimit.Location = new System.Drawing.Point(769, 169);
+            this.tbVitiBotimit.Multiline = true;
+            this.tbVitiBotimit.Name = "tbVitiBotimit";
+            this.tbVitiBotimit.Size = new System.Drawing.Size(220, 36);
+            this.tbVitiBotimit.TabIndex = 52;
+            // 
+            // tbISBN
+            // 
+            this.tbISBN.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbISBN.BackColor = System.Drawing.SystemColors.Window;
+            this.tbISBN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbISBN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbISBN.ForeColor = System.Drawing.Color.Black;
+            this.tbISBN.Location = new System.Drawing.Point(470, 169);
+            this.tbISBN.Multiline = true;
+            this.tbISBN.Name = "tbISBN";
+            this.tbISBN.Size = new System.Drawing.Size(220, 36);
+            this.tbISBN.TabIndex = 53;
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(54, 135);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Location = new System.Drawing.Point(829, 142);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 16);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "label1";
+            this.label4.Size = new System.Drawing.Size(123, 25);
+            this.label4.TabIndex = 47;
+            this.label4.Text = "Viti i botimit";
             // 
-            // textBox1
+            // tbEmri
             // 
-            this.textBox1.Location = new System.Drawing.Point(130, 83);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 5;
+            this.tbEmri.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbEmri.BackColor = System.Drawing.SystemColors.Window;
+            this.tbEmri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbEmri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEmri.ForeColor = System.Drawing.Color.Black;
+            this.tbEmri.Location = new System.Drawing.Point(172, 169);
+            this.tbEmri.Multiline = true;
+            this.tbEmri.Name = "tbEmri";
+            this.tbEmri.Size = new System.Drawing.Size(220, 36);
+            this.tbEmri.TabIndex = 51;
             // 
-            // textBox2
+            // label2
             // 
-            this.textBox2.Location = new System.Drawing.Point(130, 40);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 5;
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(548, 142);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(62, 25);
+            this.label2.TabIndex = 46;
+            this.label2.Text = "ISBN";
             // 
-            // textBox3
+            // btnPerditso
             // 
-            this.textBox3.Location = new System.Drawing.Point(130, 172);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 5;
+            this.btnPerditso.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPerditso.BackColor = System.Drawing.Color.Transparent;
+            this.btnPerditso.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnPerditso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPerditso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPerditso.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPerditso.Location = new System.Drawing.Point(470, 381);
+            this.btnPerditso.Name = "btnPerditso";
+            this.btnPerditso.Size = new System.Drawing.Size(220, 46);
+            this.btnPerditso.TabIndex = 57;
+            this.btnPerditso.Text = "Perditsoje";
+            this.btnPerditso.UseVisualStyleBackColor = false;
+            this.btnPerditso.Click += new System.EventHandler(this.btnPerditso_Click);
             // 
-            // textBox4
+            // tbBotuesi
             // 
-            this.textBox4.Location = new System.Drawing.Point(130, 129);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 5;
+            this.tbBotuesi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbBotuesi.BackColor = System.Drawing.SystemColors.Window;
+            this.tbBotuesi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbBotuesi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbBotuesi.ForeColor = System.Drawing.Color.Black;
+            this.tbBotuesi.Location = new System.Drawing.Point(470, 243);
+            this.tbBotuesi.Multiline = true;
+            this.tbBotuesi.Name = "tbBotuesi";
+            this.tbBotuesi.Size = new System.Drawing.Size(220, 36);
+            this.tbBotuesi.TabIndex = 55;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(827, 216);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(125, 25);
+            this.label3.TabIndex = 50;
+            this.label3.Text = "Nr. Kopjeve";
+            // 
+            // lblTitulli
+            // 
+            this.lblTitulli.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTitulli.AutoSize = true;
+            this.lblTitulli.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitulli.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulli.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblTitulli.Location = new System.Drawing.Point(251, 142);
+            this.lblTitulli.Name = "lblTitulli";
+            this.lblTitulli.Size = new System.Drawing.Size(64, 25);
+            this.lblTitulli.TabIndex = 45;
+            this.lblTitulli.Text = "Titulli";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(536, 216);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 25);
+            this.label1.TabIndex = 49;
+            this.label1.Text = "Botuesi";
+            // 
+            // tbPershkrimi
+            // 
+            this.tbPershkrimi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbPershkrimi.BackColor = System.Drawing.SystemColors.Window;
+            this.tbPershkrimi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbPershkrimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPershkrimi.ForeColor = System.Drawing.Color.Black;
+            this.tbPershkrimi.Location = new System.Drawing.Point(172, 243);
+            this.tbPershkrimi.Multiline = true;
+            this.tbPershkrimi.Name = "tbPershkrimi";
+            this.tbPershkrimi.Size = new System.Drawing.Size(220, 36);
+            this.tbPershkrimi.TabIndex = 54;
+            // 
+            // lblPershkrimiKat
+            // 
+            this.lblPershkrimiKat.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblPershkrimiKat.AutoSize = true;
+            this.lblPershkrimiKat.BackColor = System.Drawing.Color.Transparent;
+            this.lblPershkrimiKat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPershkrimiKat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblPershkrimiKat.Location = new System.Drawing.Point(227, 215);
+            this.lblPershkrimiKat.Name = "lblPershkrimiKat";
+            this.lblPershkrimiKat.Size = new System.Drawing.Size(113, 25);
+            this.lblPershkrimiKat.TabIndex = 48;
+            this.lblPershkrimiKat.Text = "Pershkrimi";
+            // 
+            // tbNrKopjeve
+            // 
+            this.tbNrKopjeve.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tbNrKopjeve.BackColor = System.Drawing.SystemColors.Window;
+            this.tbNrKopjeve.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbNrKopjeve.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNrKopjeve.ForeColor = System.Drawing.Color.Black;
+            this.tbNrKopjeve.Location = new System.Drawing.Point(769, 244);
+            this.tbNrKopjeve.Multiline = true;
+            this.tbNrKopjeve.Name = "tbNrKopjeve";
+            this.tbNrKopjeve.Size = new System.Drawing.Size(220, 36);
+            this.tbNrKopjeve.TabIndex = 52;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.Location = new System.Drawing.Point(388, 301);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(105, 25);
+            this.label5.TabIndex = 62;
+            this.label5.Text = "Kategoria";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.Location = new System.Drawing.Point(685, 301);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(82, 25);
+            this.label6.TabIndex = 62;
+            this.label6.Text = "Autoret";
+            // 
+            // cbKategoria
+            // 
+            this.cbKategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.cbKategoria.FormattingEnabled = true;
+            this.cbKategoria.Location = new System.Drawing.Point(324, 329);
+            this.cbKategoria.Name = "cbKategoria";
+            this.cbKategoria.Size = new System.Drawing.Size(220, 33);
+            this.cbKategoria.TabIndex = 63;
+            // 
+            // cbAutoret
+            // 
+            this.cbAutoret.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.cbAutoret.FormattingEnabled = true;
+            this.cbAutoret.Location = new System.Drawing.Point(615, 329);
+            this.cbAutoret.Name = "cbAutoret";
+            this.cbAutoret.Size = new System.Drawing.Size(220, 33);
+            this.cbAutoret.TabIndex = 63;
             // 
             // Librat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1222, 928);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(1186, 854);
+            this.Controls.Add(this.cbAutoret);
+            this.Controls.Add(this.cbKategoria);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.group);
+            this.Controls.Add(this.BtnFshije);
+            this.Controls.Add(this.dgvStudentet);
+            this.Controls.Add(this.btnRuaj);
+            this.Controls.Add(this.tbNrKopjeve);
+            this.Controls.Add(this.tbVitiBotimit);
+            this.Controls.Add(this.tbISBN);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.tbEmri);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnPerditso);
+            this.Controls.Add(this.tbBotuesi);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblTitulli);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tbPershkrimi);
+            this.Controls.Add(this.lblPershkrimiKat);
             this.Name = "Librat";
             this.Text = "Librat";
             this.Load += new System.EventHandler(this.Librat_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.group.ResumeLayout(false);
+            this.group.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStudentet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,16 +385,27 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox group;
+        private System.Windows.Forms.Label lblShtoNdrysho;
+        private System.Windows.Forms.Button BtnFshije;
+        private System.Windows.Forms.DataGridView dgvStudentet;
+        private System.Windows.Forms.Button btnRuaj;
+        private System.Windows.Forms.TextBox tbVitiBotimit;
+        private System.Windows.Forms.TextBox tbISBN;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbEmri;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnPerditso;
+        private System.Windows.Forms.TextBox tbBotuesi;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblTitulli;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tbPershkrimi;
+        private System.Windows.Forms.Label lblPershkrimiKat;
+        private System.Windows.Forms.TextBox tbNrKopjeve;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cbKategoria;
+        private System.Windows.Forms.ComboBox cbAutoret;
     }
 }
