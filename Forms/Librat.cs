@@ -1,4 +1,5 @@
 ﻿using Library_BLL;
+using Library_BO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +14,14 @@ namespace Library_TI1.Forms
 {
     public partial class Librat : Form
     {
+
+        LibraBLL libBll;
+        LibriBO libBO;
+        DataTable dt;
         public Librat()
         {
             InitializeComponent();
+            Shfaqlibrat();
         }     
         private void Librat_Load(object sender, EventArgs e)
         {
@@ -35,6 +41,15 @@ namespace Library_TI1.Forms
             }
             label1.ForeColor = ThemeColors.SecondaryColor;
             label2.ForeColor = ThemeColors.PrimaryColor;
+        }
+
+        public void Shfaqlibrat()
+        {
+
+            libBll = new LibraBLL();
+            dt = libBll.ShfaqLibratBLL();
+            dgvLibrat.DataSource = dt;
+            this.dgvLibrat.Columns["LibriId"].Visible = false;
         }
 
         private void btnPerditso_Click(object sender, EventArgs e)

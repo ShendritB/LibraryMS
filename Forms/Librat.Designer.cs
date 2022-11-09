@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.group = new System.Windows.Forms.GroupBox();
             this.lblShtoNdrysho = new System.Windows.Forms.Label();
             this.BtnFshije = new System.Windows.Forms.Button();
-            this.dgvStudentet = new System.Windows.Forms.DataGridView();
+            this.dgvLibrat = new System.Windows.Forms.DataGridView();
             this.btnRuaj = new System.Windows.Forms.Button();
             this.tbVitiBotimit = new System.Windows.Forms.TextBox();
             this.tbISBN = new System.Windows.Forms.TextBox();
@@ -52,7 +52,7 @@
             this.cbKategoria = new System.Windows.Forms.ComboBox();
             this.cbAutoret = new System.Windows.Forms.ComboBox();
             this.group.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStudentet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLibrat)).BeginInit();
             this.SuspendLayout();
             // 
             // group
@@ -94,25 +94,25 @@
             this.BtnFshije.UseVisualStyleBackColor = false;
             this.BtnFshije.Click += new System.EventHandler(this.BtnFshije_Click);
             // 
-            // dgvStudentet
+            // dgvLibrat
             // 
-            this.dgvStudentet.AllowUserToAddRows = false;
-            this.dgvStudentet.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.dgvStudentet.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvStudentet.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dgvStudentet.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.dgvStudentet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStudentet.GridColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dgvStudentet.Location = new System.Drawing.Point(172, 447);
-            this.dgvStudentet.Name = "dgvStudentet";
-            this.dgvStudentet.ReadOnly = true;
-            this.dgvStudentet.RowHeadersWidth = 51;
-            this.dgvStudentet.RowTemplate.Height = 24;
-            this.dgvStudentet.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvStudentet.Size = new System.Drawing.Size(817, 249);
-            this.dgvStudentet.TabIndex = 56;
+            this.dgvLibrat.AllowUserToAddRows = false;
+            this.dgvLibrat.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.dgvLibrat.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvLibrat.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvLibrat.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvLibrat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLibrat.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dgvLibrat.Location = new System.Drawing.Point(172, 447);
+            this.dgvLibrat.Name = "dgvLibrat";
+            this.dgvLibrat.ReadOnly = true;
+            this.dgvLibrat.RowHeadersWidth = 51;
+            this.dgvLibrat.RowTemplate.Height = 24;
+            this.dgvLibrat.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvLibrat.Size = new System.Drawing.Size(817, 249);
+            this.dgvLibrat.TabIndex = 56;
             // 
             // btnRuaj
             // 
@@ -330,6 +330,7 @@
             // 
             // cbKategoria
             // 
+            this.cbKategoria.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbKategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.cbKategoria.FormattingEnabled = true;
             this.cbKategoria.Location = new System.Drawing.Point(324, 329);
@@ -339,6 +340,7 @@
             // 
             // cbAutoret
             // 
+            this.cbAutoret.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbAutoret.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.cbAutoret.FormattingEnabled = true;
             this.cbAutoret.Location = new System.Drawing.Point(615, 329);
@@ -357,7 +359,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.group);
             this.Controls.Add(this.BtnFshije);
-            this.Controls.Add(this.dgvStudentet);
+            this.Controls.Add(this.dgvLibrat);
             this.Controls.Add(this.btnRuaj);
             this.Controls.Add(this.tbNrKopjeve);
             this.Controls.Add(this.tbVitiBotimit);
@@ -377,7 +379,7 @@
             this.Load += new System.EventHandler(this.Librat_Load);
             this.group.ResumeLayout(false);
             this.group.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStudentet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLibrat)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -388,7 +390,7 @@
         private System.Windows.Forms.GroupBox group;
         private System.Windows.Forms.Label lblShtoNdrysho;
         private System.Windows.Forms.Button BtnFshije;
-        private System.Windows.Forms.DataGridView dgvStudentet;
+        private System.Windows.Forms.DataGridView dgvLibrat;
         private System.Windows.Forms.Button btnRuaj;
         private System.Windows.Forms.TextBox tbVitiBotimit;
         private System.Windows.Forms.TextBox tbISBN;

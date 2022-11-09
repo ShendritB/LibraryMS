@@ -23,23 +23,22 @@ namespace Library_BO
         //public DateTime LUD { get; set; }
         //public int LUN { get; set; }
 
-        public LibriBO(string titulli, string pershkrimi, string isbn, string shtepiaBotuese, int vitiBotimit, int nrKopjeve,
-          /*  int insertedBy, DateTime insertedDate, string lub, DateTime lud, int lun*/)
-        {
-            Titulli = titulli; 
-            Pershkrimi = pershkrimi;
-            ISBN = isbn;
-            ShtepiaBotuese = shtepiaBotuese;
-            VitiBotimit = vitiBotimit;
-            NrKopjeve = nrKopjeve;
-            //InsertBy = insertedBy;
-            //InsertDate = insertedDate;
-            //LUB = lub;
-            //LUD = lud;
-            //LUN = lun;
-        }
-        public LibriBO(string titulli, string pershkrimi, string isbn, string shtepiaBotuese, int vitiBotimit, int nrKopjeve
-          /* string insertedBy, DateTime insertedDate*/)
+        //public LibriBO(string titulli, string pershkrimi, string isbn, string shtepiaBotuese, int vitiBotimit, int nrKopjeve
+        //  /*  int insertedBy, DateTime insertedDate, string lub, DateTime lud, int lun*/)
+        //{
+        //    Titulli = titulli; 
+        //    Pershkrimi = pershkrimi;
+        //    ISBN = isbn;
+        //    ShtepiaBotuese = shtepiaBotuese;
+        //    VitiBotimit = vitiBotimit;
+        //    NrKopjeve = nrKopjeve;
+        //    //InsertBy = insertedBy;
+        //    //InsertDate = insertedDate;
+        //    //LUB = lub;
+        //    //LUD = lud;
+        //    //LUN = lun;
+        //}
+        public LibriBO(string titulli, string pershkrimi, string isbn, string shtepiaBotuese, int vitiBotimit, int nrKopjeve)
         {
        
             Titulli = titulli;
@@ -48,8 +47,6 @@ namespace Library_BO
             ShtepiaBotuese = shtepiaBotuese;
             VitiBotimit = vitiBotimit;
             NrKopjeve = nrKopjeve;
-            //InsertBy = insertedBy;
-            //InsertDate = insertedDate;
         }
 
         public LibriBO()
