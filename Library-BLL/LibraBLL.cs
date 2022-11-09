@@ -13,8 +13,6 @@ namespace Library_BLL
     public class LibraBLL
     {
         LibratDAL l1;
-
-
         public LibraBLL()
         {
             l1 = new LibratDAL();
@@ -26,12 +24,16 @@ namespace Library_BLL
 
         public bool ShtoLiber(LibriBO shtoLibra)
         {
-            return l1.CRUDLibrat(shtoLibra,1);
+            return l1.shtoLibra(shtoLibra);
         }
 
-        public bool FshijLiber(LibriBO fshijLibra)
+        public bool FshijLiber()
         {
-            return l1.CRUDLibrat(fshijLibra,3);
+            return l1.FshijLibra();
+        }
+        public bool NdryshoLibrat(LibriBO shtoLibra)
+        {
+            return l1.NdryshoLibrat(shtoLibra);
         }
 
     }

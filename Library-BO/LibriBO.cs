@@ -9,7 +9,7 @@ namespace Library_BO
     public class LibriBO : Base
     {
 
-        public int LibriId { get; set; }
+        public static int LibriId { get; set; }
         public string Titulli { get; set; } 
         public string Pershkrimi { get; set; }
 
@@ -24,7 +24,7 @@ namespace Library_BO
         //public int LUN { get; set; }
 
         public LibriBO(string titulli, string pershkrimi, string isbn, string shtepiaBotuese, int vitiBotimit, int nrKopjeve,
-            int insertedBy, DateTime insertedDate, string lub, DateTime lud, int lun)
+          /*  int insertedBy, DateTime insertedDate, string lub, DateTime lud, int lun*/)
         {
             Titulli = titulli; 
             Pershkrimi = pershkrimi;
@@ -32,11 +32,11 @@ namespace Library_BO
             ShtepiaBotuese = shtepiaBotuese;
             VitiBotimit = vitiBotimit;
             NrKopjeve = nrKopjeve;
-            InsertBy = insertedBy;
-            InsertDate = insertedDate;
-            LUB = lub;
-            LUD = lud;
-            LUN = lun;
+            //InsertBy = insertedBy;
+            //InsertDate = insertedDate;
+            //LUB = lub;
+            //LUD = lud;
+            //LUN = lun;
         }
         public LibriBO(string titulli, string pershkrimi, string isbn, string shtepiaBotuese, int vitiBotimit, int nrKopjeve
           /* string insertedBy, DateTime insertedDate*/)
