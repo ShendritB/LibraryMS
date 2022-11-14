@@ -74,7 +74,7 @@ namespace Library_DAL
                         DBConn.cmd = new SqlCommand("spStudentetDel", DBConn.conn);
                         DBConn.cmd.CommandType = CommandType.StoredProcedure;
 
-                        DBConn.cmd.Parameters.AddWithValue("@StudentId", StudentiBO.StudentiId);
+                        DBConn.cmd.Parameters.AddWithValue("@Id", StudentiBO.StudentiId);
                         DBConn.cmd.ExecuteNonQuery();
                         return true;
 
@@ -101,7 +101,7 @@ namespace Library_DAL
                         DBConn.cmd = new SqlCommand("spStudentetEdit", DBConn.conn);
                         DBConn.cmd.CommandType = CommandType.StoredProcedure;
 
-                        DBConn.cmd.Parameters.AddWithValue("@StudentId", StudentiBO.StudentiId);
+                        DBConn.cmd.Parameters.AddWithValue("@Id", StudentiBO.StudentiId);
                         DBConn.cmd.Parameters.AddWithValue("@Emri", stuBO.Emri);
                         DBConn.cmd.Parameters.AddWithValue("@Mbiemri", stuBO.Mbiemri);
                         DBConn.cmd.Parameters.AddWithValue("@NrTel", stuBO.NrTel);

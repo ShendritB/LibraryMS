@@ -53,7 +53,7 @@ namespace Library_TI1.Forms
             katBll = new KategoriaBLL();
             lista = katBll.ShfaqKategoriaBLL();
             dgvKategoria.DataSource = lista;
-            this.dgvKategoria.Columns["KategoriaId"].Visible = false;
+            this.dgvKategoria.Columns["Id"].Visible = false;
         }
         private void btnRuaj_Click(object sender, EventArgs e)
         {

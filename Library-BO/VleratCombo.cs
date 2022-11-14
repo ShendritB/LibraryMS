@@ -9,8 +9,8 @@ namespace Library_BO
     public class VleratCombo
     { 
         
-        public int Id { get; set; }
-        public string Emri { get; set; }
+        public  int Id { get; set; }
+        public  string Emri { get; set; }
         public VleratCombo(int id, string emri)
         {
             Id = id;

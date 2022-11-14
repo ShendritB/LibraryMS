@@ -12,7 +12,8 @@ namespace Library_BO
         public static int LibriId { get; set; }
         public string Titulli { get; set; } 
         public string Pershkrimi { get; set; }
-
+        public int KategoriaId { get; set; }
+        public int AutoriId { get; set; } 
         public string ISBN { get; set; }
         public string ShtepiaBotuese { get; set; }
         public int VitiBotimit { get; set; }
@@ -38,15 +39,18 @@ namespace Library_BO
         //    //LUD = lud;
         //    //LUN = lun;
         //}
-        public LibriBO(string titulli, string pershkrimi, string isbn, string shtepiaBotuese, int vitiBotimit, int nrKopjeve)
+        public LibriBO(string titulli, string pershkrimi, string isbn, string shtepiaBotuese, int vitiBotimit, int nrKopjeve, int autorId, int kategoriaId)
         {
-       
+
             Titulli = titulli;
             Pershkrimi = pershkrimi;
             ISBN = isbn;
             ShtepiaBotuese = shtepiaBotuese;
             VitiBotimit = vitiBotimit;
             NrKopjeve = nrKopjeve;
+            AutoriId = autorId;
+            KategoriaId = kategoriaId;
+            
         }
 
         public LibriBO()

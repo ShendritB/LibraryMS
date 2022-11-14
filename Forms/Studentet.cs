@@ -36,11 +36,10 @@ namespace Library_TI1.Forms
         }
         public void ShfaqStudentet()
         {
-
             stuBll = new StudentiBLL();
             dt = stuBll.StudentetShfaqBLL();
             dgvStudentet.DataSource = dt;
-            this.dgvStudentet.Columns["StudentId"].Visible = false;
+            this.dgvStudentet.Columns["Id"].Visible = false;
         }
         private void LoadTheme()
         {

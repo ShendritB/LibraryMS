@@ -85,7 +85,9 @@ namespace Library_DAL
                     DBConn.cmd.Parameters.AddWithValue("@ShtepiaBotuese", l1.ShtepiaBotuese);
                     DBConn.cmd.Parameters.AddWithValue("@VitiBotimit", l1.VitiBotimit);
                     DBConn.cmd.Parameters.AddWithValue("@NrKopjeve", l1.NrKopjeve);
-
+                    DBConn.cmd.Parameters.AddWithValue("@KategoriaId", l1.KategoriaId);
+                    DBConn.cmd.Parameters.AddWithValue("@AutoriId", l1.AutoriId);
+                    
                     DBConn.cmd.ExecuteNonQuery();
                 }
                 return true;
@@ -99,7 +101,7 @@ namespace Library_DAL
 
         public bool FshijLibra()
         {
-            if (StudentiBO.StudentiId > 0)
+            if (LibriBO.LibriId > 0)
             {
 
                 try
@@ -110,7 +112,7 @@ namespace Library_DAL
                         DBConn.cmd = new SqlCommand("spLibratDel", DBConn.conn);
                         DBConn.cmd.CommandType = CommandType.StoredProcedure;
 
-                        DBConn.cmd.Parameters.AddWithValue("@LibriId", StudentiBO.StudentiId);
+                        DBConn.cmd.Parameters.AddWithValue("@Id", LibriBO.LibriId);
                         DBConn.cmd.ExecuteNonQuery();
                         return true;
 
@@ -137,13 +139,15 @@ namespace Library_DAL
                         DBConn.cmd = new SqlCommand("spLibratEdit", DBConn.conn);
                         DBConn.cmd.CommandType = CommandType.StoredProcedure;
 
-                        DBConn.cmd.Parameters.AddWithValue("@LibriId", LibriBO.LibriId);
+                        DBConn.cmd.Parameters.AddWithValue("@Id", LibriBO.LibriId);
                         DBConn.cmd.Parameters.AddWithValue("@Titulli", l1.Titulli);
                         DBConn.cmd.Parameters.AddWithValue("@Pershkrimi", l1.Pershkrimi);
                         DBConn.cmd.Parameters.AddWithValue("@ISBN", l1.ISBN);
                         DBConn.cmd.Parameters.AddWithValue("@ShtepiaBotuese", l1.ShtepiaBotuese);
                         DBConn.cmd.Parameters.AddWithValue("@VitiBotimit", l1.VitiBotimit);
                         DBConn.cmd.Parameters.AddWithValue("@NrKopjeve", l1.NrKopjeve);
+                        DBConn.cmd.Parameters.AddWithValue("@KategoriaId", l1.KategoriaId);
+                        DBConn.cmd.Parameters.AddWithValue("@AutoriId", l1.AutoriId);
                         DBConn.cmd.ExecuteNonQuery();
                         return true;
                     }

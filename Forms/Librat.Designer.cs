@@ -50,6 +50,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.cbKategoria = new System.Windows.Forms.ComboBox();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.cbAutoret = new System.Windows.Forms.ComboBox();
             this.group.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLibrat)).BeginInit();
@@ -72,7 +73,7 @@
             this.lblShtoNdrysho.BackColor = System.Drawing.Color.Transparent;
             this.lblShtoNdrysho.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblShtoNdrysho.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblShtoNdrysho.Location = new System.Drawing.Point(321, 28);
+            this.lblShtoNdrysho.Location = new System.Drawing.Point(312, 28);
             this.lblShtoNdrysho.Name = "lblShtoNdrysho";
             this.lblShtoNdrysho.Size = new System.Drawing.Size(192, 25);
             this.lblShtoNdrysho.TabIndex = 38;
@@ -86,7 +87,7 @@
             this.BtnFshije.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnFshije.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnFshije.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnFshije.Location = new System.Drawing.Point(769, 381);
+            this.BtnFshije.Location = new System.Drawing.Point(769, 403);
             this.BtnFshije.Name = "BtnFshije";
             this.BtnFshije.Size = new System.Drawing.Size(220, 46);
             this.BtnFshije.TabIndex = 58;
@@ -105,7 +106,7 @@
             this.dgvLibrat.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvLibrat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLibrat.GridColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dgvLibrat.Location = new System.Drawing.Point(172, 447);
+            this.dgvLibrat.Location = new System.Drawing.Point(172, 469);
             this.dgvLibrat.Name = "dgvLibrat";
             this.dgvLibrat.ReadOnly = true;
             this.dgvLibrat.RowHeadersWidth = 51;
@@ -113,6 +114,7 @@
             this.dgvLibrat.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvLibrat.Size = new System.Drawing.Size(817, 249);
             this.dgvLibrat.TabIndex = 56;
+            this.dgvLibrat.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLibrat_CellClick);
             // 
             // btnRuaj
             // 
@@ -122,7 +124,7 @@
             this.btnRuaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRuaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
             this.btnRuaj.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnRuaj.Location = new System.Drawing.Point(172, 381);
+            this.btnRuaj.Location = new System.Drawing.Point(172, 403);
             this.btnRuaj.Name = "btnRuaj";
             this.btnRuaj.Size = new System.Drawing.Size(220, 46);
             this.btnRuaj.TabIndex = 59;
@@ -137,7 +139,7 @@
             this.tbVitiBotimit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbVitiBotimit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbVitiBotimit.ForeColor = System.Drawing.Color.Black;
-            this.tbVitiBotimit.Location = new System.Drawing.Point(769, 169);
+            this.tbVitiBotimit.Location = new System.Drawing.Point(769, 173);
             this.tbVitiBotimit.Multiline = true;
             this.tbVitiBotimit.Name = "tbVitiBotimit";
             this.tbVitiBotimit.Size = new System.Drawing.Size(220, 36);
@@ -150,7 +152,7 @@
             this.tbISBN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbISBN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbISBN.ForeColor = System.Drawing.Color.Black;
-            this.tbISBN.Location = new System.Drawing.Point(470, 169);
+            this.tbISBN.Location = new System.Drawing.Point(470, 173);
             this.tbISBN.Multiline = true;
             this.tbISBN.Name = "tbISBN";
             this.tbISBN.Size = new System.Drawing.Size(220, 36);
@@ -163,7 +165,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(829, 142);
+            this.label4.Location = new System.Drawing.Point(829, 146);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(123, 25);
             this.label4.TabIndex = 47;
@@ -176,7 +178,7 @@
             this.tbEmri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbEmri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbEmri.ForeColor = System.Drawing.Color.Black;
-            this.tbEmri.Location = new System.Drawing.Point(172, 169);
+            this.tbEmri.Location = new System.Drawing.Point(172, 173);
             this.tbEmri.Multiline = true;
             this.tbEmri.Name = "tbEmri";
             this.tbEmri.Size = new System.Drawing.Size(220, 36);
@@ -189,7 +191,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(548, 142);
+            this.label2.Location = new System.Drawing.Point(549, 145);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 25);
             this.label2.TabIndex = 46;
@@ -203,7 +205,7 @@
             this.btnPerditso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPerditso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPerditso.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPerditso.Location = new System.Drawing.Point(470, 381);
+            this.btnPerditso.Location = new System.Drawing.Point(470, 403);
             this.btnPerditso.Name = "btnPerditso";
             this.btnPerditso.Size = new System.Drawing.Size(220, 46);
             this.btnPerditso.TabIndex = 57;
@@ -218,7 +220,7 @@
             this.tbBotuesi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbBotuesi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbBotuesi.ForeColor = System.Drawing.Color.Black;
-            this.tbBotuesi.Location = new System.Drawing.Point(470, 243);
+            this.tbBotuesi.Location = new System.Drawing.Point(470, 249);
             this.tbBotuesi.Multiline = true;
             this.tbBotuesi.Name = "tbBotuesi";
             this.tbBotuesi.Size = new System.Drawing.Size(220, 36);
@@ -231,7 +233,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(827, 216);
+            this.label3.Location = new System.Drawing.Point(827, 221);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(125, 25);
             this.label3.TabIndex = 50;
@@ -244,7 +246,7 @@
             this.lblTitulli.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulli.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulli.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTitulli.Location = new System.Drawing.Point(251, 142);
+            this.lblTitulli.Location = new System.Drawing.Point(251, 146);
             this.lblTitulli.Name = "lblTitulli";
             this.lblTitulli.Size = new System.Drawing.Size(64, 25);
             this.lblTitulli.TabIndex = 45;
@@ -257,7 +259,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(536, 216);
+            this.label1.Location = new System.Drawing.Point(527, 221);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 25);
             this.label1.TabIndex = 49;
@@ -270,10 +272,10 @@
             this.tbPershkrimi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbPershkrimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPershkrimi.ForeColor = System.Drawing.Color.Black;
-            this.tbPershkrimi.Location = new System.Drawing.Point(172, 243);
+            this.tbPershkrimi.Location = new System.Drawing.Point(172, 249);
             this.tbPershkrimi.Multiline = true;
             this.tbPershkrimi.Name = "tbPershkrimi";
-            this.tbPershkrimi.Size = new System.Drawing.Size(220, 36);
+            this.tbPershkrimi.Size = new System.Drawing.Size(220, 126);
             this.tbPershkrimi.TabIndex = 54;
             // 
             // lblPershkrimiKat
@@ -283,7 +285,7 @@
             this.lblPershkrimiKat.BackColor = System.Drawing.Color.Transparent;
             this.lblPershkrimiKat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPershkrimiKat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPershkrimiKat.Location = new System.Drawing.Point(227, 215);
+            this.lblPershkrimiKat.Location = new System.Drawing.Point(227, 221);
             this.lblPershkrimiKat.Name = "lblPershkrimiKat";
             this.lblPershkrimiKat.Size = new System.Drawing.Size(113, 25);
             this.lblPershkrimiKat.TabIndex = 48;
@@ -296,7 +298,7 @@
             this.tbNrKopjeve.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbNrKopjeve.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNrKopjeve.ForeColor = System.Drawing.Color.Black;
-            this.tbNrKopjeve.Location = new System.Drawing.Point(769, 244);
+            this.tbNrKopjeve.Location = new System.Drawing.Point(769, 249);
             this.tbNrKopjeve.Multiline = true;
             this.tbNrKopjeve.Name = "tbNrKopjeve";
             this.tbNrKopjeve.Size = new System.Drawing.Size(220, 36);
@@ -309,7 +311,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(388, 301);
+            this.label5.Location = new System.Drawing.Point(829, 309);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(105, 25);
             this.label5.TabIndex = 62;
@@ -322,7 +324,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(685, 301);
+            this.label6.Location = new System.Drawing.Point(529, 309);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 25);
             this.label6.TabIndex = 62;
@@ -331,9 +333,10 @@
             // cbKategoria
             // 
             this.cbKategoria.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbKategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbKategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.cbKategoria.FormattingEnabled = true;
-            this.cbKategoria.Location = new System.Drawing.Point(324, 329);
+            this.cbKategoria.Location = new System.Drawing.Point(769, 342);
             this.cbKategoria.Name = "cbKategoria";
             this.cbKategoria.Size = new System.Drawing.Size(220, 33);
             this.cbKategoria.TabIndex = 63;
@@ -341,9 +344,10 @@
             // cbAutoret
             // 
             this.cbAutoret.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbAutoret.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbAutoret.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.cbAutoret.FormattingEnabled = true;
-            this.cbAutoret.Location = new System.Drawing.Point(615, 329);
+            this.cbAutoret.Location = new System.Drawing.Point(470, 342);
             this.cbAutoret.Name = "cbAutoret";
             this.cbAutoret.Size = new System.Drawing.Size(220, 33);
             this.cbAutoret.TabIndex = 63;
@@ -408,6 +412,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cbKategoria;
+        private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.ComboBox cbAutoret;
     }
 }
