@@ -68,7 +68,27 @@ namespace Library_TI1.Forms
         }
         private void btnPerditso_Click(object sender, EventArgs e)
         {
+            if (IsValid())
+            {
+                if (PjesmarresiBO.Id > 0)
+                {
+                    roleBll.NdryshoStudent(Perditso());
+                    ShfaqPjesmarresit();
+                    MessageBox.Show("Te dhenat jane Ndryshuar me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetTb();
+                }
+                else
+                {
+                    MessageBox.Show("Kliko mbi nje rresht qe deshiron ta Ndryshosh!", "Lajmerim", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetTb();
+                }
+            }
+        }
 
+        private PjesmarresiBO Perditso()
+        {
+            pjesBO = new PjesmarresiBO(tbEmri.Text, tbMbiemri.Text, tbEmail.Text, tbPerdoruesi.Text, tbFjalkalimi.Text, MerrVlerenCmbBox(cbRoli));
+            return pjesBO;
         }
 
         private void btnRuaj_Click(object sender, EventArgs e)
@@ -93,15 +113,36 @@ namespace Library_TI1.Forms
         }
         private PjesmarresiBO shto()
         {
-            pjesBO = new PjesmarresiBO(tbEmri.Text, tbMbiemri.Text,tbEmail.Text,tbPerdoruesi.Text, tbFjalkalimi.Text, MerrVlerenCmbBox(cbRoli));
+            pjesBO = new PjesmarresiBO(tbEmri.Text, tbMbiemri.Text, tbEmail.Text, tbPerdoruesi.Text, tbFjalkalimi.Text, MerrVlerenCmbBox(cbRoli));
             return pjesBO;
         }
 
         private void BtnFshije_Click(object sender, EventArgs e)
         {
-
+           
+                if (PjesmarresiBO.Id > 0)
+                {
+                    roleBll.Fshij();
+                    ShfaqPjesmarresit();
+                    MessageBox.Show("Te dhenat jane Fshir me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetTb();
+                }
+                else
+                {
+                    MessageBox.Show("Kliko mbi nje rresht qe deshiron ta fshish!", "Lajmerim", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetTb();
+                }
         }
 
-      
+        private void dgvPjesmarresit_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            PjesmarresiBO.Id = Convert.ToInt32(dgvPjesmarresit.SelectedRows[0].Cells[0].Value.ToString());
+            tbEmri.Text = dgvPjesmarresit.SelectedRows[0].Cells[1].Value.ToString();
+            tbMbiemri.Text = dgvPjesmarresit.SelectedRows[0].Cells[2].Value.ToString();
+            tbPerdoruesi.Text = dgvPjesmarresit.SelectedRows[0].Cells[3].Value.ToString();
+            tbEmail.Text = dgvPjesmarresit.SelectedRows[0].Cells[4].Value.ToString();
+            cbRoli.Text = dgvPjesmarresit.SelectedRows[0].Cells[5].Value.ToString();
+        }
+       
     }
 }

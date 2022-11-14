@@ -26,5 +26,14 @@ namespace Library_BLL
         {
             return RoleDal.shtoPjesmarres(shtoPjesmarres);
         }
+
+        public bool NdryshoStudent(PjesmarresiBO shtoStudent)
+        {
+            return RoleDal.NdryshoPjesmmares(shtoStudent);
+        }
+        public bool Fshij()
+        {
+            return RoleDal.FshijPjesmarres();
+        }
     }
 }

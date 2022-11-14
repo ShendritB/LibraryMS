@@ -60,9 +60,9 @@ namespace Library_DAL
                 return false;
             }
         }
-        public bool FshijStudent()
+        public bool FshijPjesmarres()
         {
-            if (StudentiBO.StudentiId > 0)
+            if (PjesmarresiBO.Id > 0)
             {
 
                 try
@@ -70,10 +70,10 @@ namespace Library_DAL
                     using (DBConn.conn = new SqlConnection(DBConn.conString))
                     {
                         DBConn.conn.Open();
-                        DBConn.cmd = new SqlCommand("spStudentetDel", DBConn.conn);
+                        DBConn.cmd = new SqlCommand("spPjesmarresiDel", DBConn.conn);
                         DBConn.cmd.CommandType = CommandType.StoredProcedure;
 
-                        DBConn.cmd.Parameters.AddWithValue("@Id", StudentiBO.StudentiId);
+                        DBConn.cmd.Parameters.AddWithValue("@Id", PjesmarresiBO.Id);
                         DBConn.cmd.ExecuteNonQuery();
                         return true;
 
@@ -88,26 +88,32 @@ namespace Library_DAL
             return false;
         }
 
-        public bool NdryshoStudent(StudentiBO stuBO)
+        public bool NdryshoPjesmmares(PjesmarresiBO pjesBO)
         {
-            if (StudentiBO.StudentiId > 0)
+            if (PjesmarresiBO.Id > 0)
             {
                 try
                 {
                     using (DBConn.conn = new SqlConnection(DBConn.conString))
                     {
-                        DBConn.conn.Open();
-                        DBConn.cmd = new SqlCommand("spStudentetEdit", DBConn.conn);
-                        DBConn.cmd.CommandType = CommandType.StoredProcedure;
+                        using (DBConn.conn = new SqlConnection(DBConn.conString))
+                        {
+                            DBConn.conn.Open();
 
-                        DBConn.cmd.Parameters.AddWithValue("@Id", StudentiBO.StudentiId);
-                        DBConn.cmd.Parameters.AddWithValue("@Emri", stuBO.Emri);
-                        DBConn.cmd.Parameters.AddWithValue("@Mbiemri", stuBO.Mbiemri);
-                        DBConn.cmd.Parameters.AddWithValue("@NrTel", stuBO.NrTel);
-                        DBConn.cmd.Parameters.AddWithValue("@Email", stuBO.Email);
-                        DBConn.cmd.Parameters.AddWithValue("@NrPersonal", stuBO.NrPersonal);
-                        DBConn.cmd.Parameters.AddWithValue("@Mosha", stuBO.DataLindjes);
-                        DBConn.cmd.ExecuteNonQuery();
+                            DBConn.cmd = new SqlCommand("spPjesmarresitEdit", DBConn.conn);
+
+                            DBConn.cmd.CommandType = CommandType.StoredProcedure;
+
+                            DBConn.cmd.Parameters.AddWithValue("@Id", PjesmarresiBO.Id);
+                            DBConn.cmd.Parameters.AddWithValue("@Emri", pjesBO.Emri);
+                            DBConn.cmd.Parameters.AddWithValue("@Mbiemri", pjesBO.Mbiemri);
+                            DBConn.cmd.Parameters.AddWithValue("@Email", pjesBO.Email);
+                            DBConn.cmd.Parameters.AddWithValue("@Perdoruesi", pjesBO.Perdoruesi);
+                            DBConn.cmd.Parameters.AddWithValue("@Fjalekalimi", pjesBO.Fjalkalimi);
+                            DBConn.cmd.Parameters.AddWithValue("@RoliId", pjesBO.RoliId);
+
+                            DBConn.cmd.ExecuteNonQuery();
+                        }
                         return true;
                     }
                 }

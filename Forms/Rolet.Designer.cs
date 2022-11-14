@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.group = new System.Windows.Forms.GroupBox();
             this.lblShtoNdrysho = new System.Windows.Forms.Label();
             this.BtnFshije = new System.Windows.Forms.Button();
@@ -93,9 +93,9 @@
             // 
             this.dgvPjesmarresit.AllowUserToAddRows = false;
             this.dgvPjesmarresit.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.dgvPjesmarresit.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dgvPjesmarresit.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvPjesmarresit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvPjesmarresit.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvPjesmarresit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -108,6 +108,7 @@
             this.dgvPjesmarresit.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPjesmarresit.Size = new System.Drawing.Size(817, 249);
             this.dgvPjesmarresit.TabIndex = 56;
+            this.dgvPjesmarresit.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPjesmarresit_CellClick);
             // 
             // btnRuaj
             // 

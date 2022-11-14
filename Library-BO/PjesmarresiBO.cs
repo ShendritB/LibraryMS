@@ -8,7 +8,7 @@ namespace Library_BO
 {
     public class PjesmarresiBO
     {
-        public int Id { get; set; }
+        public static int Id { get; set; }
         public int RoliId { get; set; }
         public string Emri { get; set; }
         public string Fjalkalimi {get; set; }
