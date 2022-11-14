@@ -69,6 +69,7 @@
     <Compile Include="LoginDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LibratDAL.cs" />
+    <Compile Include="RolesDAL.cs" />
     <Compile Include="StudentiDAL.cs" />
   </ItemGroup>
   <ItemGroup>
