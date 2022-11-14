@@ -54,7 +54,7 @@ namespace Library_TI1.Forms
             autBLL = new AutoriBLL();
             lista = autBLL.ShfaqAutoriBLL();
             dgvAutori.DataSource = lista;
-            this.dgvAutori.Columns["AutoriId"].Visible = false;
+            this.dgvAutori.Columns["Id"].Visible = false;
         }
 
         private void dgvAutori_CellClick(object sender, DataGridViewCellEventArgs e)

@@ -67,7 +67,7 @@ namespace Library_DAL
                         DBConn.cmd = new SqlCommand("spAutoretDel", DBConn.conn);
                         DBConn.cmd.CommandType = CommandType.StoredProcedure;
 
-                        DBConn.cmd.Parameters.AddWithValue("@AutoriId", AutoriBO.AutoriId);
+                        DBConn.cmd.Parameters.AddWithValue("@Id", AutoriBO.AutoriId);
                         DBConn.cmd.ExecuteNonQuery();
                         return true;
 
@@ -92,7 +92,7 @@ namespace Library_DAL
                         DBConn.conn.Open();
                         DBConn.cmd = new SqlCommand("spAutoretEdit", DBConn.conn);
                         DBConn.cmd.CommandType = CommandType.StoredProcedure;
-                        DBConn.cmd.Parameters.AddWithValue("@AutoriId", AutoriBO.AutoriId);
+                        DBConn.cmd.Parameters.AddWithValue("@Id", AutoriBO.AutoriId);
                         DBConn.cmd.Parameters.AddWithValue("@Emri", katBO.Emri);
                         DBConn.cmd.Parameters.AddWithValue("@Mbiemri", katBO.Mbiemri);
                         DBConn.cmd.ExecuteNonQuery();

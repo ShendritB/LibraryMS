@@ -9,10 +9,11 @@ namespace Library_BO
     public class LibriBO : Base
     {
 
-        public int LibriId { get; set; }
+        public static int LibriId { get; set; }
         public string Titulli { get; set; } 
         public string Pershkrimi { get; set; }
-
+        public int KategoriaId { get; set; }
+        public int AutoriId { get; set; } 
         public string ISBN { get; set; }
         public string ShtepiaBotuese { get; set; }
         public int VitiBotimit { get; set; }
@@ -23,33 +24,33 @@ namespace Library_BO
         //public DateTime LUD { get; set; }
         //public int LUN { get; set; }
 
-        public LibriBO(string titulli, string pershkrimi, string isbn, string shtepiaBotuese, int vitiBotimit, int nrKopjeve,
-            int insertedBy, DateTime insertedDate, string lub, DateTime lud, int lun)
+        //public LibriBO(string titulli, string pershkrimi, string isbn, string shtepiaBotuese, int vitiBotimit, int nrKopjeve
+        //  /*  int insertedBy, DateTime insertedDate, string lub, DateTime lud, int lun*/)
+        //{
+        //    Titulli = titulli; 
+        //    Pershkrimi = pershkrimi;
+        //    ISBN = isbn;
+        //    ShtepiaBotuese = shtepiaBotuese;
+        //    VitiBotimit = vitiBotimit;
+        //    NrKopjeve = nrKopjeve;
+        //    //InsertBy = insertedBy;
+        //    //InsertDate = insertedDate;
+        //    //LUB = lub;
+        //    //LUD = lud;
+        //    //LUN = lun;
+        //}
+        public LibriBO(string titulli, string pershkrimi, string isbn, string shtepiaBotuese, int vitiBotimit, int nrKopjeve, int autorId, int kategoriaId)
         {
-            Titulli = titulli; 
-            Pershkrimi = pershkrimi;
-            ISBN = isbn;
-            ShtepiaBotuese = shtepiaBotuese;
-            VitiBotimit = vitiBotimit;
-            NrKopjeve = nrKopjeve;
-            InsertBy = insertedBy;
-            InsertDate = insertedDate;
-            LUB = lub;
-            LUD = lud;
-            LUN = lun;
-        }
-        public LibriBO(string titulli, string pershkrimi, string isbn, string shtepiaBotuese, int vitiBotimit, int nrKopjeve
-          /* string insertedBy, DateTime insertedDate*/)
-        {
-       
+
             Titulli = titulli;
             Pershkrimi = pershkrimi;
             ISBN = isbn;
             ShtepiaBotuese = shtepiaBotuese;
             VitiBotimit = vitiBotimit;
             NrKopjeve = nrKopjeve;
-            //InsertBy = insertedBy;
-            //InsertDate = insertedDate;
+            AutoriId = autorId;
+            KategoriaId = kategoriaId;
+            
         }
 
         public LibriBO()

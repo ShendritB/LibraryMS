@@ -23,13 +23,13 @@ namespace Library_TI1
         public MainPanel()
         {
             InitializeComponent();
-            if (Session.Roli == Roli.Admin)
-            {
-                btnRolet.Enabled = false;
-                lblRoli.Text = "Admin";
-            }
-            else
-                lblRoli.Text = "Biblotekist";
+            //if (Session.Roli == Roli.Admin)
+            //{
+            //    btnRolet.Enabled = false;
+            //    lblRoli.Text = "Admin";
+            //}
+            //else
+            lblRoli.Text = "Biblotekist";
             random = new Random();
             btnCloseChild.Visible = false;
             this.Text = string.Empty;
