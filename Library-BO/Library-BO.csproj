@@ -66,6 +66,7 @@
     <Compile Include="LibriBO.cs" />
     <Compile Include="Base.cs" />
     <Compile Include="Perdoruesi.cs" />
+    <Compile Include="PjesmarresiBO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Roli.cs" />
     <Compile Include="StudentiBO.cs" />
