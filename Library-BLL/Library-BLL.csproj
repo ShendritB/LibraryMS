@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutoriBLL.cs" />
+    <Compile Include="HuazimiBLL.cs" />
     <Compile Include="LogInBLL.cs" />
     <Compile Include="KategoriaBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

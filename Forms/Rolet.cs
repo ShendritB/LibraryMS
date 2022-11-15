@@ -52,7 +52,7 @@ namespace Library_TI1.Forms
         private bool IsValid()
         {
             if (tbEmri.Text == string.Empty || tbMbiemri.Text == string.Empty || tbPerdoruesi.Text == string.Empty ||
-                tbEmail.Text == string.Empty || tbFjalkalimi.Text == string.Empty || cbRoli.Text == string.Empty)
+                tbEmail.Text == string.Empty || cbRoli.Text == string.Empty)
             {
                 MessageBox.Show("Plotesoni te gjitha te dhenat", "Gabim", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
@@ -66,7 +66,55 @@ namespace Library_TI1.Forms
             dgvPjesmarresit.DataSource = dt;
             this.dgvPjesmarresit.Columns["Id"].Visible = false;
         }
-        private void btnPerditso_Click(object sender, EventArgs e)
+        private PjesmarresiBO Perditso()
+        {
+            pjesBO = new PjesmarresiBO(tbEmri.Text, tbMbiemri.Text, tbEmail.Text, tbPerdoruesi.Text, MbusheComboBox.ComputeHash256(tbFjalkalimi.Text), MerrVlerenCmbBox(cbRoli));
+            return pjesBO;
+        }
+        private void ResetTb()
+        {
+            tbEmri.Clear();
+            tbEmail.Clear();
+            tbMbiemri.Clear();
+            tbPerdoruesi.Clear();
+            tbFjalkalimi.Clear();
+
+        }
+        private PjesmarresiBO shto()
+        {
+            pjesBO = new PjesmarresiBO(tbEmri.Text, tbMbiemri.Text, tbEmail.Text, tbPerdoruesi.Text, MbusheComboBox.ComputeHash256(tbFjalkalimi.Text), MerrVlerenCmbBox(cbRoli));
+            return pjesBO;
+        }
+
+
+        private void dgvPjesmarresit_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            PjesmarresiBO.Id = Convert.ToInt32(dgvPjesmarresit.SelectedRows[0].Cells[0].Value.ToString());
+            tbEmri.Text = dgvPjesmarresit.SelectedRows[0].Cells[1].Value.ToString();
+            tbMbiemri.Text = dgvPjesmarresit.SelectedRows[0].Cells[2].Value.ToString();
+            tbPerdoruesi.Text = dgvPjesmarresit.SelectedRows[0].Cells[3].Value.ToString();
+            tbEmail.Text = dgvPjesmarresit.SelectedRows[0].Cells[4].Value.ToString();
+            cbRoli.Text = dgvPjesmarresit.SelectedRows[0].Cells[5].Value.ToString();
+        }
+
+        private void btnRuaj_Click_1(object sender, EventArgs e)
+        {
+            if (tbFjalkalimi.Text != string.Empty)
+            {
+                if (IsValid())
+                {
+                    roleBll.ShtoPjesmarres(shto());
+                    MessageBox.Show("Te dhenat jane shtuar me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetTb();
+                    ShfaqPjesmarresit();
+                }
+            }
+            else
+                MessageBox.Show("Mbush fjalkalimin!", "Gabim", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void btnPerditso_Click_1(object sender, EventArgs e)
         {
             if (IsValid())
             {
@@ -85,64 +133,26 @@ namespace Library_TI1.Forms
             }
         }
 
-        private PjesmarresiBO Perditso()
+        private void BtnFshije_Click_1(object sender, EventArgs e)
         {
-            pjesBO = new PjesmarresiBO(tbEmri.Text, tbMbiemri.Text, tbEmail.Text, tbPerdoruesi.Text, tbFjalkalimi.Text, MerrVlerenCmbBox(cbRoli));
-            return pjesBO;
-        }
-
-        private void btnRuaj_Click(object sender, EventArgs e)
-        {
-            if (IsValid())
+            if (PjesmarresiBO.Id > 0)
             {
-                roleBll.ShtoPjesmarres(shto());
-                MessageBox.Show("Te dhenat jane shtuar me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ResetTb();
+                roleBll.Fshij();
                 ShfaqPjesmarresit();
+                MessageBox.Show("Te dhenat jane Fshir me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ResetTb();
             }
-
-        }
-        private void ResetTb()
-        {
-            tbEmri.Clear();
-            tbEmail.Clear();
-            tbMbiemri.Clear();
-            tbPerdoruesi.Clear();
-            tbFjalkalimi.Clear();
-
-        }
-        private PjesmarresiBO shto()
-        {
-            pjesBO = new PjesmarresiBO(tbEmri.Text, tbMbiemri.Text, tbEmail.Text, tbPerdoruesi.Text, tbFjalkalimi.Text, MerrVlerenCmbBox(cbRoli));
-            return pjesBO;
+            else
+            {
+                MessageBox.Show("Kliko mbi nje rresht qe deshiron ta fshish!", "Lajmerim", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ResetTb();
+            }
         }
 
-        private void BtnFshije_Click(object sender, EventArgs e)
+        private void btnFjalkalimi(object sender, EventArgs e)
         {
-           
-                if (PjesmarresiBO.Id > 0)
-                {
-                    roleBll.Fshij();
-                    ShfaqPjesmarresit();
-                    MessageBox.Show("Te dhenat jane Fshir me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ResetTb();
-                }
-                else
-                {
-                    MessageBox.Show("Kliko mbi nje rresht qe deshiron ta fshish!", "Lajmerim", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ResetTb();
-                }
+            Fjalkalimi frmfjal = new Fjalkalimi();
+            frmfjal.ShowDialog();
         }
-
-        private void dgvPjesmarresit_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            PjesmarresiBO.Id = Convert.ToInt32(dgvPjesmarresit.SelectedRows[0].Cells[0].Value.ToString());
-            tbEmri.Text = dgvPjesmarresit.SelectedRows[0].Cells[1].Value.ToString();
-            tbMbiemri.Text = dgvPjesmarresit.SelectedRows[0].Cells[2].Value.ToString();
-            tbPerdoruesi.Text = dgvPjesmarresit.SelectedRows[0].Cells[3].Value.ToString();
-            tbEmail.Text = dgvPjesmarresit.SelectedRows[0].Cells[4].Value.ToString();
-            cbRoli.Text = dgvPjesmarresit.SelectedRows[0].Cells[5].Value.ToString();
-        }
-       
     }
 }

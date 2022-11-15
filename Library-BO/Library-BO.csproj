@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutoriBO.cs" />
+    <Compile Include="HuazimetBO.cs" />
     <Compile Include="KategoriaBO.cs" />
     <Compile Include="LibriBO.cs" />
     <Compile Include="Base.cs" />
