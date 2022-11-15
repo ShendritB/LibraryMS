@@ -56,8 +56,8 @@
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.pnlShowData = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.PnlBtmMid = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.pnlBtmRight = new System.Windows.Forms.Panel();
             this.pnlMenu.SuspendLayout();
             this.pnlTitle.SuspendLayout();
@@ -247,7 +247,7 @@
             this.btnSignOut.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnSignOut.Size = new System.Drawing.Size(251, 80);
             this.btnSignOut.TabIndex = 15;
-            this.btnSignOut.Text = "   Signout";
+            this.btnSignOut.Text = "   Sign out";
             this.btnSignOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSignOut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSignOut.UseVisualStyleBackColor = false;
@@ -452,6 +452,15 @@
             this.pnlShowData.Size = new System.Drawing.Size(1032, 892);
             this.pnlShowData.TabIndex = 14;
             // 
+            // PnlBtmMid
+            // 
+            this.PnlBtmMid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.PnlBtmMid.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.PnlBtmMid.Location = new System.Drawing.Point(0, 812);
+            this.PnlBtmMid.Name = "PnlBtmMid";
+            this.PnlBtmMid.Size = new System.Drawing.Size(781, 80);
+            this.PnlBtmMid.TabIndex = 1;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
@@ -461,15 +470,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(251, 892);
             this.panel3.TabIndex = 0;
-            // 
-            // PnlBtmMid
-            // 
-            this.PnlBtmMid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.PnlBtmMid.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.PnlBtmMid.Location = new System.Drawing.Point(0, 812);
-            this.PnlBtmMid.Name = "PnlBtmMid";
-            this.PnlBtmMid.Size = new System.Drawing.Size(781, 80);
-            this.PnlBtmMid.TabIndex = 1;
             // 
             // pnlBtmRight
             // 
@@ -484,6 +484,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(56)))));
             this.ClientSize = new System.Drawing.Size(1283, 972);
             this.Controls.Add(this.pnlShowData);
             this.Controls.Add(this.pnlNav);

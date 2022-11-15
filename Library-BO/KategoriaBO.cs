@@ -16,13 +16,6 @@ namespace Library_BO
         {
 
         }
-        public KategoriaBO(string emri, string pershkrimi, int insertedBy, DateTime insertedDate)
-        {
-            Emri = emri;
-            Pershkrimi = pershkrimi;
-            InsertBy = insertedBy;
-            InsertDate = insertedDate;
-        }
 
         public KategoriaBO(int id,string emri, string pershkrimi)
         {   

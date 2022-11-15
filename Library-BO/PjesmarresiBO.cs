@@ -15,6 +15,10 @@ namespace Library_BO
         public string Mbiemri { get; set; }
         public string Email { get; set; }
         public string Perdoruesi { get; set; }
+        public PjesmarresiBO(string fjalkalimi)
+        {
+            Fjalkalimi= fjalkalimi;
+        }
 
         public PjesmarresiBO(string emri, string mbiemri, string email, string perdoruesi,string fjalkalimi, int roliId)
         {

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Library_BLL;
+using Library_BO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,180 @@ namespace Library_TI1.Forms
 {
     public partial class Huazimet : Form
     {
+        HuazimiBLL huaBLL;
+        DataTable dt;
+        HuazimetBO huaBO;
         public Huazimet()
         {
+           
             InitializeComponent();
+            pnlHide.Visible = false;
+            HuazimetAktiveShfaq();
+            MbusheComboBox.MbushComboBox(cbLibrat, "spLibratCbShow", "Emri", "Id");
+            MbusheComboBox.MbushComboBox(cbLibri, "spLibratCbShow", "Emri", "Id");
+            MbusheComboBox.MbushComboBox(cbStudentat, "spStudentetCbShow", "Emri", "Id");
+            MbusheComboBox.MbushComboBox(cbStudenti, "spStudentetCbShow", "Emri", "Id");
+            cbLibri.Enabled = false;
+            cbStudenti.Enabled = false;
+            rtbVrejtja.Enabled = false;
+            dtpDataKthe.Enabled = false;
+            dtpDataHuazimit.Enabled = false;
+        }
+        private void LoadTheme()
+        {
+            foreach (Control btns in this.Controls)
+            {
+                if (btns.GetType() == typeof(Button))
+                {
+                    Button btn = (Button)btns;
+                    btn.BackColor = ThemeColors.PrimaryColor;
+                    btn.ForeColor = Color.White;
+                    btn.FlatAppearance.BorderColor = ThemeColors.SecondaryColor;
+                }
+            }
+            lblShtoNdrysho.ForeColor = ThemeColors.SecondaryColor;
+            //lblEmriAut.ForeColor = ThemeColors.PrimaryColor;
+            //lblPershkrimiKat.ForeColor = ThemeColors.PrimaryColor;
+            var color = ThemeColors.PrimaryColor;
+        }
+        public void HuazimetAktiveShfaq()
+        {
+            huaBLL = new HuazimiBLL();
+            dt = huaBLL.ShfaqHuazimietAktive();
+            dgvHuazimiActive.DataSource = dt;
+            this.dgvHuazimiActive.Columns["Id"].Visible = false;
+            this.dgvHuazimiActive.Columns["DataKthimit"].Visible = false;
+        }
+        private void dgvHuazimiActive_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            HuazimetBO.Id= Convert.ToInt32(dgvHuazimiActive.SelectedRows[0].Cells[0].Value.ToString());
+            dtpHuazimit.Text = dgvHuazimiActive.SelectedRows[0].Cells[1].Value.ToString();
+            dtpDataHuazimit.Text = dgvHuazimiActive.SelectedRows[0].Cells[1].Value.ToString();
+            dtpDataKthimit.Text = dgvHuazimiActive.SelectedRows[0].Cells[2].Value.ToString();
+            dtpAfatiKthimit.Text = dgvHuazimiActive.SelectedRows[0].Cells[3].Value.ToString();
+            dtpDataKthe.Text = dgvHuazimiActive.SelectedRows[0].Cells[3].Value.ToString();
+            rtbVrejtja.Text = dgvHuazimiActive.SelectedRows[0].Cells[4].Value.ToString();
+            rtbVerejtja.Text = dgvHuazimiActive.SelectedRows[0].Cells[4].Value.ToString();
+            cbLibrat.Text = dgvHuazimiActive.SelectedRows[0].Cells[5].Value.ToString();
+            cbLibri.Text = dgvHuazimiActive.SelectedRows[0].Cells[5].Value.ToString();
+            cbStudentat.Text = dgvHuazimiActive.SelectedRows[0].Cells[6].Value.ToString();
+            cbStudenti.Text = dgvHuazimiActive.SelectedRows[0].Cells[6].Value.ToString();
+        }
+
+        private void btnRuaj_Click(object sender, EventArgs e)
+        {
+            if(isValid())
+            {
+                huaBLL.ShtoHuazim(shto());
+                MessageBox.Show("Te dhenat jane shtuar me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ResetTb();
+                HuazimetAktiveShfaq();
+            }
+
+
+        }
+
+        private void ResetTb()
+        {
+            dtpHuazimit.ResetText();
+            dtpAfatiKthimit.ResetText();
+            rtbVerejtja.Clear();
+        }
+
+        private HuazimetBO shto()
+        {
+            huaBO = new HuazimetBO(MerrVlerenCmbBox(cbLibrat), MerrVlerenCmbBox(cbStudentat),dtpHuazimit.Text,dtpAfatiKthimit.Text,rtbVerejtja.Text);
+            return huaBO;
+        }
+        private int MerrVlerenCmbBox(ComboBox cmbB)
+        {
+            VleratCombo combovalue = (VleratCombo)cmbB.SelectedItem;
+            return combovalue.Id;
+        }
+
+        private bool isValid()
+        {
+            if (cbStudentat.Text == string.Empty || cbLibrat.Text == string.Empty)
+                return false;
+
+            return true;
+        }
+
+        private void btnPerditso_Click(object sender, EventArgs e)
+        {
+            if (isValid())
+            {
+                if (HuazimetBO.Id > 0)
+                {
+                    huaBLL.NdryshoHuazimet(Perditso());
+                    HuazimetAktiveShfaq();
+                    MessageBox.Show("Te dhenat jane Ndryshuar me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetTb();
+                }
+                else
+                {
+                    MessageBox.Show("Kliko mbi nje rresht qe deshiron ta Ndryshosh!", "Lajmerim", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetTb();
+                }
+            }
+        }
+
+        private HuazimetBO Perditso()
+        {
+            huaBO = new HuazimetBO(MerrVlerenCmbBox(cbLibrat), MerrVlerenCmbBox(cbStudentat), dtpHuazimit.Text, dtpAfatiKthimit.Text, rtbVerejtja.Text);
+            return huaBO;
+        }
+
+        private void BtnFshije_Click(object sender, EventArgs e)
+        {
+            if (isValid())
+            {
+                if (HuazimetBO.Id > 0)
+                {
+                    huaBLL.FshijHuazime();
+                    HuazimetAktiveShfaq();
+                    MessageBox.Show("Te dhenat jane Fshir me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetTb();
+                }
+                else
+                {
+                    MessageBox.Show("Kliko mbi nje rresht qe deshiron ta fshish!", "Lajmerim", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ResetTb();
+                }
+            }
+
+        }
+
+        private void btnKtheLibrin_Click(object sender, EventArgs e)
+        {
+            pnlHide.Visible = true;
+            btnPerditso.Enabled = false;
+            btnRuaj.Enabled = false;
+            BtnFshije.Enabled = false;
+        }
+
+        private void Huazimet_Load(object sender, EventArgs e)
+        {
+            LoadTheme();
+        }
+
+        private void btnKthe_Click(object sender, EventArgs e)
+        {
+            huaBLL.KtheHuazimet(shto2());
+            MessageBox.Show("Te dhenat jane shtuar me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ResetTb();
+            HuazimetAktiveShfaq();
+
+            pnlHide.Visible = false;
+            btnPerditso.Enabled = true;
+            btnRuaj.Enabled = true;
+            BtnFshije.Enabled = true;
+        }
+
+        private HuazimetBO shto2()
+        {
+            huaBO = new HuazimetBO(dtpDataKthimit.Text);
+            return huaBO;
         }
     }
 }

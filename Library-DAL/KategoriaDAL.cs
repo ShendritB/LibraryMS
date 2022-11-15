@@ -45,8 +45,6 @@ namespace Library_DAL
 
                     DBConn.cmd.Parameters.AddWithValue("@Emri", k1.Emri);
                     DBConn.cmd.Parameters.AddWithValue("@Pershkrimi", k1.Pershkrimi);
-                    DBConn.cmd.Parameters.AddWithValue("@InsertBy", k1.InsertBy);
-                    DBConn.cmd.Parameters.AddWithValue("@InsertDate", DateTime.Now);
                     DBConn.cmd.ExecuteNonQuery();
                 }
                 return true;
@@ -107,7 +105,7 @@ namespace Library_DAL
                         DBConn.cmd = new SqlCommand("spKategoritDel", DBConn.conn);
                         DBConn.cmd.CommandType = CommandType.StoredProcedure;
 
-                        DBConn.cmd.Parameters.AddWithValue("@KategoriaId", KategoriaBO.KategoriaId);
+                        DBConn.cmd.Parameters.AddWithValue("@Id", KategoriaBO.KategoriaId);
                         DBConn.cmd.ExecuteNonQuery();
                         return true;
 
@@ -134,12 +132,9 @@ namespace Library_DAL
                         DBConn.cmd = new SqlCommand("spKategoritEdit", DBConn.conn);
                         DBConn.cmd.CommandType = CommandType.StoredProcedure;
 
-                        DBConn.cmd.Parameters.AddWithValue("@KategoriaId", KategoriaBO.KategoriaId);
+                        DBConn.cmd.Parameters.AddWithValue("@Id", KategoriaBO.KategoriaId);
                         DBConn.cmd.Parameters.AddWithValue("@Emri", katBO.Emri);
                         DBConn.cmd.Parameters.AddWithValue("@Pershkrimi", katBO.Pershkrimi);
-                        DBConn.cmd.Parameters.AddWithValue("@LUB", 1);
-                        DBConn.cmd.Parameters.AddWithValue("@LUN", 1);
-                        DBConn.cmd.Parameters.AddWithValue("@LUD", DateTime.Now);
                         DBConn.cmd.ExecuteNonQuery();
                         return true;
 

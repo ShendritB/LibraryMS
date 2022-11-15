@@ -88,6 +88,36 @@ namespace Library_DAL
             return false;
         }
 
+        public bool NdryshoPsw(PjesmarresiBO pjesBO)
+        {
+            if (PjesmarresiBO.Id > 0)
+            {
+                try
+                {
+                    using (DBConn.conn = new SqlConnection(DBConn.conString))
+                    {
+                        using (DBConn.conn = new SqlConnection(DBConn.conString))
+                        {
+                            DBConn.conn.Open();
+
+                            DBConn.cmd = new SqlCommand("spFjalkalimiEdit", DBConn.conn);
+
+                            DBConn.cmd.CommandType = CommandType.StoredProcedure;
+
+                            DBConn.cmd.Parameters.AddWithValue("@Id", PjesmarresiBO.Id);
+                            DBConn.cmd.Parameters.AddWithValue("@Fjalekalimi", pjesBO.Fjalkalimi);
+                            DBConn.cmd.ExecuteNonQuery();
+                        }
+                        return true;
+                    }
+                }
+                catch (Exception)
+                {
+                    return false;
+                }
+            }
+            return false;
+        }
         public bool NdryshoPjesmmares(PjesmarresiBO pjesBO)
         {
             if (PjesmarresiBO.Id > 0)
@@ -109,8 +139,7 @@ namespace Library_DAL
                             DBConn.cmd.Parameters.AddWithValue("@Mbiemri", pjesBO.Mbiemri);
                             DBConn.cmd.Parameters.AddWithValue("@Email", pjesBO.Email);
                             DBConn.cmd.Parameters.AddWithValue("@Perdoruesi", pjesBO.Perdoruesi);
-                            DBConn.cmd.Parameters.AddWithValue("@Fjalekalimi", pjesBO.Fjalkalimi);
-                            DBConn.cmd.Parameters.AddWithValue("@RoliId", pjesBO.RoliId);
+                            DBConn.cmd.Parameters.AddWithValue("@RoleId", pjesBO.RoliId);
 
                             DBConn.cmd.ExecuteNonQuery();
                         }
