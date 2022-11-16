@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlCloseBtns = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
@@ -52,19 +52,20 @@
             this.pnlHide = new System.Windows.Forms.Panel();
             this.rtbVrejtja = new System.Windows.Forms.RichTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.dtpDataKthimit = new System.Windows.Forms.DateTimePicker();
+            this.btnKthe = new System.Windows.Forms.Button();
             this.dtpDataKthe = new System.Windows.Forms.DateTimePicker();
             this.dtpDataHuazimit = new System.Windows.Forms.DateTimePicker();
             this.cbLibri = new System.Windows.Forms.ComboBox();
-            this.cbStudenti = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.cbStudenti = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.dtpDataKthimit = new System.Windows.Forms.DateTimePicker();
-            this.label12 = new System.Windows.Forms.Label();
-            this.btnKthe = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.rdBtnVrejtja = new System.Windows.Forms.RadioButton();
             this.pnlCloseBtns.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHuazimiActive)).BeginInit();
             this.group.SuspendLayout();
@@ -115,9 +116,9 @@
             // 
             this.dgvHuazimiActive.AllowUserToAddRows = false;
             this.dgvHuazimiActive.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            this.dgvHuazimiActive.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dgvHuazimiActive.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvHuazimiActive.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvHuazimiActive.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvHuazimiActive.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -344,6 +345,7 @@
             // pnlHide
             // 
             this.pnlHide.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlHide.Controls.Add(this.rdBtnVrejtja);
             this.pnlHide.Controls.Add(this.rtbVrejtja);
             this.pnlHide.Controls.Add(this.groupBox1);
             this.pnlHide.Controls.Add(this.dtpDataKthimit);
@@ -358,28 +360,177 @@
             this.pnlHide.Controls.Add(this.label9);
             this.pnlHide.Controls.Add(this.label10);
             this.pnlHide.Controls.Add(this.label11);
-            this.pnlHide.Location = new System.Drawing.Point(164, 32);
+            this.pnlHide.Location = new System.Drawing.Point(164, 3);
             this.pnlHide.Name = "pnlHide";
-            this.pnlHide.Size = new System.Drawing.Size(843, 345);
+            this.pnlHide.Size = new System.Drawing.Size(843, 374);
             this.pnlHide.TabIndex = 74;
             // 
             // rtbVrejtja
             // 
             this.rtbVrejtja.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rtbVrejtja.Location = new System.Drawing.Point(16, 215);
+            this.rtbVrejtja.Location = new System.Drawing.Point(15, 228);
             this.rtbVrejtja.Name = "rtbVrejtja";
-            this.rtbVrejtja.Size = new System.Drawing.Size(817, 79);
+            this.rtbVrejtja.Size = new System.Drawing.Size(816, 53);
             this.rtbVrejtja.TabIndex = 88;
             this.rtbVrejtja.Text = "";
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox1.Location = new System.Drawing.Point(13, 16);
+            this.groupBox1.Location = new System.Drawing.Point(13, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(817, 72);
             this.groupBox1.TabIndex = 87;
             this.groupBox1.TabStop = false;
+            // 
+            // dtpDataKthimit
+            // 
+            this.dtpDataKthimit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtpDataKthimit.CustomFormat = "yyyy-MM-dd";
+            this.dtpDataKthimit.Font = new System.Drawing.Font("Gilroy SemiBold", 10F, System.Drawing.FontStyle.Bold);
+            this.dtpDataKthimit.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDataKthimit.Location = new System.Drawing.Point(311, 106);
+            this.dtpDataKthimit.Name = "dtpDataKthimit";
+            this.dtpDataKthimit.Size = new System.Drawing.Size(241, 27);
+            this.dtpDataKthimit.TabIndex = 81;
+            // 
+            // btnKthe
+            // 
+            this.btnKthe.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnKthe.BackColor = System.Drawing.Color.Transparent;
+            this.btnKthe.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnKthe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKthe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKthe.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnKthe.Location = new System.Drawing.Point(13, 328);
+            this.btnKthe.Name = "btnKthe";
+            this.btnKthe.Size = new System.Drawing.Size(817, 43);
+            this.btnKthe.TabIndex = 71;
+            this.btnKthe.Text = "Kthe";
+            this.btnKthe.UseVisualStyleBackColor = false;
+            this.btnKthe.Click += new System.EventHandler(this.btnKthe_Click);
+            // 
+            // dtpDataKthe
+            // 
+            this.dtpDataKthe.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtpDataKthe.CustomFormat = "yyyy-MM-dd";
+            this.dtpDataKthe.Font = new System.Drawing.Font("Gilroy SemiBold", 10F, System.Drawing.FontStyle.Bold);
+            this.dtpDataKthe.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDataKthe.Location = new System.Drawing.Point(573, 106);
+            this.dtpDataKthe.Name = "dtpDataKthe";
+            this.dtpDataKthe.Size = new System.Drawing.Size(259, 27);
+            this.dtpDataKthe.TabIndex = 81;
+            // 
+            // dtpDataHuazimit
+            // 
+            this.dtpDataHuazimit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtpDataHuazimit.CustomFormat = "yyyy-MM-dd";
+            this.dtpDataHuazimit.Font = new System.Drawing.Font("Gilroy SemiBold", 10F, System.Drawing.FontStyle.Bold);
+            this.dtpDataHuazimit.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDataHuazimit.Location = new System.Drawing.Point(15, 106);
+            this.dtpDataHuazimit.Name = "dtpDataHuazimit";
+            this.dtpDataHuazimit.Size = new System.Drawing.Size(274, 27);
+            this.dtpDataHuazimit.TabIndex = 82;
+            // 
+            // cbLibri
+            // 
+            this.cbLibri.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbLibri.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbLibri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.cbLibri.FormattingEnabled = true;
+            this.cbLibri.Location = new System.Drawing.Point(15, 162);
+            this.cbLibri.Name = "cbLibri";
+            this.cbLibri.Size = new System.Drawing.Size(345, 33);
+            this.cbLibri.TabIndex = 79;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label8.Location = new System.Drawing.Point(346, 196);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(150, 25);
+            this.label8.TabIndex = 75;
+            this.label8.Text = "Gjendja e librit";
+            // 
+            // cbStudenti
+            // 
+            this.cbStudenti.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbStudenti.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbStudenti.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.cbStudenti.FormattingEnabled = true;
+            this.cbStudenti.Location = new System.Drawing.Point(480, 162);
+            this.cbStudenti.Name = "cbStudenti";
+            this.cbStudenti.Size = new System.Drawing.Size(352, 33);
+            this.cbStudenti.TabIndex = 80;
+            // 
+            // label12
+            // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label12.Location = new System.Drawing.Point(646, 78);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(122, 25);
+            this.label12.TabIndex = 74;
+            this.label12.Text = "AfatiKthimit";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(380, 78);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(123, 25);
+            this.label7.TabIndex = 74;
+            this.label7.Text = "DataKthimit";
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label9.Location = new System.Drawing.Point(83, 78);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(140, 25);
+            this.label9.TabIndex = 76;
+            this.label9.Text = "DataHuazimit";
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label10.Location = new System.Drawing.Point(135, 134);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(53, 25);
+            this.label10.TabIndex = 77;
+            this.label10.Text = "Libri";
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label11.Location = new System.Drawing.Point(601, 134);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(92, 25);
+            this.label11.TabIndex = 78;
+            this.label11.Text = "Studenti";
             // 
             // label4
             // 
@@ -394,154 +545,17 @@
             this.label4.TabIndex = 38;
             this.label4.Text = "Huazimet Aktive";
             // 
-            // dtpDataKthe
+            // rdBtnVrejtja
             // 
-            this.dtpDataKthe.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dtpDataKthe.CustomFormat = "yyyy-MM-dd";
-            this.dtpDataKthe.Font = new System.Drawing.Font("Gilroy SemiBold", 10F, System.Drawing.FontStyle.Bold);
-            this.dtpDataKthe.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDataKthe.Location = new System.Drawing.Point(568, 119);
-            this.dtpDataKthe.Name = "dtpDataKthe";
-            this.dtpDataKthe.Size = new System.Drawing.Size(262, 27);
-            this.dtpDataKthe.TabIndex = 81;
-            // 
-            // dtpDataHuazimit
-            // 
-            this.dtpDataHuazimit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dtpDataHuazimit.CustomFormat = "yyyy-MM-dd";
-            this.dtpDataHuazimit.Font = new System.Drawing.Font("Gilroy SemiBold", 10F, System.Drawing.FontStyle.Bold);
-            this.dtpDataHuazimit.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDataHuazimit.Location = new System.Drawing.Point(13, 119);
-            this.dtpDataHuazimit.Name = "dtpDataHuazimit";
-            this.dtpDataHuazimit.Size = new System.Drawing.Size(271, 27);
-            this.dtpDataHuazimit.TabIndex = 82;
-            // 
-            // cbLibri
-            // 
-            this.cbLibri.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbLibri.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbLibri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.cbLibri.FormattingEnabled = true;
-            this.cbLibri.Location = new System.Drawing.Point(16, 176);
-            this.cbLibri.Name = "cbLibri";
-            this.cbLibri.Size = new System.Drawing.Size(339, 33);
-            this.cbLibri.TabIndex = 79;
-            // 
-            // cbStudenti
-            // 
-            this.cbStudenti.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbStudenti.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbStudenti.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.cbStudenti.FormattingEnabled = true;
-            this.cbStudenti.Location = new System.Drawing.Point(475, 176);
-            this.cbStudenti.Name = "cbStudenti";
-            this.cbStudenti.Size = new System.Drawing.Size(352, 33);
-            this.cbStudenti.TabIndex = 80;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(371, 91);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(123, 25);
-            this.label7.TabIndex = 74;
-            this.label7.Text = "DataKthimit";
-            // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(371, 187);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 25);
-            this.label8.TabIndex = 75;
-            this.label8.Text = "Verejtje";
-            // 
-            // label9
-            // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(74, 91);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(140, 25);
-            this.label9.TabIndex = 76;
-            this.label9.Text = "DataHuazimit";
-            // 
-            // label10
-            // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(130, 148);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(53, 25);
-            this.label10.TabIndex = 77;
-            this.label10.Text = "Libri";
-            // 
-            // label11
-            // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(596, 148);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(92, 25);
-            this.label11.TabIndex = 78;
-            this.label11.Text = "Studenti";
-            // 
-            // dtpDataKthimit
-            // 
-            this.dtpDataKthimit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dtpDataKthimit.CustomFormat = "yyyy-MM-dd";
-            this.dtpDataKthimit.Font = new System.Drawing.Font("Gilroy SemiBold", 10F, System.Drawing.FontStyle.Bold);
-            this.dtpDataKthimit.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDataKthimit.Location = new System.Drawing.Point(306, 119);
-            this.dtpDataKthimit.Name = "dtpDataKthimit";
-            this.dtpDataKthimit.Size = new System.Drawing.Size(241, 27);
-            this.dtpDataKthimit.TabIndex = 81;
-            // 
-            // label12
-            // 
-            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(637, 91);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(122, 25);
-            this.label12.TabIndex = 74;
-            this.label12.Text = "AfatiKthimit";
-            // 
-            // btnKthe
-            // 
-            this.btnKthe.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnKthe.BackColor = System.Drawing.Color.Transparent;
-            this.btnKthe.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnKthe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKthe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKthe.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnKthe.Location = new System.Drawing.Point(13, 299);
-            this.btnKthe.Name = "btnKthe";
-            this.btnKthe.Size = new System.Drawing.Size(817, 43);
-            this.btnKthe.TabIndex = 71;
-            this.btnKthe.Text = "Kthe";
-            this.btnKthe.UseVisualStyleBackColor = false;
-            this.btnKthe.Click += new System.EventHandler(this.btnKthe_Click);
+            this.rdBtnVrejtja.AutoSize = true;
+            this.rdBtnVrejtja.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.rdBtnVrejtja.Location = new System.Drawing.Point(364, 293);
+            this.rdBtnVrejtja.Name = "rdBtnVrejtja";
+            this.rdBtnVrejtja.Size = new System.Drawing.Size(137, 29);
+            this.rdBtnVrejtja.TabIndex = 75;
+            this.rdBtnVrejtja.TabStop = true;
+            this.rdBtnVrejtja.Text = "Jep Vrejtje";
+            this.rdBtnVrejtja.UseVisualStyleBackColor = true;
             // 
             // Huazimet
             // 
@@ -619,5 +633,6 @@
         private System.Windows.Forms.DateTimePicker dtpDataKthimit;
         private System.Windows.Forms.Button btnKthe;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.RadioButton rdBtnVrejtja;
     }
 }

@@ -84,7 +84,7 @@ namespace Library_DAL
                     DBConn.cmd.Parameters.AddWithValue("@StudentId", b1.StudentiId);
                     DBConn.cmd.Parameters.AddWithValue("@DataHuazimit", b1.DataHuazimit);
                     DBConn.cmd.Parameters.AddWithValue("@AfatiKthimit", b1.AfatiKthimit);
-                    DBConn.cmd.Parameters.AddWithValue("@Verejtja", b1.Verejtje);
+                    DBConn.cmd.Parameters.AddWithValue("@Verejtja", b1.Gjendja);
 
                     DBConn.cmd.ExecuteNonQuery();
                 }
@@ -137,7 +137,7 @@ namespace Library_DAL
                     DBConn.cmd.Parameters.AddWithValue("@StudentiId", b1.StudentiId);
                     DBConn.cmd.Parameters.AddWithValue("@DataHuazimit", b1.DataHuazimit);
                     DBConn.cmd.Parameters.AddWithValue("@AfatiKthimit", b1.AfatiKthimit);
-                    DBConn.cmd.Parameters.AddWithValue("@Verejtje", b1.Verejtje);
+                    DBConn.cmd.Parameters.AddWithValue("@Verejtje", b1.Gjendja);
 
                     DBConn.cmd.ExecuteNonQuery();
                 }
@@ -149,7 +149,7 @@ namespace Library_DAL
             }
         }
         public bool KtheHuazimin(HuazimetBO b1)
-        {
+            {
             try
             {
                 using (DBConn.conn = new SqlConnection(DBConn.conString))
@@ -160,6 +160,8 @@ namespace Library_DAL
 
                     DBConn.cmd.CommandType = CommandType.StoredProcedure;
                     DBConn.cmd.Parameters.AddWithValue("@Id", HuazimetBO.Id);
+                    DBConn.cmd.Parameters.AddWithValue("@Vrejtjet", b1.Vrejtja);
+                    DBConn.cmd.Parameters.AddWithValue("@StudentId", b1.StudentiId);
                     DBConn.cmd.Parameters.AddWithValue("@DataKthimit", b1.DataKthimit);
                     DBConn.cmd.ExecuteNonQuery();
                 }

@@ -17,6 +17,7 @@ namespace Library_TI1.Forms
         HuazimiBLL huaBLL;
         DataTable dt;
         HuazimetBO huaBO;
+        int vrejtjet = 0;
         public Huazimet()
         {
            
@@ -57,6 +58,7 @@ namespace Library_TI1.Forms
             dgvHuazimiActive.DataSource = dt;
             this.dgvHuazimiActive.Columns["Id"].Visible = false;
             this.dgvHuazimiActive.Columns["DataKthimit"].Visible = false;
+            this.dgvHuazimiActive.Columns["Vrejtjet"].Visible = false;
         }
         private void dgvHuazimiActive_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -72,6 +74,7 @@ namespace Library_TI1.Forms
             cbLibri.Text = dgvHuazimiActive.SelectedRows[0].Cells[5].Value.ToString();
             cbStudentat.Text = dgvHuazimiActive.SelectedRows[0].Cells[6].Value.ToString();
             cbStudenti.Text = dgvHuazimiActive.SelectedRows[0].Cells[6].Value.ToString();
+            vrejtjet = int.Parse(dgvHuazimiActive.SelectedRows[0].Cells[7].Value.ToString());
         }
 
         private void btnRuaj_Click(object sender, EventArgs e)
@@ -174,7 +177,7 @@ namespace Library_TI1.Forms
         private void btnKthe_Click(object sender, EventArgs e)
         {
             huaBLL.KtheHuazimet(shto2());
-            MessageBox.Show("Te dhenat jane shtuar me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Huazimi eshte kthyer me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
             ResetTb();
             HuazimetAktiveShfaq();
 
@@ -186,7 +189,10 @@ namespace Library_TI1.Forms
 
         private HuazimetBO shto2()
         {
-            huaBO = new HuazimetBO(dtpDataKthimit.Text);
+            if (rdBtnVrejtja.Checked)
+                vrejtjet++;
+
+            huaBO = new HuazimetBO(dtpDataKthimit.Text,vrejtjet,MerrVlerenCmbBox(cbStudentat));
             return huaBO;
         }
     }
