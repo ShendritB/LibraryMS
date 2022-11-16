@@ -59,12 +59,24 @@
             this.PnlBtmMid = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pnlBtmRight = new System.Windows.Forms.Panel();
+            this.lblEmriAut = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlMenu.SuspendLayout();
             this.pnlTitle.SuspendLayout();
             this.pnlNav.SuspendLayout();
             this.pnlCloseBtns.SuspendLayout();
             this.pnlShowData.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLibrat
@@ -443,9 +455,20 @@
             // 
             // pnlShowData
             // 
-            this.pnlShowData.BackColor = System.Drawing.SystemColors.Control;
+            this.pnlShowData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(41)))), ((int)(((byte)(97)))));
+            this.pnlShowData.Controls.Add(this.label12);
+            this.pnlShowData.Controls.Add(this.label11);
+            this.pnlShowData.Controls.Add(this.label10);
+            this.pnlShowData.Controls.Add(this.label9);
+            this.pnlShowData.Controls.Add(this.label6);
+            this.pnlShowData.Controls.Add(this.label3);
+            this.pnlShowData.Controls.Add(this.label5);
+            this.pnlShowData.Controls.Add(this.label4);
+            this.pnlShowData.Controls.Add(this.label1);
+            this.pnlShowData.Controls.Add(this.lblEmriAut);
             this.pnlShowData.Controls.Add(this.PnlBtmMid);
             this.pnlShowData.Controls.Add(this.panel3);
+            this.pnlShowData.Controls.Add(this.pictureBox1);
             this.pnlShowData.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlShowData.Location = new System.Drawing.Point(251, 80);
             this.pnlShowData.Name = "pnlShowData";
@@ -480,6 +503,146 @@
             this.pnlBtmRight.Size = new System.Drawing.Size(251, 80);
             this.pnlBtmRight.TabIndex = 15;
             // 
+            // lblEmriAut
+            // 
+            this.lblEmriAut.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblEmriAut.AutoSize = true;
+            this.lblEmriAut.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmriAut.Font = new System.Drawing.Font("Gilroy ExtraBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmriAut.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblEmriAut.Location = new System.Drawing.Point(85, 30);
+            this.lblEmriAut.Name = "lblEmriAut";
+            this.lblEmriAut.Size = new System.Drawing.Size(590, 49);
+            this.lblEmriAut.TabIndex = 2;
+            this.lblEmriAut.Text = "Sistemi i menaxhimit te libraris";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(108, 483);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(216, 25);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Numri total i autoreve";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(438, 483);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(196, 25);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Numri total i librave";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Location = new System.Drawing.Point(108, 566);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(238, 25);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Numri total i studenteve";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.Location = new System.Drawing.Point(68, 369);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 25);
+            this.label5.TabIndex = 3;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.Location = new System.Drawing.Point(438, 566);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(165, 25);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Huazimet aktive";
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label9.Location = new System.Drawing.Point(190, 610);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(20, 25);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "-";
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label10.Location = new System.Drawing.Point(504, 508);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(20, 25);
+            this.label10.TabIndex = 4;
+            this.label10.Text = "-";
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label11.Location = new System.Drawing.Point(163, 508);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(20, 25);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "-";
+            // 
+            // label12
+            // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label12.Location = new System.Drawing.Point(504, 591);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(20, 25);
+            this.label12.TabIndex = 4;
+            this.label12.Text = "-";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(168, 72);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(406, 408);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // MainPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -503,7 +666,9 @@
             this.pnlNav.PerformLayout();
             this.pnlCloseBtns.ResumeLayout(false);
             this.pnlShowData.ResumeLayout(false);
+            this.pnlShowData.PerformLayout();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -540,5 +705,16 @@
         private System.Windows.Forms.Panel PnlBtmMid;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel pnlBtmRight;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblEmriAut;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -1,20 +1,64 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using Library_BLL;
+using System;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Library_TI1.Forms
 {
+
     public partial class Listat : Form
     {
+        DataTable dt;
+        HuazimiBLL huaBLL;
+        StudentiBLL stuBLL;
+        LibraBLL libBll;
         public Listat()
         {
             InitializeComponent();
+            Shfaqlibrat();
+            HuazimetAktiveShfaq();
+            HuazimetTotalShfaq();
+            ShfaqStudentet();
+            ShfaqStudentetBlacklisted();
+        }
+
+        public void ShfaqStudentet()
+        {
+            stuBLL = new StudentiBLL();
+            dt = stuBLL.StudentetBlacklistedBLL();
+            DgvStudentet.DataSource = dt;
+            DgvStudentet.Columns["Id"].Visible = false;
+        }
+
+        public void ShfaqStudentetBlacklisted()
+        {
+            stuBLL = new StudentiBLL();
+            dt = stuBLL.StudentetShfaqBlacklistedBLL();
+            DgvBlacklisted.DataSource = dt;
+            DgvBlacklisted.Columns["Id"].Visible = false;
+        }
+        public void HuazimetAktiveShfaq()
+        {
+            huaBLL = new HuazimiBLL();
+            dt = huaBLL.ShfaqHuazimietAktive();
+            dgvHuazimiActive.DataSource = dt;
+            dgvHuazimiActive.Columns["Id"].Visible = false;
+            dgvHuazimiActive.Columns["DataKthimit"].Visible = false;
+        }
+        public void HuazimetTotalShfaq()
+        {
+            huaBLL = new HuazimiBLL();
+            dt = huaBLL.ShfaqHuazimietTotal();
+            dgvHuazimetTotale.DataSource = dt;
+            dgvHuazimetTotale.Columns["Id"].Visible = false;
+            dgvHuazimetTotale.Columns["DataKthimit"].Visible = false;
+        }
+        public void Shfaqlibrat()
+        {
+            libBll = new LibraBLL();
+            dt = libBll.ShfaqLibratBLL();
+            dgvLibrat.DataSource = dt;
+            this.dgvLibrat.Columns["Id"].Visible = false;
         }
     }
 }

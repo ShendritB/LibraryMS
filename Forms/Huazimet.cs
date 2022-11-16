@@ -58,7 +58,16 @@ namespace Library_TI1.Forms
             dgvHuazimiActive.DataSource = dt;
             this.dgvHuazimiActive.Columns["Id"].Visible = false;
             this.dgvHuazimiActive.Columns["DataKthimit"].Visible = false;
-            this.dgvHuazimiActive.Columns["Vrejtjet"].Visible = false;
+            //this.dgvHuazimiActive.Columns["Vrejtjet"].Visible = false;
+        }
+        public void HuazimetTotalShfaq()
+        {
+            huaBLL = new HuazimiBLL();
+            dt = huaBLL.ShfaqHuazimietTotal();
+            dgvHuazimiActive.DataSource = dt;
+            this.dgvHuazimiActive.Columns["Id"].Visible = false;
+            this.dgvHuazimiActive.Columns["DataKthimit"].Visible = false;
+            //this.dgvHuazimiActive.Columns["Vrejtjet"].Visible = false;
         }
         private void dgvHuazimiActive_CellClick(object sender, DataGridViewCellEventArgs e)
         {

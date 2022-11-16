@@ -32,6 +32,27 @@ namespace Library_DAL
             }
         }
 
+        public DataTable ShfaqStudentBlacklistedDAL()
+        {
+            try
+            {
+                using (DBConn.conn = new SqlConnection(DBConn.conString))
+                {
+
+                    DBConn.da = new SqlDataAdapter("spStudentetBlacklistedShow", DBConn.conn);
+                    DataTable dt = new DataTable();
+                    DBConn.da.Fill(dt);
+                    return dt;
+
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
         public bool shtoStudent(StudentiBO s1)
         {
             try

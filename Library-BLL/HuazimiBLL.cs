@@ -26,7 +26,7 @@ namespace Library_BLL
         }
         public DataTable ShfaqHuazimietJoAktive()
         {
-            return h1.ShfaqHuazimetAktiveDAL();
+            return h1.ShfaqHuazimetJoAktiveDAL();
         }
 
         public bool ShtoHuazim(HuazimetBO shtoHuazimet)

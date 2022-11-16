@@ -17,9 +17,13 @@ namespace Library_BLL
         {
             StuDal = new StudentiDAL();
         }
-        public DataTable StudentetShfaqBLL()
+        public DataTable StudentetBlacklistedBLL()
         {
             return StuDal.ShfaqStudentDAL();
+        }
+        public DataTable StudentetShfaqBlacklistedBLL()
+        {
+            return StuDal.ShfaqStudentBlacklistedDAL();
         }
 
         public bool ShtoStudent(StudentiBO shtoStudent)

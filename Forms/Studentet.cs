@@ -37,7 +37,7 @@ namespace Library_TI1.Forms
         public void ShfaqStudentet()
         {
             stuBll = new StudentiBLL();
-            dt = stuBll.StudentetShfaqBLL();
+            dt = stuBll.StudentetBlacklistedBLL();
             dgvStudentet.DataSource = dt;
             this.dgvStudentet.Columns["Id"].Visible = false;
         }
