@@ -124,7 +124,9 @@ namespace Library_TI1.Forms
 
         private StudentiBO Perditso()
         {
-            stuBO = new StudentiBO(tbEmri.Text, tbMbiemri.Text, tbNrTel.Text, tbNrPrs.Text, tbEmail.Text, dtpLindjes.Text);
+            if (tbVrejtjet.Text == string.Empty)
+                tbVrejtjet.Text = "0";
+            stuBO = new StudentiBO(tbEmri.Text, tbMbiemri.Text,int.Parse(tbVrejtjet.Text), tbNrTel.Text, tbNrPrs.Text, tbEmail.Text, dtpLindjes.Text);
             return stuBO;
         }
 
@@ -134,9 +136,10 @@ namespace Library_TI1.Forms
             tbEmri.Text = dgvStudentet.SelectedRows[0].Cells[1].Value.ToString();
             tbMbiemri.Text = dgvStudentet.SelectedRows[0].Cells[2].Value.ToString();
             tbEmail.Text = dgvStudentet.SelectedRows[0].Cells[3].Value.ToString();
-            tbNrPrs.Text = dgvStudentet.SelectedRows[0].Cells[4].Value.ToString();
-            tbNrTel.Text = dgvStudentet.SelectedRows[0].Cells[5].Value.ToString();
-            dtpLindjes.Text = dgvStudentet.SelectedRows[0].Cells[6].Value.ToString();
+            tbVrejtjet.Text = dgvStudentet.SelectedRows[0].Cells[4].Value.ToString();
+            tbNrPrs.Text = dgvStudentet.SelectedRows[0].Cells[5].Value.ToString();
+            tbNrTel.Text = dgvStudentet.SelectedRows[0].Cells[6].Value.ToString();
+            dtpLindjes.Text = dgvStudentet.SelectedRows[0].Cells[7].Value.ToString();
         }
     }
 }

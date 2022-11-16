@@ -72,6 +72,7 @@
     <Compile Include="Session.cs" />
     <Compile Include="StudentiBLL.cs" />
     <Compile Include="ThemeColors.cs" />
+    <Compile Include="ValidoInt.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Library-BO\Library-BO.csproj">

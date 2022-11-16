@@ -15,30 +15,32 @@ namespace Library_BO
         public string DataHuazimit { get; set; }
         public string DataKthimit { get; set; }
         public string AfatiKthimit { get; set; }
-        public string Verejtje { get; set; }
-        public HuazimetBO(string datakthimit)
+        public int Vrejtja { get; set; }
+        public string Gjendja { get; set; }
+        public HuazimetBO(string datakthimit,int vrejtja, int studentiId)
         {
             DataKthimit = datakthimit;
+            StudentiId = studentiId;
+            Vrejtja = vrejtja;
 
         }
-        public HuazimetBO(int libriId, int studentiId, string huazimi, string kthimi, string afati, string verejtja)
+        public HuazimetBO(int libriId, int studentiId, string huazimi, string kthimi, string afati, string gjendja)
         {
             LibriId = libriId;
             StudentiId = studentiId;  
             DataHuazimit = huazimi;
             DataKthimit = kthimi;
             AfatiKthimit = afati;
-            Verejtje = verejtja;
+            Gjendja = gjendja;
         }
 
-        public HuazimetBO(int libriId, int studentiId, string huazimi, string afati, string verejtja)
+        public HuazimetBO(int libriId, int studentiId, string huazimi, string afati, string gjendja)
         {
             LibriId = libriId;
             StudentiId = studentiId;
             DataHuazimit = huazimi;
-   
             AfatiKthimit = afati;
-            Verejtje = verejtja;
+            Gjendja = gjendja;
         }
 
     }

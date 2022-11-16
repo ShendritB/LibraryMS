@@ -77,7 +77,6 @@ namespace Library_DAL
                         DBConn.cmd.Parameters.AddWithValue("@Id", StudentiBO.StudentiId);
                         DBConn.cmd.ExecuteNonQuery();
                         return true;
-
                     }
                 }
                 catch (Exception)
@@ -104,6 +103,7 @@ namespace Library_DAL
                         DBConn.cmd.Parameters.AddWithValue("@Id", StudentiBO.StudentiId);
                         DBConn.cmd.Parameters.AddWithValue("@Emri", stuBO.Emri);
                         DBConn.cmd.Parameters.AddWithValue("@Mbiemri", stuBO.Mbiemri);
+                        DBConn.cmd.Parameters.AddWithValue("@Vrejtjet", stuBO.Vrejtjet);
                         DBConn.cmd.Parameters.AddWithValue("@NrTel", stuBO.NrTel);
                         DBConn.cmd.Parameters.AddWithValue("@Email", stuBO.Email);
                         DBConn.cmd.Parameters.AddWithValue("@NrPersonal", stuBO.NrPersonal);
