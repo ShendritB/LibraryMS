@@ -19,12 +19,10 @@ namespace Library_DAL
             {
                 using (DBConn.conn = new SqlConnection(DBConn.conString))
                 {
-
                     DBConn.da = new SqlDataAdapter("spStudentetShow", DBConn.conn);
                     DataTable dt = new DataTable();
                     DBConn.da.Fill(dt);
                     return dt;
-
                 }
             }
             catch (Exception ex)
@@ -89,6 +87,31 @@ namespace Library_DAL
             }
             catch (Exception)
             {
+                return false;
+            }
+
+        }
+        public bool SearchCbStudentet(StudentiBO s1, ComboBox cb1)
+        {
+            try
+            {
+                using (DBConn.conn = new SqlConnection(DBConn.conString))
+                {
+                    DBConn.conn.Open();
+
+                    DBConn.cmd = new SqlCommand("spStudentetCbShow", DBConn.conn);
+
+                    DBConn.cmd.CommandType = CommandType.StoredProcedure;
+                    DBConn.cmd.Parameters.AddWithValue("@NrPersonal", s1.NrPersonal);
+
+                    DBConn.cmd.ExecuteNonQuery();
+                    cb1.Text = s1.NrPersonal;
+                }
+                return true;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Te dhenat nuk u gjeten");
                 return false;
             }
 

@@ -38,7 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnRuaj = new System.Windows.Forms.Button();
             this.cbLanguage = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFjalkalimi)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,24 +99,28 @@
             // cbLanguage
             // 
             resources.ApplyResources(this.cbLanguage, "cbLanguage");
+            this.cbLanguage.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.cbLanguage.ForeColor = System.Drawing.SystemColors.Window;
             this.cbLanguage.FormattingEnabled = true;
             this.cbLanguage.Items.AddRange(new object[] {
             resources.GetString("cbLanguage.Items"),
             resources.GetString("cbLanguage.Items1")});
             this.cbLanguage.Name = "cbLanguage";
-            this.cbLanguage.SelectedIndexChanged += new System.EventHandler(this.cbLanguage_SelectedIndexChanged);
+            this.cbLanguage.SelectedIndexChanged += new System.EventHandler(this.cbLanguage_SelectedIndexChanged_1);
             // 
-            // label5
+            // label4
             // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Name = "label4";
             // 
             // Fjalkalimi
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.cbLanguage);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnRuaj);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -143,6 +147,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnRuaj;
         private System.Windows.Forms.ComboBox cbLanguage;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
     }
 }

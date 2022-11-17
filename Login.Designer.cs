@@ -142,6 +142,8 @@
             // cbLanguage
             // 
             resources.ApplyResources(this.cbLanguage, "cbLanguage");
+            this.cbLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
+            this.cbLanguage.ForeColor = System.Drawing.SystemColors.Window;
             this.cbLanguage.FormattingEnabled = true;
             this.cbLanguage.Items.AddRange(new object[] {
             resources.GetString("cbLanguage.Items"),

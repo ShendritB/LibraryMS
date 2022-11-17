@@ -17,10 +17,12 @@ namespace Library_TI1.Forms
         StudentiBLL stuBll;
         DataTable dt;
         StudentiBO stuBO;
+        public List<string> l1 = new List<string>();
         public Studentet()
         {
             InitializeComponent();
             ShfaqStudentet();
+            NrPersonal(l1);
         }
         private void Studentet_Load(object sender, EventArgs e)
         {
@@ -40,6 +42,12 @@ namespace Library_TI1.Forms
             dt = stuBll.StudentetBlacklistedBLL();
             dgvStudentet.DataSource = dt;
             this.dgvStudentet.Columns["Id"].Visible = false;
+        }
+
+        public List<string> NrPersonal(List<string> Result)
+        {
+           
+            return Result;
         }
         private void LoadTheme()
         {

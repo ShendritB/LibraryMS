@@ -142,10 +142,22 @@
   <data name="btnRuaj.Text" xml:space="preserve">
     <value>Save</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 16</value>
+  <data name="cbLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>256, 40</value>
   </data>
-  <data name="label5.Text" xml:space="preserve">
+  <data name="cbLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 24</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt, style=Bold</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 13</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 23</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
     <value>Language</value>
   </data>
 </root>

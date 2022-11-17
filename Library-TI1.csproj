@@ -137,6 +137,9 @@
     <EmbeddedResource Include="Forms\Fjalkalimi.resx">
       <DependentUpon>Fjalkalimi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Fjalkalimi.sq.resx">
+      <DependentUpon>Fjalkalimi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Huazimet.resx">
       <DependentUpon>Huazimet.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,11 +155,17 @@
     <EmbeddedResource Include="Forms\Listat.resx">
       <DependentUpon>Listat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Listat.sq.resx">
+      <DependentUpon>Listat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Rolet.resx">
       <DependentUpon>Rolet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Studentet.resx">
       <DependentUpon>Studentet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.bin.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.en.resx">
       <DependentUpon>Login.cs</DependentUpon>

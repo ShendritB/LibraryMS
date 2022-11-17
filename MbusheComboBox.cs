@@ -35,6 +35,17 @@ namespace Library_TI1
             }
             cmbB.ValueMember = $"{id}";
             cmbB.DisplayMember = $"{emri}";
+        }public static void MbushComboBox2(ComboBox cmbB, string emriProcedures, string emri, string id)
+        {
+            SqlDataReader drd = BiblotekistiSherbimet.ComboxData(emriProcedures);
+            while (drd.Read())
+            {
+                cmbB.Items.Add(new VleratCombo(int.Parse(drd[$"{id}"].ToString()), drd[$"{emri}"].ToString()));
+            }
+            cmbB.ValueMember = $"{id}";
+            cmbB.DisplayMember = $"{emri}";
+            cmbB.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cmbB.AutoCompleteSource = AutoCompleteSource.ListItems;
         }
         public static string ComputeHash256(string rawdata)
         {

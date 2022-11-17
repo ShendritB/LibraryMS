@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Listat));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvHuazimiActive = new System.Windows.Forms.DataGridView();
             this.dgvHuazimetTotale = new System.Windows.Forms.DataGridView();
             this.lblEmriAut = new System.Windows.Forms.Label();
@@ -58,9 +58,9 @@
             resources.ApplyResources(this.dgvHuazimiActive, "dgvHuazimiActive");
             this.dgvHuazimiActive.AllowUserToAddRows = false;
             this.dgvHuazimiActive.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
-            this.dgvHuazimiActive.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dgvHuazimiActive.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvHuazimiActive.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvHuazimiActive.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHuazimiActive.GridColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -74,9 +74,9 @@
             resources.ApplyResources(this.dgvHuazimetTotale, "dgvHuazimetTotale");
             this.dgvHuazimetTotale.AllowUserToAddRows = false;
             this.dgvHuazimetTotale.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black;
-            this.dgvHuazimetTotale.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.dgvHuazimetTotale.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvHuazimetTotale.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvHuazimetTotale.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHuazimetTotale.GridColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -104,9 +104,9 @@
             resources.ApplyResources(this.DgvBlacklisted, "DgvBlacklisted");
             this.DgvBlacklisted.AllowUserToAddRows = false;
             this.DgvBlacklisted.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
-            this.DgvBlacklisted.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            this.DgvBlacklisted.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.DgvBlacklisted.BackgroundColor = System.Drawing.SystemColors.Window;
             this.DgvBlacklisted.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvBlacklisted.GridColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -120,9 +120,9 @@
             resources.ApplyResources(this.DgvStudentet, "DgvStudentet");
             this.DgvStudentet.AllowUserToAddRows = false;
             this.DgvStudentet.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Black;
-            this.DgvStudentet.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.DgvStudentet.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DgvStudentet.BackgroundColor = System.Drawing.SystemColors.Window;
             this.DgvStudentet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvStudentet.GridColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -137,7 +137,6 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Name = "label2";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -151,9 +150,9 @@
             resources.ApplyResources(this.dgvLibrat, "dgvLibrat");
             this.dgvLibrat.AllowUserToAddRows = false;
             this.dgvLibrat.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
-            this.dgvLibrat.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            this.dgvLibrat.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvLibrat.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvLibrat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLibrat.GridColor = System.Drawing.SystemColors.ControlDarkDark;

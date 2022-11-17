@@ -17,7 +17,10 @@ namespace Library_BO
         public string  Email { get; set; }
         public string DataLindjes { get; set; }
 
-
+        public StudentiBO(string nrPersonal)
+        {
+            NrPersonal = nrPersonal;
+        }
         //Ctor shto
         public StudentiBO(string emri, string mbiemri, string nrTel, string nrPersonal, string email, string dataLindjes)
         {

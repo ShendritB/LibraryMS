@@ -1527,9 +1527,6 @@
         26h3ne8///kfiAWW4VKFnDkAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 154</value>
-  </data>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         R0lGODlh8QHyAffvAMySc6xzW7R7YdmdfFIcGEoVEtygfuSohUMODaZtV96jgLF3X+aqhp1lUEcSEEUQ
@@ -2499,9 +2496,6 @@
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10.2pt, style=Bold</value>
   </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 5</value>
-  </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 20</value>
   </data>
@@ -2510,10 +2504,10 @@
     <value>Flat</value>
   </data>
   <data name="cbLanguage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 28</value>
+    <value>12, 32</value>
   </data>
   <data name="cbLanguage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 24</value>
+    <value>83, 24</value>
   </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
