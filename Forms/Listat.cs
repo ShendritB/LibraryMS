@@ -1,6 +1,7 @@
 ﻿using Library_BLL;
 using System;
 using System.Data;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Library_TI1.Forms
@@ -59,6 +60,26 @@ namespace Library_TI1.Forms
             dt = libBll.ShfaqLibratBLL();
             dgvLibrat.DataSource = dt;
             this.dgvLibrat.Columns["Id"].Visible = false;
+        }
+
+        private void cbLanguage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (cbLanguage.SelectedIndex)
+            {
+                case 0:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+                    break;
+                case 1:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("sq");
+                    break;
+            }
+            this.Controls.Clear();
+            InitializeComponent();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

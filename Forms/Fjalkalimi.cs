@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -73,6 +74,21 @@ namespace Library_TI1.Forms
             PjesmarresiBO.Id = Convert.ToInt32(dgvFjalkalimi.SelectedRows[0].Cells[0].Value.ToString());
             tbEmri.Text = dgvFjalkalimi.SelectedRows[0].Cells[1].Value.ToString();
             tbPerdoruesi.Text = dgvFjalkalimi.SelectedRows[0].Cells[2].Value.ToString();
+        }
+
+        private void cbLanguage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (cbLanguage.SelectedIndex)
+            {
+                case 0:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+                    break;
+                case 1:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("sq");
+                    break;
+            }
+            this.Controls.Clear();
+            InitializeComponent();
         }
     }
 }
