@@ -13,6 +13,19 @@ namespace Library_TI1
 {
     public class MbusheComboBox
     {
+  //      public static void MbushComboBox(ComboBox cmbB, string emriProcedures, string emri, string id, /*List<string> a1*/string[] a1)
+  //      {
+  //          SqlDataReader drd = BiblotekistiSherbimet.ComboxData(emriProcedures);
+  ////          int i = 0;
+  //          while (drd.Read())
+  //          {             
+  //              cmbB.Items.Add(new VleratCombo(int.Parse(drd[$"{id}"].ToString()), drd[$"{emri}"].ToString()));
+  //              //a1[i] = drd[$"{emri}"].ToString();
+  //              //i++;
+  //          }
+  //          cmbB.ValueMember = $"{id}";
+  //          cmbB.DisplayMember = $"{emri}";
+  //      }
         public static void MbushComboBox(ComboBox cmbB, string emriProcedures, string emri, string id)
         {
             SqlDataReader drd = BiblotekistiSherbimet.ComboxData(emriProcedures);

@@ -27,6 +27,7 @@ namespace Library_TI1.Forms
         {
             LoadTheme();
         }
+
         private void ResetTb()
         {
             tbEmri.Clear();

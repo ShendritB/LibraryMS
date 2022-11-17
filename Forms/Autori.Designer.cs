@@ -166,7 +166,7 @@
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.dgvAutori.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvAutori.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dgvAutori.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvAutori.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
             this.dgvAutori.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAutori.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dgvAutori.Location = new System.Drawing.Point(294, 363);

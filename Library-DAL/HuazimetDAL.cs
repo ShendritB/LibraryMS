@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Library_DAL
 {
@@ -29,6 +30,16 @@ namespace Library_DAL
             catch (Exception ex)
             {
                 throw ex;
+            }
+        }
+        public string CountHuazimetDAL(Label lbl1)
+        {
+            using (DBConn.conn = new SqlConnection(DBConn.conString))
+            {
+                DBConn.conn.Open();
+
+                DBConn.cmd = new SqlCommand("spHuazimetCount", DBConn.conn);
+                return lbl1.Text = DBConn.cmd.ExecuteScalar().ToString();
             }
         }
 
@@ -161,6 +172,7 @@ namespace Library_DAL
                     DBConn.cmd.CommandType = CommandType.StoredProcedure;
                     DBConn.cmd.Parameters.AddWithValue("@Id", HuazimetBO.Id);
                     DBConn.cmd.Parameters.AddWithValue("@Vrejtjet", b1.Vrejtja);
+                    DBConn.cmd.Parameters.AddWithValue("@LibriId", b1.LibriId);
                     DBConn.cmd.Parameters.AddWithValue("@StudentId", b1.StudentiId);
                     DBConn.cmd.Parameters.AddWithValue("@DataKthimit", b1.DataKthimit);
                     DBConn.cmd.ExecuteNonQuery();

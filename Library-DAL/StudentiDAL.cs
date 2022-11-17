@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Library_DAL
 {
@@ -32,6 +33,16 @@ namespace Library_DAL
             }
         }
 
+        public string CountStudentetDAL(Label lbl1)
+        {
+            using (DBConn.conn = new SqlConnection(DBConn.conString))
+            {
+                DBConn.conn.Open();
+
+                DBConn.cmd = new SqlCommand("spStudentetCount", DBConn.conn);
+                return lbl1.Text = DBConn.cmd.ExecuteScalar().ToString();
+            }
+        }
         public DataTable ShfaqStudentBlacklistedDAL()
         {
             try

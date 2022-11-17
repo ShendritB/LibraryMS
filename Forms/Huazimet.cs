@@ -18,12 +18,17 @@ namespace Library_TI1.Forms
         DataTable dt;
         HuazimetBO huaBO;
         int vrejtjet = 0;
+        //public string[] s1 = new string[] { };
+        //public string[] s2 = new string[] { };
+        //public List<string> a1;
+        //public List<string> a2;
         public Huazimet()
         {
-           
+
             InitializeComponent();
             pnlHide.Visible = false;
             HuazimetAktiveShfaq();
+
             MbusheComboBox.MbushComboBox(cbLibrat, "spLibratCbShow", "Emri", "Id");
             MbusheComboBox.MbushComboBox(cbLibri, "spLibratCbShow", "Emri", "Id");
             MbusheComboBox.MbushComboBox(cbStudentat, "spStudentetCbShow", "Emri", "Id");
@@ -71,7 +76,7 @@ namespace Library_TI1.Forms
         }
         private void dgvHuazimiActive_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            HuazimetBO.Id= Convert.ToInt32(dgvHuazimiActive.SelectedRows[0].Cells[0].Value.ToString());
+            HuazimetBO.Id = Convert.ToInt32(dgvHuazimiActive.SelectedRows[0].Cells[0].Value.ToString());
             dtpHuazimit.Text = dgvHuazimiActive.SelectedRows[0].Cells[1].Value.ToString();
             dtpDataHuazimit.Text = dgvHuazimiActive.SelectedRows[0].Cells[1].Value.ToString();
             dtpDataKthimit.Text = dgvHuazimiActive.SelectedRows[0].Cells[2].Value.ToString();
@@ -88,7 +93,7 @@ namespace Library_TI1.Forms
 
         private void btnRuaj_Click(object sender, EventArgs e)
         {
-            if(isValid())
+            if (isValid())
             {
                 huaBLL.ShtoHuazim(shto());
                 MessageBox.Show("Te dhenat jane shtuar me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -108,7 +113,7 @@ namespace Library_TI1.Forms
 
         private HuazimetBO shto()
         {
-            huaBO = new HuazimetBO(MerrVlerenCmbBox(cbLibrat), MerrVlerenCmbBox(cbStudentat),dtpHuazimit.Text,dtpAfatiKthimit.Text,rtbVerejtja.Text);
+            huaBO = new HuazimetBO(MerrVlerenCmbBox(cbLibrat), MerrVlerenCmbBox(cbStudentat), dtpHuazimit.Text, dtpAfatiKthimit.Text, rtbVerejtja.Text);
             return huaBO;
         }
         private int MerrVlerenCmbBox(ComboBox cmbB)
@@ -201,8 +206,29 @@ namespace Library_TI1.Forms
             if (rdBtnVrejtja.Checked)
                 vrejtjet++;
 
-            huaBO = new HuazimetBO(dtpDataKthimit.Text,vrejtjet,MerrVlerenCmbBox(cbStudentat));
+            huaBO = new HuazimetBO(dtpDataKthimit.Text, MerrVlerenCmbBox(cbLibri), vrejtjet, MerrVlerenCmbBox(cbStudentat));
             return huaBO;
+        }
+
+        private void btnKerkoLiber(object sender, EventArgs e)
+        {
+            foreach (var item in cbLibrat.Text)
+            {
+                if (tbSearchBook.Text == item.ToString())
+                    cbLibrat.Text = item.ToString();
+                else
+                {
+                    MessageBox.Show("Titulli nuk u gjet", "Gabim", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void btnKerkoStudent(object sender, EventArgs e)
+        {
+            for (int i = 0; i < cbStudentat.Items.Count-1; i++)
+            {
+               tbSearchBook.Text = cbStudentat.Items[i].ToString();
+            }
         }
     }
 }

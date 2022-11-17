@@ -17,9 +17,10 @@ namespace Library_BO
         public string AfatiKthimit { get; set; }
         public int Vrejtja { get; set; }
         public string Gjendja { get; set; }
-        public HuazimetBO(string datakthimit,int vrejtja, int studentiId)
+        public HuazimetBO(string datakthimit,int libriId,int vrejtja, int studentiId)
         {
             DataKthimit = datakthimit;
+            LibriId = libriId;
             StudentiId = studentiId;
             Vrejtja = vrejtja;
 

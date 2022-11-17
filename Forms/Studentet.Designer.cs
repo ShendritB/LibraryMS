@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BtnFshije = new System.Windows.Forms.Button();
             this.dgvStudentet = new System.Windows.Forms.DataGridView();
             this.btnRuaj = new System.Windows.Forms.Button();
@@ -61,7 +61,7 @@
             this.BtnFshije.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnFshije.Font = new System.Drawing.Font("Gilroy Bold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnFshije.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnFshije.Location = new System.Drawing.Point(795, 369);
+            this.BtnFshije.Location = new System.Drawing.Point(770, 344);
             this.BtnFshije.Name = "BtnFshije";
             this.BtnFshije.Size = new System.Drawing.Size(220, 46);
             this.BtnFshije.TabIndex = 41;
@@ -73,14 +73,14 @@
             // 
             this.dgvStudentet.AllowUserToAddRows = false;
             this.dgvStudentet.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.dgvStudentet.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dgvStudentet.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvStudentet.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvStudentet.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvStudentet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStudentet.GridColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dgvStudentet.Location = new System.Drawing.Point(198, 434);
+            this.dgvStudentet.Location = new System.Drawing.Point(173, 396);
             this.dgvStudentet.Name = "dgvStudentet";
             this.dgvStudentet.ReadOnly = true;
             this.dgvStudentet.RowHeadersWidth = 51;
@@ -98,7 +98,7 @@
             this.btnRuaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRuaj.Font = new System.Drawing.Font("Gilroy Bold", 10.8F, System.Drawing.FontStyle.Bold);
             this.btnRuaj.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnRuaj.Location = new System.Drawing.Point(198, 369);
+            this.btnRuaj.Location = new System.Drawing.Point(173, 344);
             this.btnRuaj.Name = "btnRuaj";
             this.btnRuaj.Size = new System.Drawing.Size(220, 46);
             this.btnRuaj.TabIndex = 42;
@@ -126,7 +126,7 @@
             this.tbEmri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbEmri.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbEmri.ForeColor = System.Drawing.Color.Black;
-            this.tbEmri.Location = new System.Drawing.Point(198, 249);
+            this.tbEmri.Location = new System.Drawing.Point(173, 236);
             this.tbEmri.Multiline = true;
             this.tbEmri.Name = "tbEmri";
             this.tbEmri.Size = new System.Drawing.Size(220, 36);
@@ -140,7 +140,7 @@
             this.btnPerditso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPerditso.Font = new System.Drawing.Font("Gilroy Bold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPerditso.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPerditso.Location = new System.Drawing.Point(496, 369);
+            this.btnPerditso.Location = new System.Drawing.Point(471, 344);
             this.btnPerditso.Name = "btnPerditso";
             this.btnPerditso.Size = new System.Drawing.Size(220, 46);
             this.btnPerditso.TabIndex = 40;
@@ -155,7 +155,7 @@
             this.lblEmriAut.BackColor = System.Drawing.Color.Transparent;
             this.lblEmriAut.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmriAut.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblEmriAut.Location = new System.Drawing.Point(279, 222);
+            this.lblEmriAut.Location = new System.Drawing.Point(254, 209);
             this.lblEmriAut.Name = "lblEmriAut";
             this.lblEmriAut.Size = new System.Drawing.Size(55, 24);
             this.lblEmriAut.TabIndex = 34;
@@ -168,7 +168,7 @@
             this.tbMbiemri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbMbiemri.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbMbiemri.ForeColor = System.Drawing.Color.Black;
-            this.tbMbiemri.Location = new System.Drawing.Point(198, 323);
+            this.tbMbiemri.Location = new System.Drawing.Point(173, 302);
             this.tbMbiemri.Multiline = true;
             this.tbMbiemri.Name = "tbMbiemri";
             this.tbMbiemri.Size = new System.Drawing.Size(220, 36);
@@ -181,7 +181,7 @@
             this.lblPershkrimiKat.BackColor = System.Drawing.Color.Transparent;
             this.lblPershkrimiKat.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPershkrimiKat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPershkrimiKat.Location = new System.Drawing.Point(265, 296);
+            this.lblPershkrimiKat.Location = new System.Drawing.Point(240, 275);
             this.lblPershkrimiKat.Name = "lblPershkrimiKat";
             this.lblPershkrimiKat.Size = new System.Drawing.Size(85, 24);
             this.lblPershkrimiKat.TabIndex = 35;
@@ -194,7 +194,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(550, 296);
+            this.label1.Location = new System.Drawing.Point(525, 275);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(115, 24);
             this.label1.TabIndex = 35;
@@ -207,7 +207,7 @@
             this.tbNrPrs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbNrPrs.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNrPrs.ForeColor = System.Drawing.Color.Black;
-            this.tbNrPrs.Location = new System.Drawing.Point(496, 323);
+            this.tbNrPrs.Location = new System.Drawing.Point(471, 302);
             this.tbNrPrs.Multiline = true;
             this.tbNrPrs.Name = "tbNrPrs";
             this.tbNrPrs.Size = new System.Drawing.Size(220, 36);
@@ -220,7 +220,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(574, 222);
+            this.label2.Location = new System.Drawing.Point(549, 209);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 24);
             this.label2.TabIndex = 34;
@@ -233,7 +233,7 @@
             this.tbNrTel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbNrTel.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNrTel.ForeColor = System.Drawing.Color.Black;
-            this.tbNrTel.Location = new System.Drawing.Point(496, 249);
+            this.tbNrTel.Location = new System.Drawing.Point(471, 236);
             this.tbNrTel.Multiline = true;
             this.tbNrTel.Name = "tbNrTel";
             this.tbNrTel.Size = new System.Drawing.Size(220, 36);
@@ -246,7 +246,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(855, 296);
+            this.label3.Location = new System.Drawing.Point(830, 275);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(102, 24);
             this.label3.TabIndex = 35;
@@ -259,7 +259,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(869, 222);
+            this.label4.Location = new System.Drawing.Point(844, 209);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 24);
             this.label4.TabIndex = 34;
@@ -272,7 +272,7 @@
             this.tbEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbEmail.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbEmail.ForeColor = System.Drawing.Color.Black;
-            this.tbEmail.Location = new System.Drawing.Point(795, 249);
+            this.tbEmail.Location = new System.Drawing.Point(770, 236);
             this.tbEmail.Multiline = true;
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(220, 36);
@@ -284,7 +284,7 @@
             this.dtpLindjes.CustomFormat = "yyyy-MM-dd";
             this.dtpLindjes.Font = new System.Drawing.Font("Gilroy SemiBold", 10F, System.Drawing.FontStyle.Bold);
             this.dtpLindjes.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpLindjes.Location = new System.Drawing.Point(795, 323);
+            this.dtpLindjes.Location = new System.Drawing.Point(770, 302);
             this.dtpLindjes.Name = "dtpLindjes";
             this.dtpLindjes.Size = new System.Drawing.Size(220, 27);
             this.dtpLindjes.TabIndex = 43;
@@ -293,7 +293,7 @@
             // 
             this.group.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.group.Controls.Add(this.lblShtoNdrysho);
-            this.group.Location = new System.Drawing.Point(198, 81);
+            this.group.Location = new System.Drawing.Point(173, 68);
             this.group.Name = "group";
             this.group.Size = new System.Drawing.Size(817, 72);
             this.group.TabIndex = 44;
@@ -306,7 +306,7 @@
             this.tbVrejtjet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbVrejtjet.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbVrejtjet.ForeColor = System.Drawing.Color.Black;
-            this.tbVrejtjet.Location = new System.Drawing.Point(575, 183);
+            this.tbVrejtjet.Location = new System.Drawing.Point(553, 170);
             this.tbVrejtjet.Multiline = true;
             this.tbVrejtjet.Name = "tbVrejtjet";
             this.tbVrejtjet.Size = new System.Drawing.Size(55, 36);
@@ -319,7 +319,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(476, 156);
+            this.label5.Location = new System.Drawing.Point(454, 143);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(252, 24);
             this.label5.TabIndex = 45;
@@ -329,7 +329,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1186, 854);
+            this.ClientSize = new System.Drawing.Size(1181, 854);
             this.Controls.Add(this.tbVrejtjet);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.group);

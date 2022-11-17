@@ -21,6 +21,14 @@ namespace Library_BLL
         {
             return l1.ShfaqLibraDAL();
         }
+         public string CountLibratBLL(Label lbl1)
+        {
+            return l1.CountLibraDAL(lbl1);
+        }
+           public string CopiesLibratBLL(Label lbl1)
+        {
+            return l1.CopiesLibraDAL(lbl1);
+        }
 
         public bool ShtoLiber(LibriBO shtoLibra)
         {

@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using Library_BO;
 using Library_BLL;
 using System.Runtime.InteropServices;
+using Library_TI1.Forms;
 
 namespace Library_TI1
 {
@@ -20,21 +21,57 @@ namespace Library_TI1
         private Random random;
         private int tempIndex;
         private Form activeForm;
+        LibraBLL libBLL;
+        AutoriBLL autBLL;
+        HuazimiBLL huaBLL;
+        StudentiBLL stuBLL;
         public MainPanel()
         {
             InitializeComponent();
-            //if (Session.Roli == Roli.Admin)
-            //{
-            //    btnRolet.Enabled = false;
-            //    lblRoli.Text = "Admin";
-            //}
-            //else
-            lblRoli.Text = "Biblotekist";
+            TotalLibrat(lblTotLib);
+            TotalCopiesLibrat(lblTotalCopies);
+            TotalAutoret(lblTotAut);
+            HuazimetAktive(lblHuazimetAktive);
+            TotalStudentet(lblStudenti);
+            if (Session.Roli == Roli.Biblotekist)
+            {
+                btnRolet.Enabled = false;
+                lblRoli.Text = "Biblotekist";
+                
+            }
+            else
+                lblRoli.Text = "Admin";
             random = new Random();
             btnCloseChild.Visible = false;
             this.Text = string.Empty;
             this.ControlBox = false;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+        }
+        private string TotalLibrat(Label lbl1)
+        {
+           libBLL = new LibraBLL();
+           return libBLL.CountLibratBLL(lbl1);
+        }
+
+        private string TotalCopiesLibrat(Label lbl1)
+        {
+           libBLL = new LibraBLL();
+           return libBLL.CopiesLibratBLL(lbl1);
+        }
+        private string HuazimetAktive(Label lbl1)
+        {
+           huaBLL = new HuazimiBLL();
+           return huaBLL.CountHuazimetBLL(lbl1);
+        }
+        private string TotalAutoret(Label lbl1)
+        {
+            autBLL = new AutoriBLL();
+            return autBLL.CountAutoretBLL(lbl1);
+        }
+        private string TotalStudentet(Label lbl1)
+        {
+            stuBLL = new StudentiBLL();
+            return stuBLL.CountStudentetBLL(lbl1);
         }
         private void MainPanel_Load(object sender, EventArgs e)
         {
@@ -182,7 +219,5 @@ namespace Library_TI1
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
-
     }
 }

@@ -31,11 +31,6 @@ namespace Library_BLL
         {
             return katDal.Ndrysho(shtoKategorit);
         }
-
-        //public KategoriaBO GetItem(int id)
-        //{
-        //    return katDal.GetItemById(id);
-        //}
         public bool Fshij()
         {
             return katDal.FshijKategorit();

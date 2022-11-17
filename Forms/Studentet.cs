@@ -90,22 +90,18 @@ namespace Library_TI1.Forms
         }
         private void BtnFshije_Click(object sender, EventArgs e)
         {
-            if (IsValid())
+            if (StudentiBO.StudentiId > 0)
             {
-                if (StudentiBO.StudentiId > 0)
-                {
-                    stuBll.Fshij();
-                    ShfaqStudentet();
-                    MessageBox.Show("Te dhenat jane Fshir me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ResetTb();
-                }
-                else
-                {
-                    MessageBox.Show("Kliko mbi nje rresht qe deshiron ta fshish!", "Lajmerim", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ResetTb();
-                }
+                stuBll.Fshij();
+                ShfaqStudentet();
+                MessageBox.Show("Te dhenat jane Fshir me sukses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ResetTb();
             }
-
+            else
+            {
+                MessageBox.Show("Kliko mbi nje rresht qe deshiron ta fshish!", "Lajmerim", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ResetTb();
+            }
         }
         public StudentiBO shto()
         {
@@ -114,9 +110,16 @@ namespace Library_TI1.Forms
         }
         private bool IsValid()
         {
-            if (tbEmri.Text == string.Empty || tbMbiemri.Text == string.Empty || tbNrPrs.Text == string.Empty || tbEmail.Text == string.Empty)
+            if (tbEmri.Text == string.Empty || tbMbiemri.Text == string.Empty || tbEmail.Text == string.Empty)
             {
+
                 MessageBox.Show("Plotesoni te dhenat e kerkuara(Emrin,Mbiemrin,Nr.Prs dhe Emailen)!", "Gabim", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            if (ValidoNrPrs.Validate(tbNrPrs.Text) == false)
+            {
+                MessageBox.Show("Numri personal duhet te jet 10 shifror, dhe duhet te permbaj vetem numra", "Gabim", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             return true;
@@ -126,7 +129,7 @@ namespace Library_TI1.Forms
         {
             if (tbVrejtjet.Text == string.Empty)
                 tbVrejtjet.Text = "0";
-            stuBO = new StudentiBO(tbEmri.Text, tbMbiemri.Text,int.Parse(tbVrejtjet.Text), tbNrTel.Text, tbNrPrs.Text, tbEmail.Text, dtpLindjes.Text);
+            stuBO = new StudentiBO(tbEmri.Text, tbMbiemri.Text, int.Parse(tbVrejtjet.Text), tbNrTel.Text, tbNrPrs.Text, tbEmail.Text, dtpLindjes.Text);
             return stuBO;
         }
 
