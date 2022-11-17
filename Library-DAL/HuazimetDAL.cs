@@ -159,6 +159,34 @@ namespace Library_DAL
                 return false;
             }
         }
+        //public static StudentiBO KerkoStudent(string nrPersonal)
+        //{
+        //    try
+        //    {
+        //        DBConn.conn = new SqlConnection(DBConn.conString);
+        //        DBConn.conn.Open();
+        //        SqlCommand sqlCmd = new SqlCommand("spStudentetCbShow", DBConn.conn);
+        //        sqlCmd.CommandType = CommandType.StoredProcedure;
+        //        sqlCmd.Parameters.AddWithValue("@NrPersonal", nrPersonal);
+        //        DataTable dt = new DataTable();
+        //        dt.Load(sqlCmd.ExecuteReader());
+        //        if (dt.Rows.Count == 0)
+        //            return null;
+        //        StudentiBO stuBO = null;
+        //        foreach (DataRow row in dt.Rows)
+        //        {
+        //            stuBO = new StudentiBO();
+        //            stuBO.NrPersonal = (string)row["NrPersonal"];                
+        //        }
+        //        DBConn.conn.Close();
+        //        return stuBO;
+        //    }
+        //    catch (Exception es)
+
+        //    {
+        //        return null;
+        //    }
+        //}
         public bool KtheHuazimin(HuazimetBO b1)
             {
             try

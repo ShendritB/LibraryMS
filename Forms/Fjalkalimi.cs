@@ -76,19 +76,22 @@ namespace Library_TI1.Forms
             tbPerdoruesi.Text = dgvFjalkalimi.SelectedRows[0].Cells[2].Value.ToString();
         }
 
-        private void cbLanguage_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbLanguage_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             switch (cbLanguage.SelectedIndex)
             {
                 case 0:
-                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("sq");
                     break;
                 case 1:
-                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("sq");
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
                     break;
             }
             this.Controls.Clear();
             InitializeComponent();
+            ShfaqPjesmarresit();
+            tbEmri.Enabled = false;
+            tbPerdoruesi.Enabled = false;
         }
     }
 }
