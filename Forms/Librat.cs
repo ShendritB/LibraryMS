@@ -19,6 +19,7 @@ namespace Library_TI1.Forms
         LibraBLL libBll;
         LibriBO libBO;
         DataTable dt;
+        public static int count;
         public Librat()
         {
             InitializeComponent();
@@ -52,6 +53,7 @@ namespace Library_TI1.Forms
             dt = libBll.ShfaqLibratBLL();
             dgvLibrat.DataSource = dt;
             this.dgvLibrat.Columns["Id"].Visible = false;
+            count = dgvLibrat.RowCount;
         }
 
         private void btnPerditso_Click(object sender, EventArgs e)

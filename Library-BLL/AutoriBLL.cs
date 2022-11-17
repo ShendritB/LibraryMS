@@ -17,7 +17,10 @@ namespace Library_BLL
         {
             autDal = new AutoriDAL();
         }
-
+        public string CountAutoretBLL(Label lbl1)
+        {
+            return autDal.CountAutoretDAL(lbl1);
+        }
         public DataTable ShfaqAutoriBLL()
         {
             return autDal.ShfaqAutoretDAL();

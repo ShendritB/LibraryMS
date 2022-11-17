@@ -11,6 +11,10 @@ namespace Library_BO
         
         public  int Id { get; set; }
         public  string Emri { get; set; }
+        public VleratCombo(string emri)
+        {
+            Emri = emri;
+        }
         public VleratCombo(int id, string emri)
         {
             Id = id;

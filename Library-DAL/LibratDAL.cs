@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Library_BO;
 
 namespace Library_DAL
@@ -32,53 +33,99 @@ namespace Library_DAL
                 throw ex;
             }
         }
-        //public bool CRUDLibrat(LibriBO l1)
-        //{
-        //    try
-        //    {
-        //        using (DBConn.conn = new SqlConnection(DBConn.conString))
-        //        {
-        //            DBConn.conn.Open();
+        public string CountLibraDAL(Label lbl1)
+        {
+            using (DBConn.conn = new SqlConnection(DBConn.conString))
+            {
+                DBConn.conn.Open();
 
-        //            DBConn.cmd = new SqlCommand("spLibratAdd", DBConn.conn);
+                DBConn.cmd = new SqlCommand("spLibratCount", DBConn.conn);
+                return lbl1.Text = DBConn.cmd.ExecuteScalar().ToString();   
+            }
+        }
 
-        //            DBConn.cmd.CommandType = CommandType.StoredProcedure;
-        //            DBConn.cmd.Parameters.AddWithValue("@LibriId", l1.LibriId);
-        //            DBConn.cmd.Parameters.AddWithValue("@Titulli", l1.Titulli);
-        //            DBConn.cmd.Parameters.AddWithValue("@Pershkrimi", l1.Pershkrimi);
-        //            DBConn.cmd.Parameters.AddWithValue("@ISBN", l1.ISBN);
-        //            DBConn.cmd.Parameters.AddWithValue("@ShtepiaBotuese", l1.ShtepiaBotuese);
-        //            DBConn.cmd.Parameters.AddWithValue("@VitiBotimit", l1.VitiBotimit);
-        //            DBConn.cmd.Parameters.AddWithValue("@NrKopjeve", l1.NrKopjeve);
-        //            //DBConn.cmd.Parameters.AddWithValue("@Mode", Mode);
-        //            DBConn.cmd.Parameters.AddWithValue("@InsertBy", l1.InsertBy);
-        //            DBConn.cmd.Parameters.AddWithValue("@InsertDate", DateTime.Now);
-        //            DBConn.cmd.Parameters.AddWithValue("@LUB", l1.LUB);
-        //            DBConn.cmd.Parameters.AddWithValue("@LUD", DateTime.Now);
-        //            DBConn.cmd.Parameters.AddWithValue("@LUN", l1.LUN);
+        public string CopiesLibraDAL(Label lbl1)
+        {
+            using (DBConn.conn = new SqlConnection(DBConn.conString))
+            {
+                DBConn.conn.Open();
 
-        //            DBConn.cmd.ExecuteNonQuery();
-        //            DBConn.conn.Close();
-
-        //        }
-        //        return true;
-        //    }
-        //    catch (Exception)
-        //    {
-        //        return false;
-        //    }
-        //}
+                DBConn.cmd = new SqlCommand("spLibratCopies", DBConn.conn);
+                return lbl1.Text = DBConn.cmd.ExecuteScalar().ToString();
+            }
+        }
         public bool shtoLibra(LibriBO l1)
+    {
+        try
+        {
+            using (DBConn.conn = new SqlConnection(DBConn.conString))
+            {
+                DBConn.conn.Open();
+
+                DBConn.cmd = new SqlCommand("spLibratAdd", DBConn.conn);
+
+                DBConn.cmd.CommandType = CommandType.StoredProcedure;
+                DBConn.cmd.Parameters.AddWithValue("@Titulli", l1.Titulli);
+                DBConn.cmd.Parameters.AddWithValue("@Pershkrimi", l1.Pershkrimi);
+                DBConn.cmd.Parameters.AddWithValue("@ISBN", l1.ISBN);
+                DBConn.cmd.Parameters.AddWithValue("@ShtepiaBotuese", l1.ShtepiaBotuese);
+                DBConn.cmd.Parameters.AddWithValue("@VitiBotimit", l1.VitiBotimit);
+                DBConn.cmd.Parameters.AddWithValue("@NrKopjeve", l1.NrKopjeve);
+                DBConn.cmd.Parameters.AddWithValue("@KategoriaId", l1.KategoriaId);
+                DBConn.cmd.Parameters.AddWithValue("@AutoriId", l1.AutoriId);
+
+                DBConn.cmd.ExecuteNonQuery();
+            }
+            return true;
+        }
+        catch (Exception)
+        {
+            return false;
+        }
+    }
+
+
+    public bool FshijLibra()
+    {
+        if (LibriBO.LibriId > 0)
+        {
+
+            try
+            {
+                using (DBConn.conn = new SqlConnection(DBConn.conString))
+                {
+                    DBConn.conn.Open();
+                    DBConn.cmd = new SqlCommand("spLibratDel", DBConn.conn);
+                    DBConn.cmd.CommandType = CommandType.StoredProcedure;
+
+                    DBConn.cmd.Parameters.AddWithValue("@Id", LibriBO.LibriId);
+                    DBConn.cmd.ExecuteNonQuery();
+                    return true;
+
+                }
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
+        }
+        return false;
+    }
+
+    public bool NdryshoLibrat(LibriBO l1)
+    {
+        if (LibriBO.LibriId > 0)
         {
             try
             {
                 using (DBConn.conn = new SqlConnection(DBConn.conString))
                 {
                     DBConn.conn.Open();
-
-                    DBConn.cmd = new SqlCommand("spLibratAdd", DBConn.conn);
-
+                    DBConn.cmd = new SqlCommand("spLibratEdit", DBConn.conn);
                     DBConn.cmd.CommandType = CommandType.StoredProcedure;
+
+                    DBConn.cmd.Parameters.AddWithValue("@Id", LibriBO.LibriId);
                     DBConn.cmd.Parameters.AddWithValue("@Titulli", l1.Titulli);
                     DBConn.cmd.Parameters.AddWithValue("@Pershkrimi", l1.Pershkrimi);
                     DBConn.cmd.Parameters.AddWithValue("@ISBN", l1.ISBN);
@@ -87,79 +134,18 @@ namespace Library_DAL
                     DBConn.cmd.Parameters.AddWithValue("@NrKopjeve", l1.NrKopjeve);
                     DBConn.cmd.Parameters.AddWithValue("@KategoriaId", l1.KategoriaId);
                     DBConn.cmd.Parameters.AddWithValue("@AutoriId", l1.AutoriId);
-                    
                     DBConn.cmd.ExecuteNonQuery();
+                    return true;
                 }
-                return true;
             }
             catch (Exception)
             {
                 return false;
             }
         }
-
-
-        public bool FshijLibra()
-        {
-            if (LibriBO.LibriId > 0)
-            {
-
-                try
-                {
-                    using (DBConn.conn = new SqlConnection(DBConn.conString))
-                    {
-                        DBConn.conn.Open();
-                        DBConn.cmd = new SqlCommand("spLibratDel", DBConn.conn);
-                        DBConn.cmd.CommandType = CommandType.StoredProcedure;
-
-                        DBConn.cmd.Parameters.AddWithValue("@Id", LibriBO.LibriId);
-                        DBConn.cmd.ExecuteNonQuery();
-                        return true;
-
-                    }
-                }
-                catch (Exception)
-                {
-
-                    return false;
-                }
-            }
-            return false;
-        }
-
-        public bool NdryshoLibrat(LibriBO l1)
-        {
-            if (LibriBO.LibriId > 0)
-            {
-                try
-                {
-                    using (DBConn.conn = new SqlConnection(DBConn.conString))
-                    {
-                        DBConn.conn.Open();
-                        DBConn.cmd = new SqlCommand("spLibratEdit", DBConn.conn);
-                        DBConn.cmd.CommandType = CommandType.StoredProcedure;
-
-                        DBConn.cmd.Parameters.AddWithValue("@Id", LibriBO.LibriId);
-                        DBConn.cmd.Parameters.AddWithValue("@Titulli", l1.Titulli);
-                        DBConn.cmd.Parameters.AddWithValue("@Pershkrimi", l1.Pershkrimi);
-                        DBConn.cmd.Parameters.AddWithValue("@ISBN", l1.ISBN);
-                        DBConn.cmd.Parameters.AddWithValue("@ShtepiaBotuese", l1.ShtepiaBotuese);
-                        DBConn.cmd.Parameters.AddWithValue("@VitiBotimit", l1.VitiBotimit);
-                        DBConn.cmd.Parameters.AddWithValue("@NrKopjeve", l1.NrKopjeve);
-                        DBConn.cmd.Parameters.AddWithValue("@KategoriaId", l1.KategoriaId);
-                        DBConn.cmd.Parameters.AddWithValue("@AutoriId", l1.AutoriId);
-                        DBConn.cmd.ExecuteNonQuery();
-                        return true;
-                    }
-                }
-                catch (Exception)
-                {
-                    return false;
-                }
-            }
-            return false;
-        }
-
+        return false;
     }
+
+}
 }
 

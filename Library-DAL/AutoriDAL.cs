@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Library_BO;
 
 namespace Library_DAL
@@ -30,6 +31,17 @@ namespace Library_DAL
                 throw ex;
             }
         }
+        public string CountAutoretDAL(Label lbl1)
+        {
+            using (DBConn.conn = new SqlConnection(DBConn.conString))
+            {
+                DBConn.conn.Open();
+
+                DBConn.cmd = new SqlCommand("spAutoretCount", DBConn.conn);
+                return lbl1.Text = DBConn.cmd.ExecuteScalar().ToString();
+            }
+        }
+
         public bool ShtoAutoret(AutoriBO k1)
         {
             try

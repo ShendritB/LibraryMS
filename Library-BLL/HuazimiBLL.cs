@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Library_BLL
 {
@@ -26,9 +27,12 @@ namespace Library_BLL
         }
         public DataTable ShfaqHuazimietJoAktive()
         {
-            return h1.ShfaqHuazimetAktiveDAL();
+            return h1.ShfaqHuazimetJoAktiveDAL();
         }
-
+        public string CountHuazimetBLL(Label lbl1)
+        {
+            return h1.CountHuazimetDAL(lbl1);
+        }
         public bool ShtoHuazim(HuazimetBO shtoHuazimet)
         {
             return h1.shtoHuazim(shtoHuazimet);
