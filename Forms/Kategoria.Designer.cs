@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kategoria));
             this.pnlCloseBtns = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
@@ -96,7 +97,7 @@
             this.BtnFshije.Location = new System.Drawing.Point(705, 302);
             this.BtnFshije.Name = "BtnFshije";
             this.BtnFshije.Size = new System.Drawing.Size(181, 46);
-            this.BtnFshije.TabIndex = 32;
+            this.BtnFshije.TabIndex = 5;
             this.BtnFshije.Text = "Fshije";
             this.BtnFshije.UseVisualStyleBackColor = false;
             this.BtnFshije.Click += new System.EventHandler(this.BtnFshije_Click);
@@ -133,7 +134,7 @@
             this.btnRuaj.Location = new System.Drawing.Point(294, 302);
             this.btnRuaj.Name = "btnRuaj";
             this.btnRuaj.Size = new System.Drawing.Size(166, 46);
-            this.btnRuaj.TabIndex = 33;
+            this.btnRuaj.TabIndex = 3;
             this.btnRuaj.Text = "Shto Kategori";
             this.btnRuaj.UseVisualStyleBackColor = false;
             this.btnRuaj.Click += new System.EventHandler(this.btnRuaj_Click);
@@ -162,7 +163,7 @@
             this.tbEmri.Multiline = true;
             this.tbEmri.Name = "tbEmri";
             this.tbEmri.Size = new System.Drawing.Size(592, 36);
-            this.tbEmri.TabIndex = 27;
+            this.tbEmri.TabIndex = 1;
             // 
             // btnPerditso
             // 
@@ -175,7 +176,7 @@
             this.btnPerditso.Location = new System.Drawing.Point(495, 302);
             this.btnPerditso.Name = "btnPerditso";
             this.btnPerditso.Size = new System.Drawing.Size(181, 46);
-            this.btnPerditso.TabIndex = 31;
+            this.btnPerditso.TabIndex = 4;
             this.btnPerditso.Text = "Perditsoje";
             this.btnPerditso.UseVisualStyleBackColor = false;
             this.btnPerditso.Click += new System.EventHandler(this.btnPerditso_Click);
@@ -204,7 +205,7 @@
             this.tbPershkrimi.Multiline = true;
             this.tbPershkrimi.Name = "tbPershkrimi";
             this.tbPershkrimi.Size = new System.Drawing.Size(592, 36);
-            this.tbPershkrimi.TabIndex = 28;
+            this.tbPershkrimi.TabIndex = 2;
             // 
             // lblPershkrimiKat
             // 
@@ -223,6 +224,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1186, 854);
             this.Controls.Add(this.pnlCloseBtns);
             this.Controls.Add(this.BtnFshije);

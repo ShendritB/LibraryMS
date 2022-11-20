@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Librat));
             this.group = new System.Windows.Forms.GroupBox();
             this.lblShtoNdrysho = new System.Windows.Forms.Label();
             this.BtnFshije = new System.Windows.Forms.Button();
@@ -59,6 +60,7 @@
             // group
             // 
             this.group.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.group.BackColor = System.Drawing.Color.Transparent;
             this.group.Controls.Add(this.lblShtoNdrysho);
             this.group.Location = new System.Drawing.Point(172, 67);
             this.group.Name = "group";
@@ -90,7 +92,7 @@
             this.BtnFshije.Location = new System.Drawing.Point(769, 403);
             this.BtnFshije.Name = "BtnFshije";
             this.BtnFshije.Size = new System.Drawing.Size(220, 46);
-            this.BtnFshije.TabIndex = 58;
+            this.BtnFshije.TabIndex = 12;
             this.BtnFshije.Text = "Fshije";
             this.BtnFshije.UseVisualStyleBackColor = false;
             this.BtnFshije.Click += new System.EventHandler(this.BtnFshije_Click);
@@ -99,9 +101,9 @@
             // 
             this.dgvLibrat.AllowUserToAddRows = false;
             this.dgvLibrat.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.dgvLibrat.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            this.dgvLibrat.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvLibrat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvLibrat.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvLibrat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -127,7 +129,7 @@
             this.btnRuaj.Location = new System.Drawing.Point(172, 403);
             this.btnRuaj.Name = "btnRuaj";
             this.btnRuaj.Size = new System.Drawing.Size(220, 46);
-            this.btnRuaj.TabIndex = 59;
+            this.btnRuaj.TabIndex = 10;
             this.btnRuaj.Text = "Shto student";
             this.btnRuaj.UseVisualStyleBackColor = false;
             this.btnRuaj.Click += new System.EventHandler(this.btnRuaj_Click);
@@ -143,7 +145,7 @@
             this.tbVitiBotimit.Multiline = true;
             this.tbVitiBotimit.Name = "tbVitiBotimit";
             this.tbVitiBotimit.Size = new System.Drawing.Size(220, 36);
-            this.tbVitiBotimit.TabIndex = 52;
+            this.tbVitiBotimit.TabIndex = 3;
             // 
             // tbISBN
             // 
@@ -156,7 +158,7 @@
             this.tbISBN.Multiline = true;
             this.tbISBN.Name = "tbISBN";
             this.tbISBN.Size = new System.Drawing.Size(220, 36);
-            this.tbISBN.TabIndex = 53;
+            this.tbISBN.TabIndex = 2;
             // 
             // label4
             // 
@@ -182,7 +184,7 @@
             this.tbEmri.Multiline = true;
             this.tbEmri.Name = "tbEmri";
             this.tbEmri.Size = new System.Drawing.Size(220, 36);
-            this.tbEmri.TabIndex = 51;
+            this.tbEmri.TabIndex = 1;
             // 
             // label2
             // 
@@ -208,7 +210,7 @@
             this.btnPerditso.Location = new System.Drawing.Point(470, 403);
             this.btnPerditso.Name = "btnPerditso";
             this.btnPerditso.Size = new System.Drawing.Size(220, 46);
-            this.btnPerditso.TabIndex = 57;
+            this.btnPerditso.TabIndex = 11;
             this.btnPerditso.Text = "Perditsoje";
             this.btnPerditso.UseVisualStyleBackColor = false;
             this.btnPerditso.Click += new System.EventHandler(this.btnPerditso_Click);
@@ -224,7 +226,7 @@
             this.tbBotuesi.Multiline = true;
             this.tbBotuesi.Name = "tbBotuesi";
             this.tbBotuesi.Size = new System.Drawing.Size(220, 36);
-            this.tbBotuesi.TabIndex = 55;
+            this.tbBotuesi.TabIndex = 5;
             // 
             // label3
             // 
@@ -276,7 +278,7 @@
             this.tbPershkrimi.Multiline = true;
             this.tbPershkrimi.Name = "tbPershkrimi";
             this.tbPershkrimi.Size = new System.Drawing.Size(220, 126);
-            this.tbPershkrimi.TabIndex = 54;
+            this.tbPershkrimi.TabIndex = 4;
             // 
             // lblPershkrimiKat
             // 
@@ -302,7 +304,7 @@
             this.tbNrKopjeve.Multiline = true;
             this.tbNrKopjeve.Name = "tbNrKopjeve";
             this.tbNrKopjeve.Size = new System.Drawing.Size(220, 36);
-            this.tbNrKopjeve.TabIndex = 52;
+            this.tbNrKopjeve.TabIndex = 6;
             // 
             // label5
             // 
@@ -339,7 +341,7 @@
             this.cbKategoria.Location = new System.Drawing.Point(769, 342);
             this.cbKategoria.Name = "cbKategoria";
             this.cbKategoria.Size = new System.Drawing.Size(220, 33);
-            this.cbKategoria.TabIndex = 63;
+            this.cbKategoria.TabIndex = 8;
             // 
             // cbAutoret
             // 
@@ -350,12 +352,13 @@
             this.cbAutoret.Location = new System.Drawing.Point(470, 342);
             this.cbAutoret.Name = "cbAutoret";
             this.cbAutoret.Size = new System.Drawing.Size(220, 33);
-            this.cbAutoret.TabIndex = 63;
+            this.cbAutoret.TabIndex = 7;
             // 
             // Librat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1186, 854);
             this.Controls.Add(this.cbAutoret);
             this.Controls.Add(this.cbKategoria);

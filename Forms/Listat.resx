@@ -159,6 +159,9 @@
   <data name="lblEmriAut.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="&gt;&gt;dgvLibrat.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -180,9 +183,6 @@
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
   </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
   <data name="&gt;&gt;label3.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -198,11 +198,8 @@
   <data name="lblEmriAut.Location" type="System.Drawing.Point, System.Drawing">
     <value>242, 32</value>
   </data>
-  <data name="lblEmriAut.Text" xml:space="preserve">
-    <value>Huazimet</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="dgvHuazimiActive.Location" type="System.Drawing.Point, System.Drawing">
     <value>743, 59</value>
@@ -239,6 +236,12 @@
   </data>
   <data name="lblEmriAut.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="dgvHuazimetTotale.Size" type="System.Drawing.Size, System.Drawing">
+    <value>698, 212</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
   </data>
   <data name="&gt;&gt;lblEmriAut.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -282,6 +285,9 @@
   <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
+  <data name="&gt;&gt;dgvHuazimetTotale.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
   <data name="&gt;&gt;dgvHuazimiActive.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -294,14 +300,17 @@
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>262, 25</value>
   </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>912, 274</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
   </data>
   <data name="&gt;&gt;cbLanguage.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;label3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -324,12 +333,6 @@
   <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="dgvHuazimiActive.Size" type="System.Drawing.Size, System.Drawing">
-    <value>699, 212</value>
-  </data>
-  <data name="dgvHuazimetTotale.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1454, 854</value>
   </data>
@@ -348,14 +351,14 @@
   <data name="&gt;&gt;label5.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="dgvHuazimiActive.Size" type="System.Drawing.Size, System.Drawing">
+    <value>699, 212</value>
   </data>
-  <data name="dgvHuazimetTotale.Size" type="System.Drawing.Size, System.Drawing">
-    <value>698, 212</value>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;dgvLibrat.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>1063, 32</value>
@@ -363,8 +366,8 @@
   <data name="label3.Text" xml:space="preserve">
     <value>Studentet me mbi 3 vrejtje</value>
   </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblEmriAut.Text" xml:space="preserve">
+    <value>Huazimet</value>
   </data>
   <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -375,11 +378,11 @@
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 16</value>
+  </data>
   <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
-  </data>
-  <data name="dgvHuazimetTotale.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 59</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -387,8 +390,8 @@
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
+  <data name="&gt;&gt;dgvLibrat.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -405,17 +408,14 @@
   <data name="DgvBlacklisted.Location" type="System.Drawing.Point, System.Drawing">
     <value>743, 301</value>
   </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="&gt;&gt;dgvLibrat.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;dgvHuazimetTotale.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;cbLanguage.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -426,8 +426,8 @@
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>912, 274</value>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="cbLanguage.Location" type="System.Drawing.Point, System.Drawing">
     <value>503, 18</value>
@@ -444,8 +444,8 @@
   <data name="DgvBlacklisted.Size" type="System.Drawing.Size, System.Drawing">
     <value>699, 212</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 16</value>
+  <data name="dgvHuazimetTotale.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 59</value>
   </data>
   <data name="DgvBlacklisted.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -456,8 +456,8 @@
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
   </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="dgvHuazimetTotale.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
   </data>
   <data name="&gt;&gt;dgvHuazimiActive.ZOrder" xml:space="preserve">
     <value>11</value>

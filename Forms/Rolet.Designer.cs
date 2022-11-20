@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Rolet));
             this.group = new System.Windows.Forms.GroupBox();
             this.lblShtoNdrysho = new System.Windows.Forms.Label();
             this.cbRoli = new System.Windows.Forms.ComboBox();
@@ -55,8 +56,9 @@
             // group
             // 
             this.group.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.group.BackColor = System.Drawing.Color.Transparent;
             this.group.Controls.Add(this.lblShtoNdrysho);
-            this.group.Location = new System.Drawing.Point(172, 67);
+            this.group.Location = new System.Drawing.Point(181, 121);
             this.group.Name = "group";
             this.group.Size = new System.Drawing.Size(817, 72);
             this.group.TabIndex = 78;
@@ -81,10 +83,10 @@
             this.cbRoli.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbRoli.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.cbRoli.FormattingEnabled = true;
-            this.cbRoli.Location = new System.Drawing.Point(768, 241);
+            this.cbRoli.Location = new System.Drawing.Point(777, 295);
             this.cbRoli.Name = "cbRoli";
             this.cbRoli.Size = new System.Drawing.Size(220, 33);
-            this.cbRoli.TabIndex = 79;
+            this.cbRoli.TabIndex = 6;
             // 
             // lblPershkrimiKat
             // 
@@ -93,7 +95,7 @@
             this.lblPershkrimiKat.BackColor = System.Drawing.Color.Transparent;
             this.lblPershkrimiKat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPershkrimiKat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPershkrimiKat.Location = new System.Drawing.Point(238, 210);
+            this.lblPershkrimiKat.Location = new System.Drawing.Point(247, 264);
             this.lblPershkrimiKat.Name = "lblPershkrimiKat";
             this.lblPershkrimiKat.Size = new System.Drawing.Size(88, 25);
             this.lblPershkrimiKat.TabIndex = 68;
@@ -106,11 +108,11 @@
             this.tbMbiemri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbMbiemri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbMbiemri.ForeColor = System.Drawing.Color.Black;
-            this.tbMbiemri.Location = new System.Drawing.Point(171, 238);
+            this.tbMbiemri.Location = new System.Drawing.Point(180, 292);
             this.tbMbiemri.Multiline = true;
             this.tbMbiemri.Name = "tbMbiemri";
             this.tbMbiemri.Size = new System.Drawing.Size(220, 36);
-            this.tbMbiemri.TabIndex = 73;
+            this.tbMbiemri.TabIndex = 4;
             // 
             // BtnFshije
             // 
@@ -120,10 +122,10 @@
             this.BtnFshije.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnFshije.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnFshije.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnFshije.Location = new System.Drawing.Point(768, 280);
+            this.BtnFshije.Location = new System.Drawing.Point(777, 334);
             this.BtnFshije.Name = "BtnFshije";
             this.BtnFshije.Size = new System.Drawing.Size(220, 46);
-            this.BtnFshije.TabIndex = 76;
+            this.BtnFshije.TabIndex = 9;
             this.BtnFshije.Text = "Fshije";
             this.BtnFshije.UseVisualStyleBackColor = false;
             this.BtnFshije.Click += new System.EventHandler(this.BtnFshije_Click_1);
@@ -135,7 +137,7 @@
             this.lblEmriAut.BackColor = System.Drawing.Color.Transparent;
             this.lblEmriAut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmriAut.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblEmriAut.Location = new System.Drawing.Point(252, 144);
+            this.lblEmriAut.Location = new System.Drawing.Point(261, 198);
             this.lblEmriAut.Name = "lblEmriAut";
             this.lblEmriAut.Size = new System.Drawing.Size(62, 25);
             this.lblEmriAut.TabIndex = 64;
@@ -152,7 +154,7 @@
             this.dgvPjesmarresit.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvPjesmarresit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPjesmarresit.GridColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dgvPjesmarresit.Location = new System.Drawing.Point(171, 329);
+            this.dgvPjesmarresit.Location = new System.Drawing.Point(180, 383);
             this.dgvPjesmarresit.Name = "dgvPjesmarresit";
             this.dgvPjesmarresit.ReadOnly = true;
             this.dgvPjesmarresit.RowHeadersWidth = 51;
@@ -170,10 +172,10 @@
             this.btnPerditso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPerditso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPerditso.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPerditso.Location = new System.Drawing.Point(469, 280);
+            this.btnPerditso.Location = new System.Drawing.Point(478, 334);
             this.btnPerditso.Name = "btnPerditso";
             this.btnPerditso.Size = new System.Drawing.Size(220, 46);
-            this.btnPerditso.TabIndex = 75;
+            this.btnPerditso.TabIndex = 8;
             this.btnPerditso.Text = "Perditsoje";
             this.btnPerditso.UseVisualStyleBackColor = false;
             this.btnPerditso.Click += new System.EventHandler(this.btnPerditso_Click_1);
@@ -186,10 +188,10 @@
             this.btnRuaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRuaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
             this.btnRuaj.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnRuaj.Location = new System.Drawing.Point(171, 280);
+            this.btnRuaj.Location = new System.Drawing.Point(180, 334);
             this.btnRuaj.Name = "btnRuaj";
             this.btnRuaj.Size = new System.Drawing.Size(220, 46);
-            this.btnRuaj.TabIndex = 77;
+            this.btnRuaj.TabIndex = 7;
             this.btnRuaj.Text = "Shto pjesmarres";
             this.btnRuaj.UseVisualStyleBackColor = false;
             this.btnRuaj.Click += new System.EventHandler(this.btnRuaj_Click_1);
@@ -201,7 +203,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(521, 144);
+            this.label1.Location = new System.Drawing.Point(530, 198);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(116, 25);
             this.label1.TabIndex = 65;
@@ -214,11 +216,11 @@
             this.tbEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbEmail.ForeColor = System.Drawing.Color.Black;
-            this.tbEmail.Location = new System.Drawing.Point(469, 238);
+            this.tbEmail.Location = new System.Drawing.Point(478, 292);
             this.tbEmail.Multiline = true;
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(220, 36);
-            this.tbEmail.TabIndex = 72;
+            this.tbEmail.TabIndex = 5;
             // 
             // tbEmri
             // 
@@ -227,11 +229,11 @@
             this.tbEmri.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbEmri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbEmri.ForeColor = System.Drawing.Color.Black;
-            this.tbEmri.Location = new System.Drawing.Point(171, 171);
+            this.tbEmri.Location = new System.Drawing.Point(180, 225);
             this.tbEmri.Multiline = true;
             this.tbEmri.Name = "tbEmri";
             this.tbEmri.Size = new System.Drawing.Size(220, 36);
-            this.tbEmri.TabIndex = 71;
+            this.tbEmri.TabIndex = 1;
             // 
             // label4
             // 
@@ -240,7 +242,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(543, 210);
+            this.label4.Location = new System.Drawing.Point(552, 264);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 25);
             this.label4.TabIndex = 67;
@@ -253,7 +255,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(854, 210);
+            this.label3.Location = new System.Drawing.Point(863, 264);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 25);
             this.label3.TabIndex = 66;
@@ -266,7 +268,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(831, 144);
+            this.label2.Location = new System.Drawing.Point(840, 198);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 25);
             this.label2.TabIndex = 63;
@@ -279,11 +281,11 @@
             this.tbFjalkalimi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbFjalkalimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbFjalkalimi.ForeColor = System.Drawing.Color.Black;
-            this.tbFjalkalimi.Location = new System.Drawing.Point(768, 171);
+            this.tbFjalkalimi.Location = new System.Drawing.Point(777, 225);
             this.tbFjalkalimi.Multiline = true;
             this.tbFjalkalimi.Name = "tbFjalkalimi";
             this.tbFjalkalimi.Size = new System.Drawing.Size(220, 36);
-            this.tbFjalkalimi.TabIndex = 70;
+            this.tbFjalkalimi.TabIndex = 3;
             // 
             // tbPerdoruesi
             // 
@@ -292,11 +294,11 @@
             this.tbPerdoruesi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbPerdoruesi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPerdoruesi.ForeColor = System.Drawing.Color.Black;
-            this.tbPerdoruesi.Location = new System.Drawing.Point(469, 171);
+            this.tbPerdoruesi.Location = new System.Drawing.Point(478, 225);
             this.tbPerdoruesi.Multiline = true;
             this.tbPerdoruesi.Name = "tbPerdoruesi";
             this.tbPerdoruesi.Size = new System.Drawing.Size(220, 36);
-            this.tbPerdoruesi.TabIndex = 69;
+            this.tbPerdoruesi.TabIndex = 2;
             // 
             // btnNdryshoFjalkalimin
             // 
@@ -306,10 +308,10 @@
             this.btnNdryshoFjalkalimin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNdryshoFjalkalimin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNdryshoFjalkalimin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnNdryshoFjalkalimin.Location = new System.Drawing.Point(768, 584);
+            this.btnNdryshoFjalkalimin.Location = new System.Drawing.Point(777, 638);
             this.btnNdryshoFjalkalimin.Name = "btnNdryshoFjalkalimin";
             this.btnNdryshoFjalkalimin.Size = new System.Drawing.Size(220, 46);
-            this.btnNdryshoFjalkalimin.TabIndex = 77;
+            this.btnNdryshoFjalkalimin.TabIndex = 10;
             this.btnNdryshoFjalkalimin.Text = "Ndrysho Fjalkalimin";
             this.btnNdryshoFjalkalimin.UseVisualStyleBackColor = false;
             this.btnNdryshoFjalkalimin.Click += new System.EventHandler(this.btnFjalkalimi);
@@ -318,6 +320,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1186, 854);
             this.Controls.Add(this.group);
             this.Controls.Add(this.cbRoli);
