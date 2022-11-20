@@ -43,6 +43,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cbLanguage = new System.Windows.Forms.ComboBox();
+            this.btnHM = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -151,11 +152,22 @@
             this.cbLanguage.Name = "cbLanguage";
             this.cbLanguage.SelectedIndexChanged += new System.EventHandler(this.cbLanguage_SelectedIndexChanged);
             // 
+            // btnHM
+            // 
+            resources.ApplyResources(this.btnHM, "btnHM");
+            this.btnHM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
+            this.btnHM.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(216)))), ((int)(((byte)(255)))));
+            this.btnHM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(216)))), ((int)(((byte)(255)))));
+            this.btnHM.Name = "btnHM";
+            this.btnHM.UseVisualStyleBackColor = false;
+            this.btnHM.Click += new System.EventHandler(this.btnHM_Click);
+            // 
             // Login
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
+            this.Controls.Add(this.btnHM);
             this.Controls.Add(this.cbLanguage);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -198,5 +210,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbLanguage;
+        private System.Windows.Forms.Button btnHM;
     }
 }
