@@ -212,5 +212,10 @@ namespace Library_TI1.Forms
             huaBO = new HuazimetBO(dtpDataKthimit.Text, MerrVlerenCmbBox(cbLibri), vrejtjet, MerrVlerenCmbBox(cbStudentat));
             return huaBO;
         }
+
+        private void btnHM_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"C:\Users\Shend\Documents\HelpAndManual Projects\LibraryMSManual.chm", HelpNavigator.KeywordIndex, "HuazimetHM");
+        }
     }
 }

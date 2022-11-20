@@ -68,6 +68,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnHM = new System.Windows.Forms.Button();
             this.pnlCloseBtns.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHuazimiActive)).BeginInit();
             this.group.SuspendLayout();
@@ -578,12 +579,28 @@
             this.label4.TabIndex = 38;
             this.label4.Text = "Huazimet Aktive";
             // 
+            // btnHM
+            // 
+            this.btnHM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
+            this.btnHM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnHM.ForeColor = System.Drawing.Color.Cyan;
+            this.btnHM.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnHM.Location = new System.Drawing.Point(12, 12);
+            this.btnHM.Name = "btnHM";
+            this.btnHM.Size = new System.Drawing.Size(89, 80);
+            this.btnHM.TabIndex = 75;
+            this.btnHM.Text = "?";
+            this.btnHM.UseVisualStyleBackColor = false;
+            this.btnHM.Click += new System.EventHandler(this.btnHM_Click);
+            // 
             // Huazimet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1186, 854);
+            this.Controls.Add(this.btnHM);
             this.Controls.Add(this.pnlHide);
             this.Controls.Add(this.rtbVerejtja);
             this.Controls.Add(this.group);
@@ -659,5 +676,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.RadioButton rdBtnVrejtja;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button btnHM;
     }
 }

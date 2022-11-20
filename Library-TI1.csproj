@@ -127,7 +127,6 @@
     </Compile>
     <Compile Include="MbusheComboBox.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Autori.resx">
       <DependentUpon>Autori.cs</DependentUpon>
     </EmbeddedResource>

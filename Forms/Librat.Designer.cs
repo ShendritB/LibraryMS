@@ -53,6 +53,7 @@
             this.cbKategoria = new System.Windows.Forms.ComboBox();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.cbAutoret = new System.Windows.Forms.ComboBox();
+            this.btnHM = new System.Windows.Forms.Button();
             this.group.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLibrat)).BeginInit();
             this.SuspendLayout();
@@ -354,12 +355,28 @@
             this.cbAutoret.Size = new System.Drawing.Size(220, 33);
             this.cbAutoret.TabIndex = 7;
             // 
+            // btnHM
+            // 
+            this.btnHM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(36)))), ((int)(((byte)(55)))));
+            this.btnHM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnHM.ForeColor = System.Drawing.Color.Cyan;
+            this.btnHM.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnHM.Location = new System.Drawing.Point(12, 12);
+            this.btnHM.Name = "btnHM";
+            this.btnHM.Size = new System.Drawing.Size(89, 80);
+            this.btnHM.TabIndex = 63;
+            this.btnHM.Text = "?";
+            this.btnHM.UseVisualStyleBackColor = false;
+            this.btnHM.Click += new System.EventHandler(this.btnHM_Click);
+            // 
             // Librat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1186, 854);
+            this.Controls.Add(this.btnHM);
             this.Controls.Add(this.cbAutoret);
             this.Controls.Add(this.cbKategoria);
             this.Controls.Add(this.label6);
@@ -417,5 +434,6 @@
         private System.Windows.Forms.ComboBox cbKategoria;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.ComboBox cbAutoret;
+        private System.Windows.Forms.Button btnHM;
     }
 }

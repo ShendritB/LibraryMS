@@ -68,13 +68,15 @@
     <Compile Include="Base.cs" />
     <Compile Include="Perdoruesi.cs" />
     <Compile Include="PjesmarresiBO.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Roli.cs" />
     <Compile Include="StudentiBO.cs" />
     <Compile Include="VleratCombo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
