@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Autori));
             this.lblShtoNdrysho = new System.Windows.Forms.Label();
             this.tbMbiemri = new System.Windows.Forms.TextBox();
             this.tbEmri = new System.Windows.Forms.TextBox();
@@ -52,7 +53,7 @@
             this.lblShtoNdrysho.BackColor = System.Drawing.Color.Transparent;
             this.lblShtoNdrysho.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblShtoNdrysho.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblShtoNdrysho.Location = new System.Drawing.Point(491, 164);
+            this.lblShtoNdrysho.Location = new System.Drawing.Point(492, 164);
             this.lblShtoNdrysho.Name = "lblShtoNdrysho";
             this.lblShtoNdrysho.Size = new System.Drawing.Size(192, 25);
             this.lblShtoNdrysho.TabIndex = 0;
@@ -69,7 +70,7 @@
             this.tbMbiemri.Multiline = true;
             this.tbMbiemri.Name = "tbMbiemri";
             this.tbMbiemri.Size = new System.Drawing.Size(592, 36);
-            this.tbMbiemri.TabIndex = 4;
+            this.tbMbiemri.TabIndex = 2;
             // 
             // tbEmri
             // 
@@ -82,7 +83,7 @@
             this.tbEmri.Multiline = true;
             this.tbEmri.Name = "tbEmri";
             this.tbEmri.Size = new System.Drawing.Size(592, 36);
-            this.tbEmri.TabIndex = 2;
+            this.tbEmri.TabIndex = 1;
             // 
             // lblMbiemriAut
             // 
@@ -121,7 +122,7 @@
             this.btnRuaj.Location = new System.Drawing.Point(294, 299);
             this.btnRuaj.Name = "btnRuaj";
             this.btnRuaj.Size = new System.Drawing.Size(166, 46);
-            this.btnRuaj.TabIndex = 5;
+            this.btnRuaj.TabIndex = 3;
             this.btnRuaj.Text = "Shto autor";
             this.btnRuaj.UseVisualStyleBackColor = false;
             this.btnRuaj.Click += new System.EventHandler(this.btnRuaj_Click);
@@ -137,7 +138,7 @@
             this.BtnFshije.Location = new System.Drawing.Point(705, 299);
             this.BtnFshije.Name = "BtnFshije";
             this.BtnFshije.Size = new System.Drawing.Size(181, 46);
-            this.BtnFshije.TabIndex = 7;
+            this.BtnFshije.TabIndex = 5;
             this.BtnFshije.Text = "Fshije";
             this.BtnFshije.UseVisualStyleBackColor = false;
             this.BtnFshije.Click += new System.EventHandler(this.BtnFshije_Click);
@@ -153,7 +154,7 @@
             this.btnPerditso.Location = new System.Drawing.Point(495, 299);
             this.btnPerditso.Name = "btnPerditso";
             this.btnPerditso.Size = new System.Drawing.Size(181, 46);
-            this.btnPerditso.TabIndex = 6;
+            this.btnPerditso.TabIndex = 4;
             this.btnPerditso.Text = "Perditsoje";
             this.btnPerditso.UseVisualStyleBackColor = false;
             this.btnPerditso.Click += new System.EventHandler(this.btnNdrysho_Click);
@@ -224,6 +225,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1186, 854);
             this.Controls.Add(this.pnlCloseBtns);
             this.Controls.Add(this.BtnFshije);

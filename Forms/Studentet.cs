@@ -64,6 +64,11 @@ namespace Library_TI1.Forms
             lblShtoNdrysho.ForeColor = ThemeColors.SecondaryColor;
             lblEmriAut.ForeColor = ThemeColors.PrimaryColor;
             lblPershkrimiKat.ForeColor = ThemeColors.PrimaryColor;
+            label2.ForeColor = ThemeColors.PrimaryColor;
+            label1.ForeColor = ThemeColors.PrimaryColor;
+            label3.ForeColor = ThemeColors.PrimaryColor;
+            label4.ForeColor = ThemeColors.PrimaryColor;
+            label5.ForeColor = ThemeColors.PrimaryColor;
             var color = ThemeColors.PrimaryColor;
         }
         private void btnPerditso_Click(object sender, EventArgs e)

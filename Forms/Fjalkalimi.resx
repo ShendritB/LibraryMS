@@ -134,6 +134,9 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Fjalkalimi i ri</value>
   </data>
+  <data name="&gt;&gt;tbEmri.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
     <value>comboBox1</value>
   </data>
@@ -161,11 +164,8 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Fjalkalimi</value>
   </data>
-  <data name="&gt;&gt;dgvFjalkalimi.Name" xml:space="preserve">
-    <value>dgvFjalkalimi</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Gjuhësia</value>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 25</value>
   </data>
   <data name="&gt;&gt;lblShtoNdrysho.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -173,14 +173,17 @@
   <data name="dgvFjalkalimi.Size" type="System.Drawing.Size, System.Drawing">
     <value>553, 183</value>
   </data>
-  <data name="tbPerdoruesi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 37</value>
+  <data name="&gt;&gt;tbFjalkalimi.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
+  <data name="&gt;&gt;cbLanguage.Name" xml:space="preserve">
+    <value>cbLanguage</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="btnRuaj.Location" type="System.Drawing.Point, System.Drawing">
     <value>347, 162</value>
@@ -191,17 +194,14 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
-  </data>
-  <data name="lblShtoNdrysho.Text" xml:space="preserve">
-    <value>Perdoruesi</value>
-  </data>
   <data name="&gt;&gt;tbPerdoruesi.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
+  <data name="&gt;&gt;lblRuaj.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblRuaj.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 131</value>
   </data>
   <data name="dgvFjalkalimi.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
@@ -209,17 +209,17 @@
   <data name="lblShtoNdrysho.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
   <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 24</value>
+  </data>
+  <data name="&gt;&gt;lblRuaj.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 15</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 25</value>
+  <data name="tbFjalkalimi.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Emri</value>
@@ -230,14 +230,14 @@
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>262, 14</value>
   </data>
-  <data name="&gt;&gt;comboBox2.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;dgvFjalkalimi.Name" xml:space="preserve">
+    <value>dgvFjalkalimi</value>
+  </data>
+  <data name="tbFjalkalimi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 162</value>
   </data>
   <data name="&gt;&gt;tbPerdoruesi.Name" xml:space="preserve">
     <value>tbPerdoruesi</value>
@@ -245,18 +245,11 @@
   <data name="&gt;&gt;tbFjalkalimi.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;dgvFjalkalimi.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 53</value>
   </data>
   <data name="&gt;&gt;btnRuaj.Parent" xml:space="preserve">
     <value>$this</value>
@@ -267,23 +260,29 @@
   <data name="&gt;&gt;dgvFjalkalimi.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="tbPerdoruesi.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 25</value>
+  </data>
+  <data name="cbLanguage.Items1" xml:space="preserve">
+    <value>English</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
-  <data name="lblShtoNdrysho.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  <data name="&gt;&gt;tbEmri.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="cbLanguage.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 24</value>
   </data>
-  <data name="btnRuaj.Text" xml:space="preserve">
-    <value>Ruaj</value>
+  <data name="tbPerdoruesi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 37</value>
   </data>
-  <data name="tbFjalkalimi.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="&gt;&gt;comboBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cbLanguage.Parent" xml:space="preserve">
     <value>$this</value>
@@ -297,8 +296,17 @@
   <data name="&gt;&gt;tbFjalkalimi.Name" xml:space="preserve">
     <value>tbFjalkalimi</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 16</value>
+  <data name="lblShtoNdrysho.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="comboBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="lblShtoNdrysho.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 25</value>
+  </data>
+  <data name="&gt;&gt;comboBox2.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
@@ -312,8 +320,11 @@
   <data name="&gt;&gt;cbLanguage.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 53</value>
   </data>
   <data name="&gt;&gt;tbEmri.Name" xml:space="preserve">
     <value>tbEmri</value>
@@ -321,17 +332,23 @@
   <data name="&gt;&gt;comboBox2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="tbFjalkalimi.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="lblRuaj.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="cbLanguage.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
   </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
+  <data name="&gt;&gt;btnRuaj.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>259, 32</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>611, 399</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="tbPerdoruesi.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
@@ -351,23 +368,23 @@
   <data name="tbEmri.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>259, 32</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="btnRuaj.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="cbLanguage.Items1" xml:space="preserve">
-    <value>English</value>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>85, 134</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;dgvFjalkalimi.Parent" xml:space="preserve">
     <value>$this</value>
@@ -384,8 +401,8 @@
   <data name="tbEmri.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="btnRuaj.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  <data name="tbFjalkalimi.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="tbPerdoruesi.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -393,14 +410,14 @@
   <data name="&gt;&gt;tbFjalkalimi.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tbEmri.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="lblShtoNdrysho.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 25</value>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;lblShtoNdrysho.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblShtoNdrysho.Text" xml:space="preserve">
+    <value>Perdoruesi</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
@@ -417,8 +434,8 @@
   <data name="tbFjalkalimi.Size" type="System.Drawing.Size, System.Drawing">
     <value>236, 37</value>
   </data>
-  <data name="&gt;&gt;comboBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;lblRuaj.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tbEmri.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
@@ -426,14 +443,11 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>611, 399</value>
-  </data>
   <data name="comboBox1.Items1" xml:space="preserve">
     <value>English</value>
   </data>
-  <data name="lblShtoNdrysho.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;tbEmri.Parent" xml:space="preserve">
     <value>$this</value>
@@ -447,8 +461,8 @@
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;tbEmri.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tbEmri.Location" type="System.Drawing.Point, System.Drawing">
     <value>30, 81</value>
@@ -456,23 +470,27 @@
   <data name="cbLanguage.Location" type="System.Drawing.Point, System.Drawing">
     <value>119, 12</value>
   </data>
-  <data name="tbPerdoruesi.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
   </data>
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
-  <data name="comboBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;lblShtoNdrysho.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnRuaj.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;lblRuaj.Name" xml:space="preserve">
+    <value>lblRuaj</value>
   </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 16</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
@@ -483,26 +501,26 @@
   <data name="btnRuaj.Size" type="System.Drawing.Size, System.Drawing">
     <value>236, 37</value>
   </data>
-  <data name="&gt;&gt;tbFjalkalimi.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
   </data>
-  <data name="tbFjalkalimi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 162</value>
+  <data name="&gt;&gt;lblShtoNdrysho.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Gjuhësia</value>
   </data>
   <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="lblShtoNdrysho.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnRuaj.Text" xml:space="preserve">
+    <value>Ruaj</value>
+  </data>
   <data name="dgvFjalkalimi.Location" type="System.Drawing.Point, System.Drawing">
     <value>30, 205</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;cbLanguage.Name" xml:space="preserve">
-    <value>cbLanguage</value>
   </data>
   <data name="&gt;&gt;tbPerdoruesi.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -511,6 +529,6 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
+    <value>sq</value>
   </metadata>
 </root>

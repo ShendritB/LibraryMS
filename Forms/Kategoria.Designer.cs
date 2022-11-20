@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kategoria));
             this.pnlCloseBtns = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
@@ -96,7 +97,7 @@
             this.BtnFshije.Location = new System.Drawing.Point(705, 302);
             this.BtnFshije.Name = "BtnFshije";
             this.BtnFshije.Size = new System.Drawing.Size(181, 46);
-            this.BtnFshije.TabIndex = 32;
+            this.BtnFshije.TabIndex = 5;
             this.BtnFshije.Text = "Fshije";
             this.BtnFshije.UseVisualStyleBackColor = false;
             this.BtnFshije.Click += new System.EventHandler(this.BtnFshije_Click);
@@ -105,9 +106,9 @@
             // 
             this.dgvKategoria.AllowUserToAddRows = false;
             this.dgvKategoria.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.dgvKategoria.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dgvKategoria.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvKategoria.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvKategoria.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvKategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -133,7 +134,7 @@
             this.btnRuaj.Location = new System.Drawing.Point(294, 302);
             this.btnRuaj.Name = "btnRuaj";
             this.btnRuaj.Size = new System.Drawing.Size(166, 46);
-            this.btnRuaj.TabIndex = 33;
+            this.btnRuaj.TabIndex = 3;
             this.btnRuaj.Text = "Shto Kategori";
             this.btnRuaj.UseVisualStyleBackColor = false;
             this.btnRuaj.Click += new System.EventHandler(this.btnRuaj_Click);
@@ -143,11 +144,11 @@
             this.lblShtoNdrysho.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblShtoNdrysho.AutoSize = true;
             this.lblShtoNdrysho.BackColor = System.Drawing.Color.Transparent;
-            this.lblShtoNdrysho.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShtoNdrysho.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.lblShtoNdrysho.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblShtoNdrysho.Location = new System.Drawing.Point(491, 167);
+            this.lblShtoNdrysho.Location = new System.Drawing.Point(492, 167);
             this.lblShtoNdrysho.Name = "lblShtoNdrysho";
-            this.lblShtoNdrysho.Size = new System.Drawing.Size(185, 24);
+            this.lblShtoNdrysho.Size = new System.Drawing.Size(192, 25);
             this.lblShtoNdrysho.TabIndex = 29;
             this.lblShtoNdrysho.Text = "Shto/Ndrysho/Fshi";
             // 
@@ -162,7 +163,7 @@
             this.tbEmri.Multiline = true;
             this.tbEmri.Name = "tbEmri";
             this.tbEmri.Size = new System.Drawing.Size(592, 36);
-            this.tbEmri.TabIndex = 27;
+            this.tbEmri.TabIndex = 1;
             // 
             // btnPerditso
             // 
@@ -175,7 +176,7 @@
             this.btnPerditso.Location = new System.Drawing.Point(495, 302);
             this.btnPerditso.Name = "btnPerditso";
             this.btnPerditso.Size = new System.Drawing.Size(181, 46);
-            this.btnPerditso.TabIndex = 31;
+            this.btnPerditso.TabIndex = 4;
             this.btnPerditso.Text = "Perditsoje";
             this.btnPerditso.UseVisualStyleBackColor = false;
             this.btnPerditso.Click += new System.EventHandler(this.btnPerditso_Click);
@@ -185,11 +186,11 @@
             this.lblEmriAut.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblEmriAut.AutoSize = true;
             this.lblEmriAut.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmriAut.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmriAut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.lblEmriAut.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblEmriAut.Location = new System.Drawing.Point(173, 210);
             this.lblEmriAut.Name = "lblEmriAut";
-            this.lblEmriAut.Size = new System.Drawing.Size(55, 24);
+            this.lblEmriAut.Size = new System.Drawing.Size(62, 25);
             this.lblEmriAut.TabIndex = 25;
             this.lblEmriAut.Text = "Emri:";
             // 
@@ -204,18 +205,18 @@
             this.tbPershkrimi.Multiline = true;
             this.tbPershkrimi.Name = "tbPershkrimi";
             this.tbPershkrimi.Size = new System.Drawing.Size(592, 36);
-            this.tbPershkrimi.TabIndex = 28;
+            this.tbPershkrimi.TabIndex = 2;
             // 
             // lblPershkrimiKat
             // 
             this.lblPershkrimiKat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPershkrimiKat.AutoSize = true;
             this.lblPershkrimiKat.BackColor = System.Drawing.Color.Transparent;
-            this.lblPershkrimiKat.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPershkrimiKat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.lblPershkrimiKat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblPershkrimiKat.Location = new System.Drawing.Point(173, 261);
             this.lblPershkrimiKat.Name = "lblPershkrimiKat";
-            this.lblPershkrimiKat.Size = new System.Drawing.Size(109, 24);
+            this.lblPershkrimiKat.Size = new System.Drawing.Size(120, 25);
             this.lblPershkrimiKat.TabIndex = 26;
             this.lblPershkrimiKat.Text = "Pershkrimi:";
             // 
@@ -223,6 +224,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1186, 854);
             this.Controls.Add(this.pnlCloseBtns);
             this.Controls.Add(this.BtnFshije);

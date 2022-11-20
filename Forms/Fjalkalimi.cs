@@ -81,10 +81,10 @@ namespace Library_TI1.Forms
             switch (cbLanguage.SelectedIndex)
             {
                 case 0:
-                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("sq");
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
                     break;
                 case 1:
-                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("sq");
                     break;
             }
             this.Controls.Clear();

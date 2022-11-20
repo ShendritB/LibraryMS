@@ -171,6 +171,7 @@
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Name = "label5";
             // 
             // cbLanguage

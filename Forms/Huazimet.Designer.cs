@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Huazimet));
             this.pnlCloseBtns = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
@@ -53,6 +54,7 @@
             this.rdBtnVrejtja = new System.Windows.Forms.RadioButton();
             this.rtbVrejtja = new System.Windows.Forms.RichTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.dtpDataKthimit = new System.Windows.Forms.DateTimePicker();
             this.btnKthe = new System.Windows.Forms.Button();
             this.dtpDataKthe = new System.Windows.Forms.DateTimePicker();
@@ -66,7 +68,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.pnlCloseBtns.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHuazimiActive)).BeginInit();
             this.group.SuspendLayout();
@@ -144,7 +145,7 @@
             this.cbLibrat.Location = new System.Drawing.Point(179, 345);
             this.cbLibrat.Name = "cbLibrat";
             this.cbLibrat.Size = new System.Drawing.Size(373, 33);
-            this.cbLibrat.TabIndex = 66;
+            this.cbLibrat.TabIndex = 4;
             // 
             // cbStudentat
             // 
@@ -155,7 +156,7 @@
             this.cbStudentat.Location = new System.Drawing.Point(628, 345);
             this.cbStudentat.Name = "cbStudentat";
             this.cbStudentat.Size = new System.Drawing.Size(368, 33);
-            this.cbStudentat.TabIndex = 67;
+            this.cbStudentat.TabIndex = 5;
             // 
             // label6
             // 
@@ -192,7 +193,7 @@
             this.dtpHuazimit.Location = new System.Drawing.Point(179, 204);
             this.dtpHuazimit.Name = "dtpHuazimit";
             this.dtpHuazimit.Size = new System.Drawing.Size(271, 27);
-            this.dtpHuazimit.TabIndex = 68;
+            this.dtpHuazimit.TabIndex = 1;
             // 
             // dtpAfatiKthimit
             // 
@@ -203,7 +204,7 @@
             this.dtpAfatiKthimit.Location = new System.Drawing.Point(729, 204);
             this.dtpAfatiKthimit.Name = "dtpAfatiKthimit";
             this.dtpAfatiKthimit.Size = new System.Drawing.Size(267, 27);
-            this.dtpAfatiKthimit.TabIndex = 68;
+            this.dtpAfatiKthimit.TabIndex = 2;
             // 
             // label1
             // 
@@ -237,12 +238,12 @@
             this.BtnFshije.BackColor = System.Drawing.Color.Transparent;
             this.BtnFshije.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnFshije.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnFshije.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnFshije.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.BtnFshije.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BtnFshije.Location = new System.Drawing.Point(849, 384);
             this.BtnFshije.Name = "BtnFshije";
             this.BtnFshije.Size = new System.Drawing.Size(147, 46);
-            this.BtnFshije.TabIndex = 71;
+            this.BtnFshije.TabIndex = 9;
             this.BtnFshije.Text = "Fshije";
             this.BtnFshije.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnFshije.UseVisualStyleBackColor = false;
@@ -254,12 +255,12 @@
             this.btnRuaj.BackColor = System.Drawing.Color.Transparent;
             this.btnRuaj.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnRuaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRuaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnRuaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnRuaj.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRuaj.Location = new System.Drawing.Point(179, 384);
             this.btnRuaj.Name = "btnRuaj";
-            this.btnRuaj.Size = new System.Drawing.Size(145, 46);
-            this.btnRuaj.TabIndex = 69;
+            this.btnRuaj.Size = new System.Drawing.Size(150, 46);
+            this.btnRuaj.TabIndex = 6;
             this.btnRuaj.Text = "Shto Huazim";
             this.btnRuaj.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnRuaj.UseVisualStyleBackColor = false;
@@ -271,13 +272,13 @@
             this.btnPerditso.BackColor = System.Drawing.Color.Transparent;
             this.btnPerditso.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnPerditso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPerditso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPerditso.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnPerditso.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnPerditso.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPerditso.Location = new System.Drawing.Point(330, 384);
+            this.btnPerditso.Location = new System.Drawing.Point(335, 384);
             this.btnPerditso.Name = "btnPerditso";
             this.btnPerditso.Size = new System.Drawing.Size(146, 46);
-            this.btnPerditso.TabIndex = 70;
+            this.btnPerditso.TabIndex = 7;
             this.btnPerditso.Text = "Perditsoje";
             this.btnPerditso.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPerditso.UseVisualStyleBackColor = false;
@@ -286,6 +287,7 @@
             // group
             // 
             this.group.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.group.BackColor = System.Drawing.Color.Transparent;
             this.group.Controls.Add(this.lblShtoNdrysho);
             this.group.Location = new System.Drawing.Point(179, 98);
             this.group.Name = "group";
@@ -312,12 +314,12 @@
             this.btnKtheLibrin.BackColor = System.Drawing.Color.Transparent;
             this.btnKtheLibrin.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnKtheLibrin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKtheLibrin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKtheLibrin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnKtheLibrin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnKtheLibrin.Location = new System.Drawing.Point(697, 384);
             this.btnKtheLibrin.Name = "btnKtheLibrin";
             this.btnKtheLibrin.Size = new System.Drawing.Size(146, 46);
-            this.btnKtheLibrin.TabIndex = 71;
+            this.btnKtheLibrin.TabIndex = 8;
             this.btnKtheLibrin.Text = "Kthe Librin";
             this.btnKtheLibrin.UseVisualStyleBackColor = false;
             this.btnKtheLibrin.Click += new System.EventHandler(this.btnKtheLibrin_Click);
@@ -325,10 +327,10 @@
             // rtbVerejtja
             // 
             this.rtbVerejtja.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rtbVerejtja.Location = new System.Drawing.Point(179, 237);
+            this.rtbVerejtja.Location = new System.Drawing.Point(179, 235);
             this.rtbVerejtja.Name = "rtbVerejtja";
             this.rtbVerejtja.Size = new System.Drawing.Size(817, 79);
-            this.rtbVerejtja.TabIndex = 73;
+            this.rtbVerejtja.TabIndex = 3;
             this.rtbVerejtja.Text = "";
             // 
             // label3
@@ -347,6 +349,8 @@
             // pnlHide
             // 
             this.pnlHide.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlHide.BackColor = System.Drawing.Color.Transparent;
+            this.pnlHide.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlHide.BackgroundImage")));
             this.pnlHide.Controls.Add(this.rdBtnVrejtja);
             this.pnlHide.Controls.Add(this.rtbVrejtja);
             this.pnlHide.Controls.Add(this.groupBox1);
@@ -362,7 +366,7 @@
             this.pnlHide.Controls.Add(this.label9);
             this.pnlHide.Controls.Add(this.label10);
             this.pnlHide.Controls.Add(this.label11);
-            this.pnlHide.Location = new System.Drawing.Point(167, 68);
+            this.pnlHide.Location = new System.Drawing.Point(163, 70);
             this.pnlHide.Name = "pnlHide";
             this.pnlHide.Size = new System.Drawing.Size(843, 362);
             this.pnlHide.TabIndex = 74;
@@ -391,12 +395,26 @@
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Location = new System.Drawing.Point(13, 0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(817, 72);
             this.groupBox1.TabIndex = 87;
             this.groupBox1.TabStop = false;
+            // 
+            // label14
+            // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label14.Location = new System.Drawing.Point(367, 29);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(109, 25);
+            this.label14.TabIndex = 74;
+            this.label14.Text = "Kthe librin";
             // 
             // dtpDataKthimit
             // 
@@ -407,7 +425,7 @@
             this.dtpDataKthimit.Location = new System.Drawing.Point(311, 103);
             this.dtpDataKthimit.Name = "dtpDataKthimit";
             this.dtpDataKthimit.Size = new System.Drawing.Size(241, 27);
-            this.dtpDataKthimit.TabIndex = 81;
+            this.dtpDataKthimit.TabIndex = 31;
             // 
             // btnKthe
             // 
@@ -434,7 +452,7 @@
             this.dtpDataKthe.Location = new System.Drawing.Point(573, 103);
             this.dtpDataKthe.Name = "dtpDataKthe";
             this.dtpDataKthe.Size = new System.Drawing.Size(259, 27);
-            this.dtpDataKthe.TabIndex = 81;
+            this.dtpDataKthe.TabIndex = 32;
             // 
             // dtpDataHuazimit
             // 
@@ -445,7 +463,7 @@
             this.dtpDataHuazimit.Location = new System.Drawing.Point(15, 103);
             this.dtpDataHuazimit.Name = "dtpDataHuazimit";
             this.dtpDataHuazimit.Size = new System.Drawing.Size(274, 27);
-            this.dtpDataHuazimit.TabIndex = 82;
+            this.dtpDataHuazimit.TabIndex = 30;
             // 
             // cbLibri
             // 
@@ -554,29 +572,17 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(505, 394);
+            this.label4.Location = new System.Drawing.Point(503, 397);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(168, 25);
             this.label4.TabIndex = 38;
             this.label4.Text = "Huazimet Aktive";
             // 
-            // label14
-            // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label14.Location = new System.Drawing.Point(367, 29);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(109, 25);
-            this.label14.TabIndex = 74;
-            this.label14.Text = "Kthe librin";
-            // 
             // Huazimet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1186, 854);
             this.Controls.Add(this.pnlHide);
             this.Controls.Add(this.rtbVerejtja);

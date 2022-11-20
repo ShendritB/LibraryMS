@@ -14,7 +14,7 @@ namespace Library_BLL
         public static Color SecondaryColor { get; set; }
         public static List<string> ColorList = new List<string>()
         {
-            "#3f37c9","#4361ee","#3a0ca3","#4895ef","#4cc9f0","#560bad","#7209b7","#b5179e"
+            "#91A8A4","#242F40","#334A6C","#334A6C","#5A5A66","#2B4570","#7D8491","#59656F"
                   //"#3F51B5", "#009688", "#FF5722",
                   //"#607D8B", "#FF9800", "#9C27B0",
                   //"#2196F3", "#EA676C", "#E41A4A",

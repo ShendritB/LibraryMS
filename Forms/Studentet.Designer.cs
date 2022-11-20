@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Studentet));
             this.BtnFshije = new System.Windows.Forms.Button();
             this.dgvStudentet = new System.Windows.Forms.DataGridView();
             this.btnRuaj = new System.Windows.Forms.Button();
@@ -46,11 +47,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.dtpLindjes = new System.Windows.Forms.DateTimePicker();
-            this.group = new System.Windows.Forms.GroupBox();
+            this.gAutori = new System.Windows.Forms.GroupBox();
             this.tbVrejtjet = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudentet)).BeginInit();
-            this.group.SuspendLayout();
+            this.gAutori.SuspendLayout();
             this.SuspendLayout();
             // 
             // BtnFshije
@@ -64,7 +65,7 @@
             this.BtnFshije.Location = new System.Drawing.Point(770, 344);
             this.BtnFshije.Name = "BtnFshije";
             this.BtnFshije.Size = new System.Drawing.Size(220, 46);
-            this.BtnFshije.TabIndex = 41;
+            this.BtnFshije.TabIndex = 9;
             this.BtnFshije.Text = "Fshije";
             this.BtnFshije.UseVisualStyleBackColor = false;
             this.BtnFshije.Click += new System.EventHandler(this.BtnFshije_Click);
@@ -101,7 +102,7 @@
             this.btnRuaj.Location = new System.Drawing.Point(173, 344);
             this.btnRuaj.Name = "btnRuaj";
             this.btnRuaj.Size = new System.Drawing.Size(220, 46);
-            this.btnRuaj.TabIndex = 42;
+            this.btnRuaj.TabIndex = 7;
             this.btnRuaj.Text = "Shto student";
             this.btnRuaj.UseVisualStyleBackColor = false;
             this.btnRuaj.Click += new System.EventHandler(this.btnRuaj_Click);
@@ -130,7 +131,7 @@
             this.tbEmri.Multiline = true;
             this.tbEmri.Name = "tbEmri";
             this.tbEmri.Size = new System.Drawing.Size(220, 36);
-            this.tbEmri.TabIndex = 36;
+            this.tbEmri.TabIndex = 1;
             // 
             // btnPerditso
             // 
@@ -143,7 +144,7 @@
             this.btnPerditso.Location = new System.Drawing.Point(471, 344);
             this.btnPerditso.Name = "btnPerditso";
             this.btnPerditso.Size = new System.Drawing.Size(220, 46);
-            this.btnPerditso.TabIndex = 40;
+            this.btnPerditso.TabIndex = 8;
             this.btnPerditso.Text = "Perditsoje";
             this.btnPerditso.UseVisualStyleBackColor = false;
             this.btnPerditso.Click += new System.EventHandler(this.btnPerditso_Click);
@@ -172,7 +173,7 @@
             this.tbMbiemri.Multiline = true;
             this.tbMbiemri.Name = "tbMbiemri";
             this.tbMbiemri.Size = new System.Drawing.Size(220, 36);
-            this.tbMbiemri.TabIndex = 37;
+            this.tbMbiemri.TabIndex = 4;
             // 
             // lblPershkrimiKat
             // 
@@ -211,7 +212,7 @@
             this.tbNrPrs.Multiline = true;
             this.tbNrPrs.Name = "tbNrPrs";
             this.tbNrPrs.Size = new System.Drawing.Size(220, 36);
-            this.tbNrPrs.TabIndex = 37;
+            this.tbNrPrs.TabIndex = 5;
             // 
             // label2
             // 
@@ -237,7 +238,7 @@
             this.tbNrTel.Multiline = true;
             this.tbNrTel.Name = "tbNrTel";
             this.tbNrTel.Size = new System.Drawing.Size(220, 36);
-            this.tbNrTel.TabIndex = 36;
+            this.tbNrTel.TabIndex = 2;
             // 
             // label3
             // 
@@ -276,7 +277,7 @@
             this.tbEmail.Multiline = true;
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(220, 36);
-            this.tbEmail.TabIndex = 36;
+            this.tbEmail.TabIndex = 3;
             // 
             // dtpLindjes
             // 
@@ -287,17 +288,19 @@
             this.dtpLindjes.Location = new System.Drawing.Point(770, 302);
             this.dtpLindjes.Name = "dtpLindjes";
             this.dtpLindjes.Size = new System.Drawing.Size(220, 27);
-            this.dtpLindjes.TabIndex = 43;
+            this.dtpLindjes.TabIndex = 6;
             // 
-            // group
+            // gAutori
             // 
-            this.group.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.group.Controls.Add(this.lblShtoNdrysho);
-            this.group.Location = new System.Drawing.Point(173, 68);
-            this.group.Name = "group";
-            this.group.Size = new System.Drawing.Size(817, 72);
-            this.group.TabIndex = 44;
-            this.group.TabStop = false;
+            this.gAutori.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gAutori.BackColor = System.Drawing.Color.Transparent;
+            this.gAutori.Controls.Add(this.lblShtoNdrysho);
+            this.gAutori.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gAutori.Location = new System.Drawing.Point(173, 68);
+            this.gAutori.Name = "gAutori";
+            this.gAutori.Size = new System.Drawing.Size(817, 72);
+            this.gAutori.TabIndex = 44;
+            this.gAutori.TabStop = false;
             // 
             // tbVrejtjet
             // 
@@ -329,10 +332,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1181, 854);
             this.Controls.Add(this.tbVrejtjet);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.group);
+            this.Controls.Add(this.gAutori);
             this.Controls.Add(this.dtpLindjes);
             this.Controls.Add(this.BtnFshije);
             this.Controls.Add(this.dgvStudentet);
@@ -353,8 +357,8 @@
             this.Text = "Studenti";
             this.Load += new System.EventHandler(this.Studentet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudentet)).EndInit();
-            this.group.ResumeLayout(false);
-            this.group.PerformLayout();
+            this.gAutori.ResumeLayout(false);
+            this.gAutori.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -379,7 +383,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.DateTimePicker dtpLindjes;
-        private System.Windows.Forms.GroupBox group;
+        private System.Windows.Forms.GroupBox gAutori;
         private System.Windows.Forms.TextBox tbVrejtjet;
         private System.Windows.Forms.Label label5;
     }
