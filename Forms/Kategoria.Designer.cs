@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kategoria));
             this.pnlCloseBtns = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
@@ -106,9 +106,9 @@
             // 
             this.dgvKategoria.AllowUserToAddRows = false;
             this.dgvKategoria.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.dgvKategoria.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dgvKategoria.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvKategoria.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvKategoria.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvKategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -144,11 +144,11 @@
             this.lblShtoNdrysho.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblShtoNdrysho.AutoSize = true;
             this.lblShtoNdrysho.BackColor = System.Drawing.Color.Transparent;
-            this.lblShtoNdrysho.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShtoNdrysho.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.lblShtoNdrysho.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblShtoNdrysho.Location = new System.Drawing.Point(491, 167);
+            this.lblShtoNdrysho.Location = new System.Drawing.Point(492, 167);
             this.lblShtoNdrysho.Name = "lblShtoNdrysho";
-            this.lblShtoNdrysho.Size = new System.Drawing.Size(185, 24);
+            this.lblShtoNdrysho.Size = new System.Drawing.Size(192, 25);
             this.lblShtoNdrysho.TabIndex = 29;
             this.lblShtoNdrysho.Text = "Shto/Ndrysho/Fshi";
             // 
@@ -186,11 +186,11 @@
             this.lblEmriAut.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblEmriAut.AutoSize = true;
             this.lblEmriAut.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmriAut.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmriAut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.lblEmriAut.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblEmriAut.Location = new System.Drawing.Point(173, 210);
             this.lblEmriAut.Name = "lblEmriAut";
-            this.lblEmriAut.Size = new System.Drawing.Size(55, 24);
+            this.lblEmriAut.Size = new System.Drawing.Size(62, 25);
             this.lblEmriAut.TabIndex = 25;
             this.lblEmriAut.Text = "Emri:";
             // 
@@ -212,11 +212,11 @@
             this.lblPershkrimiKat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPershkrimiKat.AutoSize = true;
             this.lblPershkrimiKat.BackColor = System.Drawing.Color.Transparent;
-            this.lblPershkrimiKat.Font = new System.Drawing.Font("Gilroy SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPershkrimiKat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.lblPershkrimiKat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblPershkrimiKat.Location = new System.Drawing.Point(173, 261);
             this.lblPershkrimiKat.Name = "lblPershkrimiKat";
-            this.lblPershkrimiKat.Size = new System.Drawing.Size(109, 24);
+            this.lblPershkrimiKat.Size = new System.Drawing.Size(120, 25);
             this.lblPershkrimiKat.TabIndex = 26;
             this.lblPershkrimiKat.Text = "Pershkrimi:";
             // 

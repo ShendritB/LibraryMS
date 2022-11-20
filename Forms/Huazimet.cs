@@ -48,8 +48,19 @@ namespace Library_TI1.Forms
                 }
             }
             lblShtoNdrysho.ForeColor = ThemeColors.SecondaryColor;
-            //lblEmriAut.ForeColor = ThemeColors.PrimaryColor;
-            //lblPershkrimiKat.ForeColor = ThemeColors.PrimaryColor;
+            label1.ForeColor = ThemeColors.PrimaryColor;
+            label2.ForeColor = ThemeColors.PrimaryColor;
+            label3.ForeColor = ThemeColors.PrimaryColor;
+            label4.ForeColor = ThemeColors.PrimaryColor;
+            label5.ForeColor = ThemeColors.PrimaryColor;
+            label6.ForeColor = ThemeColors.PrimaryColor;
+            label7.ForeColor = ThemeColors.PrimaryColor;
+            label8.ForeColor = ThemeColors.PrimaryColor;
+            label9.ForeColor = ThemeColors.PrimaryColor;
+            label10.ForeColor = ThemeColors.PrimaryColor;
+            label11.ForeColor = ThemeColors.PrimaryColor;
+            label12.ForeColor = ThemeColors.PrimaryColor;
+            label14.ForeColor = ThemeColors.PrimaryColor;
             var color = ThemeColors.PrimaryColor;
         }
         public void HuazimetAktiveShfaq()
@@ -59,7 +70,6 @@ namespace Library_TI1.Forms
             dgvHuazimiActive.DataSource = dt;
             this.dgvHuazimiActive.Columns["Id"].Visible = false;
             this.dgvHuazimiActive.Columns["DataKthimit"].Visible = false;
-            //this.dgvHuazimiActive.Columns["Vrejtjet"].Visible = false;
         }
         public void HuazimetTotalShfaq()
         {
@@ -68,7 +78,6 @@ namespace Library_TI1.Forms
             dgvHuazimiActive.DataSource = dt;
             this.dgvHuazimiActive.Columns["Id"].Visible = false;
             this.dgvHuazimiActive.Columns["DataKthimit"].Visible = false;
-            //this.dgvHuazimiActive.Columns["Vrejtjet"].Visible = false;
         }
         private void dgvHuazimiActive_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -125,7 +134,6 @@ namespace Library_TI1.Forms
 
             return true;
         }
-
         private void btnPerditso_Click(object sender, EventArgs e)
         {
             if (isValid())
@@ -144,7 +152,6 @@ namespace Library_TI1.Forms
                 }
             }
         }
-
         private HuazimetBO Perditso()
         {
             huaBO = new HuazimetBO(MerrVlerenCmbBox(cbLibrat), MerrVlerenCmbBox(cbStudentat), dtpHuazimit.Text, dtpAfatiKthimit.Text, rtbVerejtja.Text);

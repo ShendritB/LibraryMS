@@ -47,11 +47,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.dtpLindjes = new System.Windows.Forms.DateTimePicker();
-            this.group = new System.Windows.Forms.GroupBox();
+            this.gAutori = new System.Windows.Forms.GroupBox();
             this.tbVrejtjet = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudentet)).BeginInit();
-            this.group.SuspendLayout();
+            this.gAutori.SuspendLayout();
             this.SuspendLayout();
             // 
             // BtnFshije
@@ -290,16 +290,17 @@
             this.dtpLindjes.Size = new System.Drawing.Size(220, 27);
             this.dtpLindjes.TabIndex = 6;
             // 
-            // group
+            // gAutori
             // 
-            this.group.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.group.BackColor = System.Drawing.Color.Transparent;
-            this.group.Controls.Add(this.lblShtoNdrysho);
-            this.group.Location = new System.Drawing.Point(173, 68);
-            this.group.Name = "group";
-            this.group.Size = new System.Drawing.Size(817, 72);
-            this.group.TabIndex = 44;
-            this.group.TabStop = false;
+            this.gAutori.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gAutori.BackColor = System.Drawing.Color.Transparent;
+            this.gAutori.Controls.Add(this.lblShtoNdrysho);
+            this.gAutori.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gAutori.Location = new System.Drawing.Point(173, 68);
+            this.gAutori.Name = "gAutori";
+            this.gAutori.Size = new System.Drawing.Size(817, 72);
+            this.gAutori.TabIndex = 44;
+            this.gAutori.TabStop = false;
             // 
             // tbVrejtjet
             // 
@@ -335,7 +336,7 @@
             this.ClientSize = new System.Drawing.Size(1181, 854);
             this.Controls.Add(this.tbVrejtjet);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.group);
+            this.Controls.Add(this.gAutori);
             this.Controls.Add(this.dtpLindjes);
             this.Controls.Add(this.BtnFshije);
             this.Controls.Add(this.dgvStudentet);
@@ -356,8 +357,8 @@
             this.Text = "Studenti";
             this.Load += new System.EventHandler(this.Studentet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudentet)).EndInit();
-            this.group.ResumeLayout(false);
-            this.group.PerformLayout();
+            this.gAutori.ResumeLayout(false);
+            this.gAutori.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -382,7 +383,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.DateTimePicker dtpLindjes;
-        private System.Windows.Forms.GroupBox group;
+        private System.Windows.Forms.GroupBox gAutori;
         private System.Windows.Forms.TextBox tbVrejtjet;
         private System.Windows.Forms.Label label5;
     }

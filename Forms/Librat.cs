@@ -43,8 +43,14 @@ namespace Library_TI1.Forms
                     btn.FlatAppearance.BorderColor = ThemeColors.SecondaryColor;
                 }
             }
+            lblShtoNdrysho.ForeColor = ThemeColors.SecondaryColor;
             label1.ForeColor = ThemeColors.SecondaryColor;
             label2.ForeColor = ThemeColors.PrimaryColor;
+            label3.ForeColor = ThemeColors.PrimaryColor;
+            label4.ForeColor = ThemeColors.PrimaryColor;
+            label5.ForeColor = ThemeColors.PrimaryColor;
+            lblPershkrimiKat.ForeColor = ThemeColors.PrimaryColor;
+            lblTitulli.ForeColor = ThemeColors.PrimaryColor;
         }
 
         public void Shfaqlibrat()

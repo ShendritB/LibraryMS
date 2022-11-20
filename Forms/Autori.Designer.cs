@@ -53,7 +53,7 @@
             this.lblShtoNdrysho.BackColor = System.Drawing.Color.Transparent;
             this.lblShtoNdrysho.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblShtoNdrysho.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblShtoNdrysho.Location = new System.Drawing.Point(491, 164);
+            this.lblShtoNdrysho.Location = new System.Drawing.Point(492, 164);
             this.lblShtoNdrysho.Name = "lblShtoNdrysho";
             this.lblShtoNdrysho.Size = new System.Drawing.Size(192, 25);
             this.lblShtoNdrysho.TabIndex = 0;

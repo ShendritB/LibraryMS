@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Librat));
             this.group = new System.Windows.Forms.GroupBox();
             this.lblShtoNdrysho = new System.Windows.Forms.Label();
@@ -101,9 +101,9 @@
             // 
             this.dgvLibrat.AllowUserToAddRows = false;
             this.dgvLibrat.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            this.dgvLibrat.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dgvLibrat.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvLibrat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvLibrat.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvLibrat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -130,7 +130,7 @@
             this.btnRuaj.Name = "btnRuaj";
             this.btnRuaj.Size = new System.Drawing.Size(220, 46);
             this.btnRuaj.TabIndex = 10;
-            this.btnRuaj.Text = "Shto student";
+            this.btnRuaj.Text = "Shto libra";
             this.btnRuaj.UseVisualStyleBackColor = false;
             this.btnRuaj.Click += new System.EventHandler(this.btnRuaj_Click);
             // 

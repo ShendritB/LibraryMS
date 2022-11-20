@@ -238,7 +238,7 @@
             this.BtnFshije.BackColor = System.Drawing.Color.Transparent;
             this.BtnFshije.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnFshije.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnFshije.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnFshije.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.BtnFshije.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BtnFshije.Location = new System.Drawing.Point(849, 384);
             this.BtnFshije.Name = "BtnFshije";
@@ -255,11 +255,11 @@
             this.btnRuaj.BackColor = System.Drawing.Color.Transparent;
             this.btnRuaj.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnRuaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRuaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnRuaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnRuaj.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRuaj.Location = new System.Drawing.Point(179, 384);
             this.btnRuaj.Name = "btnRuaj";
-            this.btnRuaj.Size = new System.Drawing.Size(145, 46);
+            this.btnRuaj.Size = new System.Drawing.Size(150, 46);
             this.btnRuaj.TabIndex = 6;
             this.btnRuaj.Text = "Shto Huazim";
             this.btnRuaj.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -272,10 +272,10 @@
             this.btnPerditso.BackColor = System.Drawing.Color.Transparent;
             this.btnPerditso.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnPerditso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPerditso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPerditso.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnPerditso.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnPerditso.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPerditso.Location = new System.Drawing.Point(330, 384);
+            this.btnPerditso.Location = new System.Drawing.Point(335, 384);
             this.btnPerditso.Name = "btnPerditso";
             this.btnPerditso.Size = new System.Drawing.Size(146, 46);
             this.btnPerditso.TabIndex = 7;
@@ -314,7 +314,7 @@
             this.btnKtheLibrin.BackColor = System.Drawing.Color.Transparent;
             this.btnKtheLibrin.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnKtheLibrin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKtheLibrin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKtheLibrin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.btnKtheLibrin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnKtheLibrin.Location = new System.Drawing.Point(697, 384);
             this.btnKtheLibrin.Name = "btnKtheLibrin";
@@ -572,7 +572,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(505, 394);
+            this.label4.Location = new System.Drawing.Point(503, 397);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(168, 25);
             this.label4.TabIndex = 38;

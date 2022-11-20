@@ -90,8 +90,7 @@
             // btnRuaj
             // 
             resources.ApplyResources(this.btnRuaj, "btnRuaj");
-            this.btnRuaj.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRuaj.FlatAppearance.BorderSize = 0;
+            this.btnRuaj.BackColor = System.Drawing.Color.Transparent;
             this.btnRuaj.Name = "btnRuaj";
             this.btnRuaj.UseVisualStyleBackColor = false;
             this.btnRuaj.Click += new System.EventHandler(this.btnRuaj_Click);

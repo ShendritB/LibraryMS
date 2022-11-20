@@ -125,7 +125,7 @@
     <value>53, 112</value>
   </data>
   <data name="lblEmriAut.Location" type="System.Drawing.Point, System.Drawing">
-    <value>283, 85</value>
+    <value>341, 84</value>
   </data>
   <data name="lblEmriAut.Size" type="System.Drawing.Size, System.Drawing">
     <value>119, 25</value>
@@ -149,7 +149,7 @@
     <value>53, 354</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 327</value>
+    <value>353, 327</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 25</value>
@@ -158,13 +158,13 @@
     <value>Students</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>953, 327</value>
+    <value>1104, 326</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>345, 25</value>
+    <value>208, 25</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Students with more than 3 remarks</value>
+    <value>Blacklisted Students</value>
   </data>
   <data name="dgvLibrat.Location" type="System.Drawing.Point, System.Drawing">
     <value>53, 596</value>
