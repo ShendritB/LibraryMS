@@ -20,7 +20,5 @@ namespace Library_BO
             Id = id;
             Emri = emri;
         }
-
-      
     }
 }
